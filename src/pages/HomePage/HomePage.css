@@ -217,13 +217,13 @@ background: #FCFCFC;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  margin-top: 40px;
+  margin-top: 16px;
   color: #ffffff;
 }
 .u-alone {
   /* background-color: red; */
   margin-top: 18px;
-  width: 60%;
+  width: 80%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

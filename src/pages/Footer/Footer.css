@@ -65,3 +65,50 @@ border-radius: 12px;
 outline: none;
 border: none;
 }
+.grey{
+    background-color: #FCFCFC;
+}
+.wituyt{
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+.comppp{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+margin-bottom: 20px;
+
+color: #121212;
+}
+.wghat{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+margin-bottom: 30px;
+color: #121212;
+cursor: pointer;
+}
+.collab{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+margin-top: 6px;
+color: #565656;
+margin-bottom: 60px;
+}
+.dribb{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #121212;
+margin-bottom: 25px;
+text-align: center;
+}
+.f{
+    margin-top: 9px;
+    border-bottom: 1.5px solid rgb(0, 0, 0);
+}
