@@ -1,0 +1,67 @@
+.promises{
+    padding-top: 70px;
+    padding-bottom: 20px;
+}
+.sched{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 80px;
+color: #121212;
+line-height: 100px;
+}
+.know{
+    color: #007BFF;
+}
+.letss{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: #000000;
+
+
+}
+@media screen and (max-width:991px){
+    .reje{
+    /* background-color: red; */
+    width: 100% !important;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+}
+
+.reje{
+    /* background-color: red; */
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+.magnify{
+    width: 210px;
+height: 50px;
+outline: none;
+border: none;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #FFFFFF;
+background: #007BFF;
+border-radius: 12px;
+}
+.capmi{
+    width: 127px;
+height: 50px;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+color: #007BFF;
+background: rgba(0, 123, 255, 0.22);
+border-radius: 12px;
+outline: none;
+border: none;
+}

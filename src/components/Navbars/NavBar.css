@@ -1,0 +1,78 @@
+.sure {
+  width: 100%;
+}
+
+.story {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.loik {
+  display: flex;
+}
+.ohohoh{
+    cursor: pointer;
+}
+@media screen and (max-width: 991px) {
+  .loik {
+    display: block !important;
+  }
+  .story {
+    width: 100%;
+    display: block !important;
+  }
+  .outfit {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 0px !important;
+    margin-top: 18px;
+    cursor: pointer;
+    color: #121212;
+  }
+  .cafmu {
+  width: 145px;
+  height: 48px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #007bff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  margin-top: 18px;
+}
+
+}
+.outfit {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 50px;
+  cursor: pointer;
+  color: #121212;
+}
+.cafmu {
+  width: 145px;
+  height: 48px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background: #007bff;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
