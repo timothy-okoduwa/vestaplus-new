@@ -25,10 +25,10 @@
 }
 .fjfujf {
   /* background-color: red; */
-  width: 48%;
+  /* width: 48%; */
   margin-top: 23px;
-  display: flex;
-  justify-content: space-between;
+  /* display: flex;
+  justify-content: space-between; */
 }
 @media screen and (max-width: 991px) {
   .lplp {
@@ -54,13 +54,7 @@ width: 50% !important;
     padding: 15px !important;
     margin-top: 40px;
   }
-  .fjfujf {
-    /* background-color: red; */
-    width: 100% !important;
-    margin-top: 23px;
-    display: flex;
-    justify-content: space-between;
-  }
+  
   .will {
     display: flex !important;
     justify-content: center !important;
@@ -81,7 +75,7 @@ width: 50% !important;
   height: 50px;
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 400;
+    font-weight: 500;
   font-size: 16px;
   color: #ffffff;
   background: #007bff;
@@ -94,13 +88,14 @@ width: 50% !important;
   height: 50px;
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 400;
+    font-weight: 500;
   font-size: 16px;
   color: #007bff;
   background: rgba(0, 123, 255, 0.22);
   border-radius: 12px;
   outline: none;
   border: none;
+  margin-left: 35px;
 }
 .heart {
   margin-top: 70px;

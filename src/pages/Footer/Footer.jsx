@@ -2,7 +2,12 @@ import React from 'react';
 import './Footer.css';
 import v from '../images/vp.svg';
 import { Fade } from 'react-awesome-reveal';
+import {  useLocation } from 'react-router-dom';
 const Footer = () => {
+      const location = useLocation();
+
+      const hideInWhatPage = location.pathname === '/whatwedo';
+      const hideInHomePage = location.pathname === '/';
   return (
     <div className="grey">
       <div className="container">
@@ -18,14 +23,31 @@ const Footer = () => {
                   <div>
                     <div className="sched">
                       Schedule time to{' '}
-                      <span className="know">talk with us.</span>
+                      {hideInWhatPage ? null : (
+                        <span className="know">talk with us.</span>
+                      )}
+                      {hideInHomePage ? null : (
+                        <span className="what">talk with us.</span>
+                      )}
                     </div>
                     <div className="letss">Let’s talk about your goals</div>
                     <div className="reje">
-                      <button className="magnify">
-                        Book 30 Minutes Session
-                      </button>
-                      <button className="capmi">Contact Us</button>
+                      {hideInWhatPage ? null : (
+                        <button className="magnify">
+                          Book 30 Minutes Session
+                        </button>
+                      )}
+                      {hideInHomePage ? null : (
+                        <button className="magnify rehyy">
+                          Book 30 Minutes Session
+                        </button>
+                      )}
+                      {hideInWhatPage ? null : (
+                        <button className="capmi">Contact Us</button>
+                      )}
+                      {hideInHomePage ? null : (
+                        <button className="capmi ong">Contact Us</button>
+                      )}
                     </div>
                   </div>
                 </Fade>
@@ -92,7 +114,7 @@ const Footer = () => {
             <div>
               <div className="f"></div>
             </div>
-            <div className='going'>2023 Copyright. Vestarplus</div>
+            <div className="going">2023 Copyright. Vestarplus</div>
           </div>
         </div>
       </div>

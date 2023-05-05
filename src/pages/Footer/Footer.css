@@ -1,133 +1,121 @@
-.promises{
-    padding-top: 70px;
-    padding-bottom: 20px;
+.promises {
+  padding-top: 70px;
+  padding-bottom: 20px;
 }
-.sched{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 700;
-font-size: 80px;
-color: #121212;
-line-height: 100px;
+.sched {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 80px;
+  color: #121212;
+  line-height: 100px;
 }
-.know{
-    color: #007BFF;
+.know {
+  color: #007bff;
 }
-.letss{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-color: #000000;
-
-
+.what {
+  color: #fc7a31;
 }
-@media screen and (max-width:991px){
-    .reje{
-    /* background-color: red; */
-    width: 100% !important;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 22px;
-}
+.letss {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
 }
 
-.reje{
-    /* background-color: red; */
-    width: 65% !important;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 22px;
+.reje {
+  margin-top: 22px;
 }
-@media screen and (min-width:1200px){
-.reje{
-    /* background-color: red; */
-    width: 55% !important;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 22px;
-}
-}
-.magnify{
-    width: 210px;
-height: 50px;
-outline: none;
-border: none;
-font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-color: #FFFFFF;
-background: #007BFF;
-border-radius: 12px;
-}
-.capmi{
-    width: 127px;
-height: 50px;
-font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-color: #007BFF;
-background: rgba(0, 123, 255, 0.22);
-border-radius: 12px;
-outline: none;
-border: none;
-}
-.grey{
-    background-color: #FCFCFC;
-}
-.wituyt{
-    margin-top: 80px;
-    padding-bottom: 30px;
-}
-.comppp{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-margin-bottom: 20px;
 
-color: #121212;
+.magnify {
+  width: 210px;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  background: #007bff;
+  border-radius: 12px;
 }
-.wghat{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-margin-bottom: 30px;
-color: #121212;
-cursor: pointer;
+.rehyy {
+  background: #fc7a31;
 }
-.collab{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-margin-top: 6px;
-color: #565656;
-margin-bottom: 60px;
+.ong {
+  background: rgba(255, 173, 74, 0.22) !important;
+  color: #fc7a31 !important;
 }
-.dribb{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-color: #121212;
-margin-bottom: 25px;
-text-align: center;
+.capmi {
+  width: 127px;
+  height: 50px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #007bff;
+  background: rgba(0, 123, 255, 0.22);
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  margin-left: 10px;
 }
-.f{
-    margin-top: 9px;
-    border-bottom: 1.5px solid rgb(0, 0, 0);
+.grey {
+  background-color: #fcfcfc;
 }
-.going{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 25px;
-text-align: center;
-margin-top: 24px;
-color: #565656;
+.wituyt {
+  margin-top: 80px;
+  padding-bottom: 30px;
+}
+.comppp {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 20px;
+
+  color: #121212;
+}
+.wghat {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #121212;
+  cursor: pointer;
+}
+.collab {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 6px;
+  color: #565656;
+  margin-bottom: 60px;
+}
+.dribb {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #121212;
+  margin-bottom: 25px;
+  text-align: center;
+}
+.f {
+  margin-top: 9px;
+  border-bottom: 0.5px solid rgb(0, 0, 0);
+}
+.going {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  margin-top: 24px;
+  color: #565656;
 }

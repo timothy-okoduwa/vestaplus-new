@@ -1,0 +1,110 @@
+.hands {
+  padding-top: 60px;
+}
+.orange {
+  color: #fc7a31;
+}
+.tenn99 {
+  width: 144px;
+  height: 50px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ffffff;
+  background: #fc7a31;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+}
+.tenn299 {
+  width: 144px;
+  height: 50px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fc7a31;
+  background: rgba(255, 173, 74, 0.22);
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  margin-left: 35px;
+}
+.sby {
+  padding-top: 140px;
+}
+.haveot {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+  color: #121212;
+}
+.padr {
+  color: #ffad4a;
+}
+.tuss {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #121212;
+  margin-top: 6px;
+}
+.mkir {
+  margin-top: 100px;
+}
+.usually {
+  background: #fcfcfc;
+  border: 1.07889px solid #f1f1f1;
+  border-radius: 40px;
+  height: 470px;
+}
+.containerd {
+  padding: 60px;
+}
+.brandd {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 50px;
+  color: #000000;
+  margin-top: 10px;
+}
+.whiyr {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  margin-top: 20px;
+
+  color: #000000;
+}
+@media screen and (max-width: 425px) {
+  .usually {
+    background: #fcfcfc;
+    border: 1.07889px solid #f1f1f1;
+    border-radius: 40px;
+    height: auto;
+  }
+}
+
+.hopesay {
+  transform: rotate(13.77deg);
+  margin-left: -44px;
+}
+.olo {
+  margin-top: -20px;
+}
+.fullterms {
+background-image: url('../images/dback.svg');
+background-size: cover;
+background-repeat: no-repeat;
+  border-radius: 40px;
+  height: 470px;
+}
