@@ -92,6 +92,41 @@
     border-radius: 40px;
     height: auto;
   }
+  .fullterms {
+    background-image: url('../images/dback.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    height: auto !important;
+  }
+  .fullterms2 {
+    background-image: url('../images/bitback.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    height: auto !important;
+  }
+  .fullterms3 {
+  background-image: url('../images/webback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+ height: auto !important;
+}
+.fullterms4 {
+  background-image: url('../images/eback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+ height: auto !important;
+}
+.fullterms5 {
+  background-image: url('../images/eduback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+ height: auto !important;
+}
 }
 
 .hopesay {
@@ -102,9 +137,110 @@
   margin-top: -20px;
 }
 .fullterms {
-background-image: url('../images/dback.svg');
-background-size: cover;
-background-repeat: no-repeat;
+  background-image: url('../images/dback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
   border-radius: 40px;
   height: 470px;
+}
+.fullterms2 {
+  background-image: url('../images/bitback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  height: 470px;
+}
+.fullterms3 {
+  background-image: url('../images/webback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  height: 470px;
+}
+.fullterms4 {
+  background-image: url('../images/eback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  height: 470px;
+}
+.fullterms5 {
+  background-image: url('../images/eduback.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 40px;
+  height: 470px;
+}
+.Fintech {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  color: #007bff;
+  margin-top: 10px;
+}
+.goof {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  color: #007bff;
+}
+.crypto {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #f7931a;
+}
+.humm {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #f7931a;
+  margin-top: 15px;
+}
+.website {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ed3324;
+}
+.nomind {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ed3324;
+}
+.ecoo{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+color: #61D748;
+}
+.waitfor{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: #61D748;
+}
+.edu{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+color: #36C9F7;
+}
+.die{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+color: #36C9F7;
 }
