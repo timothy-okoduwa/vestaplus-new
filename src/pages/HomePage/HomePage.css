@@ -321,11 +321,18 @@ background: #FCFCFC;
   display: flex;
   justify-content: center;
   /* width: 550px; */
+
   padding-top: 60px;
 }
 .ynl {
   width: 400px;
+ 
+}
+@media screen and (min-width:1200px){
+  .ynl {
+  width: 450px !important;
   /* background-color: red; */
+}
 }
 .memind {
   margin-top: 14px;

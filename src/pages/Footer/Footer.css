@@ -112,3 +112,13 @@ text-align: center;
     margin-top: 9px;
     border-bottom: 1.5px solid rgb(0, 0, 0);
 }
+.going{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+text-align: center;
+margin-top: 24px;
+color: #565656;
+}

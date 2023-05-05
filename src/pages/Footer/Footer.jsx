@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
 import v from '../images/vp.svg';
-import { Bounce } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 const Footer = () => {
   return (
     <div className="grey">
@@ -10,7 +10,11 @@ const Footer = () => {
           <div>
             <div className="row">
               <div className="col-12 col-lg-7">
-                <Bounce duration="800" triggerOnce="true" direction="down">
+                <Fade
+                  //   duration="6000"
+                  triggerOnce="true"
+                  direction="up"
+                >
                   <div>
                     <div className="sched">
                       Schedule time to{' '}
@@ -24,7 +28,7 @@ const Footer = () => {
                       <button className="capmi">Contact Us</button>
                     </div>
                   </div>
-                </Bounce>
+                </Fade>
               </div>
               <div className="col-12 col-lg-5"></div>
             </div>
@@ -88,6 +92,7 @@ const Footer = () => {
             <div>
               <div className="f"></div>
             </div>
+            <div className='going'>2023 Copyright. Vestarplus</div>
           </div>
         </div>
       </div>
