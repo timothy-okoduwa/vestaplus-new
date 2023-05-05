@@ -34,10 +34,19 @@ color: #000000;
 
 .reje{
     /* background-color: red; */
-    width: 60%;
+    width: 65% !important;
     display: flex;
     justify-content: space-between;
     margin-top: 22px;
+}
+@media screen and (min-width:1200px){
+.reje{
+    /* background-color: red; */
+    width: 55% !important;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
 }
 .magnify{
     width: 210px;
