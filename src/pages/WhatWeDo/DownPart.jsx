@@ -194,7 +194,7 @@ const DownPart = () => {
               <Zoom duration="800" triggerOnce="true">
                 <div className="fullterms5">
                   <div className="containerd">
-                    <div>
+                    <div>  
                       <div>
                         <img src={edu} alt="" />
                       </div>

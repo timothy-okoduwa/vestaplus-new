@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const WhatFirst = () => {
   return (
     <div className="hands">
@@ -18,13 +19,14 @@ const WhatFirst = () => {
             </div>
             <div className="fjfujf">
               <button className="tenn99">Start Building</button>
-              <button className="tenn299">Contact Us</button>
+              <Link to="/contact" style={{ textDecoration: 'none' }}>
+                <button className="tenn299">Contact Us</button>
+              </Link>
             </div>
           </div>
         </div>
         <div className="col-12 col-lg-4"></div>
       </div>
-
     </div>
   );
 };

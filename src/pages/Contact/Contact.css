@@ -1,0 +1,107 @@
+.emilo {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  margin-bottom: 3px;
+  color: #121212;
+}
+.nomore {
+  color: #03bc52;
+}
+.sbc {
+  background: #03bc52;
+}
+.sbc2 {
+  background: rgba(3, 188, 82, 0.22);
+  color: #03bc52;
+}
+.pushes {
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+.labell {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #121212;
+  margin-bottom: 25px;
+}
+.takila {
+  border: 0.5px solid #3f3b3b;
+  border-radius: 10px;
+  height: 60px;
+  width: 90%;
+  padding-left: 20px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #565656;
+}
+.takila2 {
+  border: 0.5px solid #3f3b3b;
+  border-radius: 10px;
+  height: 130px;
+  width: 90%;
+  padding-left: 20px;
+  padding-top: 10px;
+   font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #565656;
+}
+@media screen and (max-width: 991px) {
+  .takila {
+    border: 0.5px solid #3f3b3b;
+    border-radius: 10px;
+    height: 60px;
+    width: 100%;
+  }
+  .takila2 {
+    border: 0.5px solid #3f3b3b;
+    border-radius: 10px;
+    height: 130px;
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 10px;
+  }
+}
+.subb {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  background: #121212;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  width: 128px;
+  height: 60px;
+}
+.terapy {
+  /* background-color: rebeccapurple; */
+  height: 600px;
+}
+
+.shana {
+  margin-top: 40px;
+}
+
+.tryin {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  color: #121212;
+}
+.coker {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 26px;
+  color: #121212;
+}

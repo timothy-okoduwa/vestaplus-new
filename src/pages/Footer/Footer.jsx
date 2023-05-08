@@ -2,12 +2,36 @@ import React from 'react';
 import './Footer.css';
 import v from '../images/vp.svg';
 import { Fade } from 'react-awesome-reveal';
-import {  useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const Footer = () => {
-      const location = useLocation();
+  const location = useLocation();
 
-      const hideInWhatPage = location.pathname === '/whatwedo';
-      const hideInHomePage = location.pathname === '/';
+  const hideInWhatPage =
+    location.pathname === '/whatwedo' ||
+    location.pathname === '/project' ||
+    location.pathname === '/about' ||
+    location.pathname === '/contact';
+  const hideInHomePage =
+    location.pathname === '/' ||
+    location.pathname === '/project' ||
+    location.pathname === '/about' ||
+    location.pathname === '/contact';
+  const hideInWhatAndHomePage =
+    location.pathname === '/' ||
+    location.pathname === '/whatwedo' ||
+    location.pathname === '/about' ||
+    location.pathname === '/contact';
+  const hideInWhatAndHomeAndProductPage =
+    location.pathname === '/' ||
+    location.pathname === '/whatwedo' ||
+    location.pathname === '/about' ||
+    location.pathname === '/project';
+  const hideInWhatAndHomeAndContactProjectPage =
+    location.pathname === '/' ||
+    location.pathname === '/whatwedo' ||
+    location.pathname === '/contact' ||
+    location.pathname === '/project';
   return (
     <div className="grey">
       <div className="container">
@@ -29,6 +53,15 @@ const Footer = () => {
                       {hideInHomePage ? null : (
                         <span className="what">talk with us.</span>
                       )}
+                      {hideInWhatAndHomePage ? null : (
+                        <span className="what projrct">talk with us.</span>
+                      )}
+                      {hideInWhatAndHomeAndProductPage ? null : (
+                        <span className="what contactcc">talk with us.</span>
+                      )}
+                      {hideInWhatAndHomeAndContactProjectPage ? null : (
+                        <span className="know ">talk with us.</span>
+                      )}
                     </div>
                     <div className="letss">Let’s talk about your goals</div>
                     <div className="reje">
@@ -42,11 +75,45 @@ const Footer = () => {
                           Book 30 Minutes Session
                         </button>
                       )}
+                      {hideInWhatAndHomePage ? null : (
+                        <button className="magnify whthome">
+                          Book 30 Minutes Session
+                        </button>
+                      )}
+                      {hideInWhatAndHomeAndProductPage ? null : (
+                        <button className="magnify con">
+                          Book 30 Minutes Session
+                        </button>
+                      )}
+                      {hideInWhatAndHomeAndContactProjectPage ? null : (
+                        <button className="magnify ">
+                          Book 30 Minutes Session
+                        </button>
+                      )}
                       {hideInWhatPage ? null : (
-                        <button className="capmi">Contact Us</button>
+                        <Link to="/contact" style={{ textDecoration: 'none' }}>
+                          <button className="capmi">Contact Us</button>
+                        </Link>
                       )}
                       {hideInHomePage ? null : (
-                        <button className="capmi ong">Contact Us</button>
+                        <Link to="/contact" style={{ textDecoration: 'none' }}>
+                          <button className="capmi ong">Contact Us</button>
+                        </Link>
+                      )}
+                      {hideInWhatAndHomePage ? null : (
+                        <Link to="/contact" style={{ textDecoration: 'none' }}>
+                          <button className="capmi wathome2">Contact Us</button>
+                        </Link>
+                      )}
+                      {hideInWhatAndHomeAndProductPage ? null : (
+                        <Link to="/contact" style={{ textDecoration: 'none' }}>
+                          <button className="capmi con2">Contact Us</button>
+                        </Link>
+                      )}
+                      {hideInWhatAndHomeAndContactProjectPage ? null : (
+                        <Link to="/contact" style={{ textDecoration: 'none' }}>
+                          <button className="capmi ">Contact Us</button>
+                        </Link>
                       )}
                     </div>
                   </div>
@@ -74,21 +141,32 @@ const Footer = () => {
               <div className="col-12 col-lg-3">
                 <div>
                   <div className="comppp">Company</div>
-                  <div className="wghat">What we do</div>
-                  <div className="wghat">About Us</div>
+                     <Link to="/whatwedo" style={{ textDecoration: 'none' }}>
+                       <div className="wghat">What we do</div>
+                     </Link>
+                    <Link to="/about" style={{ textDecoration: 'none' }}>
+                      <div className="wghat">About Us</div>
+                    </Link>
+                  
                 </div>
               </div>
               <div className="col-12 col-lg-3">
                 <div>
                   <div className="comppp">Resources</div>
-                  <div className="wghat">Projects</div>
+                     <Link to="/project" style={{ textDecoration: 'none' }}>
+                       <div className="wghat">Projects</div>
+                     </Link>
+                 
                   <div className="wghat">Products</div>
                 </div>
               </div>
               <div className="col-12 col-lg-2">
                 <div>
                   <div className="comppp">Media</div>
-                  <div className="wghat">Contact us</div>
+                     <Link to="/contact" style={{ textDecoration: 'none' }}>
+                      <div className="wghat">Contact us</div>
+                     </Link>
+                  
                   <div className="wghat">Blog</div>
                 </div>
               </div>

@@ -1,0 +1,49 @@
+.avee{
+    color: #ED3324;
+}
+.sb{
+       background-color: #ED3324;
+}
+.sb2{
+background: rgba(237, 51, 36, 0.22);
+color: #ED3324;
+}
+.mentor{
+    padding-top: 180px;
+    padding-bottom: 80px;
+}
+.skills{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 64px;
+text-align: center;
+color: #121212;
+}
+.strategy{
+    color: #ED3324;
+}
+.funn{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #121212;
+}
+.truru{
+    margin-top: 90px;
+}
+.advisors{
+    background-color: #3580F8;
+}
+.degin{
+    background-color: #FFFFFF;
+    color: black;
+}
+.cbh{
+    background: #0A0C4E;
+}
+.nvm{
+    background-color: #FFBB55;
+}

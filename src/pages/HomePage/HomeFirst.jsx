@@ -1,5 +1,6 @@
 import React from 'react';
 import v from '../images/vestar.mp4';
+import { Link } from 'react-router-dom';
 const HomeFirst = () => {
   return (
     <div>
@@ -19,7 +20,9 @@ const HomeFirst = () => {
             </div>
             <div className="fjfujf">
               <button className="tenn">Start Building</button>
-              <button className="tenn2">Contact Us</button>
+              <Link to="/contact" style={{ textDecoration: 'none' }}>
+                <button className="tenn2">Contact Us</button>
+              </Link>
             </div>
           </div>
         </div>

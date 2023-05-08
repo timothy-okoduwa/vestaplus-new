@@ -1,0 +1,108 @@
+.pushess {
+  margin-top: 170px;
+  margin-bottom: 80px;
+}
+.gettoknow {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #121212;
+}
+.ourR {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 62px;
+  margin-top: 8px;
+  text-align: center;
+  color: #121212;
+}
+.oikuj {
+  margin-top: 70px;
+  /* background-color: red; */
+}
+.wawawa {
+  height: 350px;
+  width: 220px;
+  border-radius: 94px;
+  background: #DAEDFF;
+  border-radius: 94px;
+  
+  /* Set initial position */
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.wawawa-1 {
+  /* Add animation for first element */
+  animation-name: float-up-down;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.wawawa-2 {
+  /* Add animation for second element */
+  animation-name: float-down-up;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Define the float-up-down animation */
+@keyframes float-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Define the float-down-up animation */
+@keyframes float-down-up {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+.sly{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #121212;
+margin-top: 10px;
+
+}
+.product{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+text-align: center;
+margin-top: 9px;
+
+color: #565656;
+}
+.band {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 94px;
+}
