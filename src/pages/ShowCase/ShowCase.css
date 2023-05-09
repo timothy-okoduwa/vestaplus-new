@@ -1,0 +1,50 @@
+.sch {
+  color: #0a5076;
+}
+.surv {
+  background-color: #0a5076;
+}
+.surv2 {
+  background: rgba(10, 80, 118, 0.22);
+  color: #0a5076;
+}
+.stbyu {
+  margin-top: 150px;
+  margin-bottom: 90px;
+}
+.winther {
+  display: flex;
+  justify-content: center;
+}
+.over {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #121212;
+}
+.always {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 18px;
+  color: #121212;
+}
+.mbs {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+
+  color: #121212;
+}
+.fame {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+
+  color: #121212;
+}

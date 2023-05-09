@@ -1,5 +1,6 @@
 .sure {
   width: 100%;
+  /* background-color: red; */
 }
 
 .story {
@@ -13,6 +14,7 @@
 }
 .ohohoh{
     cursor: pointer;
+ 
 }
 @media screen and (max-width: 991px) {
   .loik {
@@ -85,4 +87,8 @@
 }
 .contact{
   background-color: #03BC52;
+}
+
+.daba{
+  background-color: #0A5076;
 }

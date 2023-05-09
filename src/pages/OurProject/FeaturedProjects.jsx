@@ -8,6 +8,7 @@ import p from '../images/pstt.png';
 import cc from '../images/crypto.svg';
 import oo from '../images/coin.png';
 import { Zoom } from 'react-awesome-reveal';
+import { Link } from 'react-router-dom';
 const FeaturedProjects = () => {
   return (
     <div className="mentor">
@@ -21,7 +22,8 @@ const FeaturedProjects = () => {
            
             <div className="col-12 col-lg-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
-                <div className="loast">
+                <Link to='/schoolgate' style={{textDecoration:'none'}}>
+                 <div className="loast">
                   <div className="lplp">
                     <div className="ynl">
                       <div>
@@ -47,6 +49,8 @@ const FeaturedProjects = () => {
                     </div>
                   </div>
                 </div>
+                </Link>
+               
               </Zoom>
             </div>
 

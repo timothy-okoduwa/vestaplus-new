@@ -10,6 +10,16 @@
   color: #121212;
   line-height: 100px;
 }
+@media screen and (max-width:991px){
+  .sched {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: #121212;
+  line-height: 55px;
+}
+}
 .know {
   color: #007bff;
 }
@@ -138,4 +148,14 @@ background-color: #03BC52;
 .con2{
 background: rgba(3, 188, 82, 0.22);
 color: #03BC52;
+}
+.dbhu{
+  color: #0A5076;
+}
+.reda{
+  background-color: #0A5076;
+}
+.reda2{
+background: rgba(10, 80, 118, 0.22);
+color: #0A5076;
 }

@@ -16,7 +16,7 @@ const OurTeam = () => {
       <div>
         <div className="oikuj">
           <div className="row">
-            <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
+            <div className="col-12 col-lg-4 mb-5 heyye">
               <div>
                 <div className="wawawa wawawa-1">
                   <img src={b} alt="" className="band" />
@@ -34,7 +34,7 @@ const OurTeam = () => {
                 <div className="product">Digital Marketer</div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
+            <div className="col-12 col-lg-4 mb-5 starte">
               <div>
                 <div className="wawawa wawawa-1">
                   <img src={d} alt="" className="band" />
@@ -43,7 +43,7 @@ const OurTeam = () => {
                 <div className="product">UI/UX Designer</div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
+            <div className="col-12 col-lg-4 mb-5 d-flex heyye">
               <div>
                 <div className="wawawa wawawa-2">
                   <img src={e} alt="" className="band" />
@@ -61,7 +61,7 @@ const OurTeam = () => {
                 <div className="product">Graphics Designer</div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
+            <div className="col-12 col-lg-4 mb-5 starte">
               <div>
                 <div className="wawawa wawawa-2">
                   <img src={g} alt="" className="band" />

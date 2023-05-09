@@ -11,25 +11,36 @@ const Footer = () => {
     location.pathname === '/whatwedo' ||
     location.pathname === '/project' ||
     location.pathname === '/about' ||
+    location.pathname === '/schoolgate' ||
     location.pathname === '/contact';
   const hideInHomePage =
     location.pathname === '/' ||
     location.pathname === '/project' ||
     location.pathname === '/about' ||
+    location.pathname === '/schoolgate' ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/about' ||
+    location.pathname === '/schoolgate' ||
     location.pathname === '/contact';
   const hideInWhatAndHomeAndProductPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/about' ||
+    location.pathname === '/schoolgate' ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/contact' ||
+    location.pathname === '/schoolgate' ||
+    location.pathname === '/project';
+  const hideInWhatAndHomeAndContactAndAboutProjectPage =
+    location.pathname === '/' ||
+    location.pathname === '/whatwedo' ||
+    location.pathname === '/about' ||
     location.pathname === '/contact' ||
     location.pathname === '/project';
   return (
@@ -62,6 +73,9 @@ const Footer = () => {
                       {hideInWhatAndHomeAndContactProjectPage ? null : (
                         <span className="know ">talk with us.</span>
                       )}
+                      {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
+                        <span className="know dbhu">talk with us.</span>
+                      )}
                     </div>
                     <div className="letss">Let’s talk about your goals</div>
                     <div className="reje">
@@ -90,6 +104,11 @@ const Footer = () => {
                           Book 30 Minutes Session
                         </button>
                       )}
+                      {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
+                        <button className="magnify reda">
+                          Book 30 Minutes Session
+                        </button>
+                      )}
                       {hideInWhatPage ? null : (
                         <Link to="/contact" style={{ textDecoration: 'none' }}>
                           <button className="capmi">Contact Us</button>
@@ -113,6 +132,11 @@ const Footer = () => {
                       {hideInWhatAndHomeAndContactProjectPage ? null : (
                         <Link to="/contact" style={{ textDecoration: 'none' }}>
                           <button className="capmi ">Contact Us</button>
+                        </Link>
+                      )}
+                      {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
+                        <Link to="/contact" style={{ textDecoration: 'none' }}>
+                          <button className="capmi reda2">Contact Us</button>
                         </Link>
                       )}
                     </div>
@@ -141,32 +165,31 @@ const Footer = () => {
               <div className="col-12 col-lg-3">
                 <div>
                   <div className="comppp">Company</div>
-                     <Link to="/whatwedo" style={{ textDecoration: 'none' }}>
-                       <div className="wghat">What we do</div>
-                     </Link>
-                    <Link to="/about" style={{ textDecoration: 'none' }}>
-                      <div className="wghat">About Us</div>
-                    </Link>
-                  
+                  <Link to="/whatwedo" style={{ textDecoration: 'none' }}>
+                    <div className="wghat">What we do</div>
+                  </Link>
+                  <Link to="/about" style={{ textDecoration: 'none' }}>
+                    <div className="wghat">About Us</div>
+                  </Link>
                 </div>
               </div>
               <div className="col-12 col-lg-3">
                 <div>
                   <div className="comppp">Resources</div>
-                     <Link to="/project" style={{ textDecoration: 'none' }}>
-                       <div className="wghat">Projects</div>
-                     </Link>
-                 
+                  <Link to="/project" style={{ textDecoration: 'none' }}>
+                    <div className="wghat">Projects</div>
+                  </Link>
+
                   <div className="wghat">Products</div>
                 </div>
               </div>
               <div className="col-12 col-lg-2">
                 <div>
                   <div className="comppp">Media</div>
-                     <Link to="/contact" style={{ textDecoration: 'none' }}>
-                      <div className="wghat">Contact us</div>
-                     </Link>
-                  
+                  <Link to="/contact" style={{ textDecoration: 'none' }}>
+                    <div className="wghat">Contact us</div>
+                  </Link>
+
                   <div className="wghat">Blog</div>
                 </div>
               </div>

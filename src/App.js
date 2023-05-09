@@ -9,6 +9,7 @@ import WhatWeDo from './pages/WhatWeDo/WhatWeDo'
 import OurProject from './pages/OurProject/OurProject'
 import Contact from './pages/Contact/Contact'
 import About from './pages/AboutUs/About'
+import ShowCase from './pages/ShowCase/ShowCase'
 const App = () => {
   return (
     <BrowserRouter>
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="/project" element={<OurProject />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
+        <Route path="/schoolgate" element={<ShowCase />} />
       </Routes>
 
       <Footer />

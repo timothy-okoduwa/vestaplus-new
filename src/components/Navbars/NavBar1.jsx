@@ -11,26 +11,37 @@ const NavBar1 = () => {
   const hideInWhatPage =
     location.pathname === '/whatwedo' ||
     location.pathname === '/project' ||
+    location.pathname === '/schoolgate' ||
     location.pathname === '/about' ||
     location.pathname === '/contact';
   const hideInHomePage =
     location.pathname === '/' ||
     location.pathname === '/project' ||
     location.pathname === '/about' ||
+    location.pathname === '/schoolgate' ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/schoolgate' ||
     location.pathname === '/about' ||
     location.pathname === '/contact';
   const hideInWhatAndHomeAndProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/schoolgate' ||
     location.pathname === '/about' ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/schoolgate' ||
+    location.pathname === '/contact' ||
+    location.pathname === '/project';
+  const hideInWhatAndHomeAndContactAndAboutProjectPage =
+    location.pathname === '/' ||
+    location.pathname === '/whatwedo' ||
+    location.pathname === '/about' ||
     location.pathname === '/contact' ||
     location.pathname === '/project';
   return (
@@ -40,6 +51,7 @@ const NavBar1 = () => {
           <Navbar.Brand>
             <Link to="/">
               <img src={a} alt="" className="ohohoh" />
+          
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -79,6 +91,9 @@ const NavBar1 = () => {
                     )}
                     {hideInWhatAndHomeAndContactProjectPage ? null : (
                       <button className="cafmu">Start Building </button>
+                    )}
+                    {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
+                      <button className="cafmu daba">Start Building</button>
                     )}
                   </div>
                 </div>
