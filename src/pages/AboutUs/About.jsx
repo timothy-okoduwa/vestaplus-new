@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import './About.css';
 import FirstAbout from './FirstAbout'
 import OurTeam from './OurTeam';
+import Blog from './Blog';
 const About = () => {
       useEffect(() => {
         document.title = 'Vestarplus Team';
@@ -11,6 +12,7 @@ const About = () => {
         <div className="container">
             <FirstAbout/>
             <OurTeam/>
+            <Blog/>
         </div>
     </div>
   )

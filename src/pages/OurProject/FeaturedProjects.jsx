@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import f from '../images/fin.png';
 import l from '../images/finacery logo.svg';
 import s from '../images/scl.svg';
@@ -9,7 +9,22 @@ import cc from '../images/crypto.svg';
 import oo from '../images/coin.png';
 import { Zoom } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
+import { doc, onSnapshot } from 'firebase/firestore';
+import { db } from '../../firebase';
 const FeaturedProjects = () => {
+  const [user, setUser] = useState([]);
+
+  useEffect(() => {
+    const docRef = doc(db, 'project', 'project');
+
+    const unsubscribe = onSnapshot(docRef, (docSnap) => {
+      if (docSnap.exists()) {
+        setUser(docSnap?.data());
+      }
+    });
+    return () => unsubscribe();
+  }, []);
+  console.log(user);
   return (
     <div className="mentor">
       <div>
@@ -19,140 +34,62 @@ const FeaturedProjects = () => {
         <div className="funn">Trusted by some of the world leading brands</div>
         <div className="truru">
           <div className="row">
-           
-            <div className="col-12 col-lg-6 mb-5">
-              <Zoom duration="800" triggerOnce="true">
-                <Link to='/schoolgate' style={{textDecoration:'none'}}>
-                 <div className="loast">
-                  <div className="lplp">
-                    <div className="ynl">
-                      <div>
-                        <img src={s} alt="" />
-                      </div>
-                      <div className="memind">
-                        An E-learning platform for all ages.
-                      </div>
-                      <div>
-                        <div className="u-alone">
-                          <div className="presence">UI/UX Design</div>
-                          <div className="presence2">Branding</div>
-                        </div>
-                        <div>
-                          <button className="sbbb mb-4">Start Building</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <img src={u} alt="" style={{ width: '100%' }} />
-                    </div>
-                  </div>
-                </div>
-                </Link>
-               
-              </Zoom>
-            </div>
+            {user?.project?.map((prod) => (
+              <div className="col-12 col-lg-6 mb-5">
+                <Zoom duration="800" triggerOnce={true}>
+                  <Link
+                    to={`/${prod.projectName}`}
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <div
+                      className="loastf"
+                      style={{ background: prod.projectCardColor }}
+                    >
+                      <div className="lplp">
+                        <div className="ynl">
+                          <div>
+                            <img src={prod.logoImage} alt="" />
+                          </div>
+                          <div className="memind">{prod?.shortDescription}</div>
+                          <div>
+                            <div className="u-alone">
+                              {prod.ux && (
+                                <div className="presence">{prod.ux}</div>
+                              )}
 
-            <div className="col-12 col-lg-6 mb-5">
-              <Zoom duration="800" triggerOnce="true">
-                <div className="loast2">
-                  <div className="lplp">
-                    <div className="ynl">
-                      <div>
-                        <img src={b} alt="" />
-                      </div>
-                      <div className="memind">
-                        An online library with inspirationals books from famous
-                        achievers
-                      </div>
-                      <div>
-                        <div className="u-alone">
-                          <div className="presence">UI/UX Design</div>
-                          <div className="presence2">Branding</div>
+                              {prod.branding && (
+                                <div className="presence2">{prod.branding}</div>
+                              )}
+
+                              {prod.web && (
+                                <div className="presence2">{prod.web}</div>
+                              )}
+                            </div>
+                            <div>
+                              <button
+                                className="sbbbf mb-4"
+                                style={{ background: prod.cardButtonColor }}
+                              >
+                                Start Building
+                              </button>
+                            </div>
+                          </div>
                         </div>
+                      </div>
+                      <div>
                         <div>
-                          <button className="sbbb2 ">Start Building</button>
+                          <img
+                            src={prod.thubNail}
+                            alt=""
+                            style={{ width: '100%' }}
+                          />
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div>
-                    <div>
-                      <img src={p} alt="" style={{ width: '96%' }} />
-                    </div>
-                  </div>
-                </div>
-              </Zoom>
-            </div>
-            <div className="col-12 col-lg-6 mb-5">
-              <Zoom duration="800" triggerOnce="true">
-                <div className="loast2 advisors">
-                  <div className="lplp">
-                    <div className="ynl">
-                      <div>
-                        <img src={l} alt="" />
-                      </div>
-                      <div className="memind">
-                        Start a ride hailing business, or Logistics startup
-                        today. Let's build your product from start to finish, go
-                        to market in 8 weeks.
-                      </div>
-                      <div>
-                        <div className="u-alone">
-                          <div className="presence">UI/UX Design</div>
-                          <div className="presence2">Branding</div>
-                        </div>
-                        <div>
-                          <button className="sbbb2 degin">
-                            Start Building
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <img src={f} alt="" style={{ width: '96%' }} />
-                    </div>
-                  </div>
-                </div>
-              </Zoom>
-            </div>
-            <div className="col-12 col-lg-6 mb-5">
-              <Zoom duration="800" triggerOnce="true">
-                <div className="loast2 nvm">
-                  <div className="lplp">
-                    <div className="ynl">
-                      <div>
-                        <img src={cc} alt="" />
-                      </div>
-                      <div className="memind">
-                        Start a ride hailing business, or Logistics startup
-                        today. Let's build your product from start to finish, go
-                        to market in 8 weeks.
-                      </div>
-                      <div>
-                        <div className="u-alone">
-                          <div className="presence">UI/UX Design</div>
-                          <div className="presence2">Branding</div>
-                        </div>
-                        <div>
-                          <button className="sbbb2 cbh mb-4">
-                            Start Building
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <img src={oo} alt="" style={{ width: '96%' }} />
-                    </div>
-                  </div>
-                </div>
-              </Zoom>
-            </div>
+                  </Link>
+                </Zoom>
+              </div>
+            ))}
           </div>
         </div>
       </div>

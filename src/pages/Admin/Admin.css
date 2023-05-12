@@ -1,0 +1,118 @@
+.leftt{
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+}
+.log{
+    font-size: 33px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.wiki{
+   border-radius: 0 10px 10px 0;
+  background-color: #8776F3;
+
+}
+@media screen and (max-width:991px){
+    .wiki{
+ display: none;
+
+}
+.leftt{
+    background-color: white;
+    border-radius: 10px ;
+}
+}
+.moverdi{
+    margin-top: 70px;
+}
+
+.kuki{
+  border: 1px solid rgba(0, 0, 0, 0.177);
+  padding-top: 22px;
+  padding-left: 9px;
+  border-radius: 9px;
+}
+
+.push-down {
+  background-color: #ffffff;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  /* margin-top: 50px; */
+  margin-bottom: 25px;
+
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.177);
+}
+
+.jikl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* height: 40px; */
+  /* margin-top: 10px; */
+}
+
+.tambo {
+  height: 250px;
+  width: 100%;
+  background-color: rgb(214, 213, 213);
+}
+
+.realise {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pheww {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+
+.bubu {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #888888e3;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+ font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 9px;
+  cursor: pointer;
+}
+.badtins{
+    border: 1px solid black;
+    border-radius: 9px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.badtins2{
+    border: 1px solid black;
+    border-radius: 9px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+.pcpc{
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 55px;
+    font-weight: 600;
+    font-size: 28px;
+}
+.bu{
+    height: 50px;
+    width: 240px;
+}

@@ -47,3 +47,23 @@ color: #121212;
 .nvm{
     background-color: #FFBB55;
 }
+.loastf {
+
+  border-radius: 43px;
+}
+.sbbbf {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.6409px;
+  line-height: 18px;
+  text-align: center;
+  width: 136.58px;
+  height: 43.62px;
+  background: #8df736;
+  border-radius: 4.5753px;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  margin-top: 23px;
+}
