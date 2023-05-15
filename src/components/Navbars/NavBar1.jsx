@@ -19,7 +19,6 @@ if (prod && prod.length) {
   }
 }
 
-console.log(projectNames);
   const hideAll =
     location.pathname === '/project-upload' ||
     location.pathname === '/create-admin' ||
@@ -27,17 +26,20 @@ console.log(projectNames);
   const hideInWhatPage =
     location.pathname === '/whatwedo' ||
     location.pathname === '/project' ||
+    location.pathname === '/blog' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/about' ||
     location.pathname === '/contact';
   const hideInHomePage =
     location.pathname === '/' ||
     location.pathname === '/project' ||
+    location.pathname === '/blog' ||
     location.pathname === '/about' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
     location.pathname === '/' ||
+    location.pathname === '/blog' ||
     location.pathname === '/whatwedo' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/about' ||
@@ -45,6 +47,7 @@ console.log(projectNames);
   const hideInWhatAndHomeAndProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/blog' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/about' ||
     location.pathname === '/project';
@@ -57,6 +60,7 @@ console.log(projectNames);
   const hideInWhatAndHomeAndContactAndAboutProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/blog' ||
     // location.pathname === `/${user?.projectNames}` ||
     location.pathname === '/about' ||
     location.pathname === '/contact' ||

@@ -17,7 +17,6 @@ const Footer = ({ prod }) => {
     }
   }
 
-  console.log(projectNames);
   const hideAll =
     location.pathname === '/create-admin' ||
     location.pathname === '/project-upload' ||
@@ -26,35 +25,40 @@ const Footer = ({ prod }) => {
     location.pathname === '/whatwedo' ||
     location.pathname === '/project' ||
     location.pathname === '/about' ||
-       projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname === '/blog' ||
+    projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
   const hideInHomePage =
     location.pathname === '/' ||
     location.pathname === '/project' ||
     location.pathname === '/about' ||
-       projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname === '/blog' ||
+    projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/blog' ||
     location.pathname === '/about' ||
-       projectNames.includes(location.pathname.substring(1)) ||
+    projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
   const hideInWhatAndHomeAndProductPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/blog' ||
     location.pathname === '/about' ||
-       projectNames.includes(location.pathname.substring(1)) ||
+    projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/contact' ||
-       projectNames.includes(location.pathname.substring(1)) ||
+    projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactAndAboutProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/blog' ||
     location.pathname === '/about' ||
     location.pathname === '/contact' ||
     location.pathname === '/project';
@@ -230,26 +234,57 @@ const Footer = ({ prod }) => {
                       <Link to="/contact" style={{ textDecoration: 'none' }}>
                         <div className="wghat">Contact us</div>
                       </Link>
-
-                      <div className="wghat">Blog</div>
+                      <Link to="/blog" style={{ textDecoration: 'none' }}>
+                        <div className="wghat">Blog</div>
+                      </Link>
                     </div>
                   </div>
                 </div>
                 <div className="row">
                   <div className="col">
-                    <div className="dribb">Dribbble</div>
+                    <a
+                      href="https://dribbble.com/vestarplus"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <div className="dribb">Dribbble</div>
+                    </a>
                   </div>
                   <div className="col">
-                    <div className="dribb">Behance</div>
+                    <a
+                      href="https://www.behance.net/vestarplus"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <div className="dribb">Behance</div>
+                    </a>
                   </div>
                   <div className="col">
-                    <div className="dribb">Linkedin</div>
+                    <a
+                      href="https://www.linkedin.com/company/vestarplus/mycompany/"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <div className="dribb">Linkedin</div>
+                    </a>
                   </div>
                   <div className="col">
-                    <div className="dribb">Instagram</div>
+                    <a
+                      href="https://www.instagram.com/vestarplus/"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <div className="dribb">Instagram</div>
+                    </a>
                   </div>
                   <div className="col">
-                    <div className="dribb">Facebook</div>
+                    <a
+                      href="https://web.facebook.com/vestarplusng"
+                      target="_blank"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <div className="dribb">Facebook</div>
+                    </a>
                   </div>
                 </div>
 

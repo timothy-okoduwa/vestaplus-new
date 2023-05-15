@@ -9,15 +9,15 @@ const HomeFirst = () => {
           <Fade direction="down" triggerOnce="true">
             <div>
               <div className="designD">
-                <span className="blacjd">We design Digital</span>{' '}
-                <span className="bliure">Impactful Products </span>{' '}
+                <span className="blacjd">We are an</span>{' '}
+                <span className="bliure">Innovative Team </span>{' '}
               </div>
             </div>
             <div>
               <div className="hearhear">
-                We work with establish brands, businesses & startups across the
-                world to create awesome products that impact users experience &
-                also generate <br /> revenue for the business in return.{' '}
+                We are a forward thinking product design agency, that uses
+                design,<br/> innovation and technology to bulid UX products, engaging
+                websites and <br/>brands for clients world-wide
               </div>
               <div className="fjfujf">
                 <button className="tenn">Start Building</button>

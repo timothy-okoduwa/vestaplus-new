@@ -31,7 +31,7 @@ const FeaturedProjects = () => {
         <div className="skills">
           Featured <span className="strategy">Projects</span>{' '}
         </div>
-        <div className="funn">Trusted by some of the world leading brands</div>
+        <div className="funn">Some of our works and projects</div>
         <div className="truru">
           <div className="row">
             {user?.project?.map((prod) => (

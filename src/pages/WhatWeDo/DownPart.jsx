@@ -17,7 +17,11 @@ const DownPart = () => {
         <div className="haveot">
           What <span className="padr">we do</span>{' '}
         </div>
-        <div className="tuss">Trusted by some of the world leading brands</div>
+        <div className="tuss">
+          Our expertise spans design and tech, enabling us to create innovative
+          products
+          <br /> that drive growth, enhance efficiency, and exceed expectations
+        </div>
       </div>
 
       <div className="mkir">
@@ -110,7 +114,8 @@ const DownPart = () => {
             </span>
           </div>
           <div className="tuss olo">
-            Trusted by some of the world leading brands
+            Our expertise in creating innovative solutions tailored to meet
+            diverse needs and deliver exceptional value
           </div>
         </div>
         <div className="mkir">
@@ -125,9 +130,9 @@ const DownPart = () => {
                       </div>
                       <div className="Fintech">Fintech</div>
                       <div className="goof">
-                        With good branding, you can give your
-                        <br /> brand a more human side, to make <br />
-                        your business stand out.
+                        We design fintech products that enhance financial
+                        experiences, empowering individuals and businesses with
+                        secure and user-friendly financial solutions
                       </div>
                     </div>
                   </div>
@@ -144,8 +149,11 @@ const DownPart = () => {
                       </div>
                       <div className="crypto">Crypto & Web3</div>
                       <div className="humm">
-                        We design human centered products
-                        <br /> to attract audience and make
+                        We design innovative crypto and <br /> Web3 products
+                        that enhance digital
+                        <br /> experiences, empowering users with
+                        <br />
+                        cutting-edge tools and decentralized <br /> solutions
                       </div>
                     </div>
                   </div>
@@ -162,9 +170,10 @@ const DownPart = () => {
                       </div>
                       <div className="website">Websites</div>
                       <div className="nomind">
-                        We help your business to build a<br /> web application
-                        that serves <br />
-                        customers/ service needs
+                        We help your business to build a<br /> websites/web
+                        application that serves
+                        <br /> customers/ service needs, increase <br />
+                        business growth
                       </div>
                     </div>
                   </div>
@@ -181,9 +190,12 @@ const DownPart = () => {
                       </div>
                       <div className="ecoo">E-Commerce</div>
                       <div className="waitfor">
-                        We help your business to build a web <br />
-                        application that serves customers/ <br />
-                        service needs, increase business growth
+                        We design e-commerce products that
+                        <br /> enhance online shopping experiences,
+                        <br /> empowering businesses and consumers
+                        <br /> with seamless transactions and user-
+                        <br />
+                        friendly interfaces."
                       </div>
                     </div>
                   </div>
@@ -194,16 +206,14 @@ const DownPart = () => {
               <Zoom duration="800" triggerOnce="true">
                 <div className="fullterms5">
                   <div className="containerd">
-                    <div>  
+                    <div>
                       <div>
                         <img src={edu} alt="" />
                       </div>
                       <div className="edu">EduTech</div>
                       <div className="die">
-                        We help you develop mobile
-                        <br /> application that give your users
-                        <br /> awesome experience and generate <br />
-                        leads, and increase sales
+                        We design educational technology<br/> products that enhance
+                        learning<br/> experiences and empower students<br/> and educators
                       </div>
                     </div>
                   </div>

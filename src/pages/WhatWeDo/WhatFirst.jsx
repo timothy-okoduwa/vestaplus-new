@@ -7,15 +7,15 @@ const WhatFirst = () => {
         <div className="col-12 col-lg-8">
           <div>
             <div className="designD">
-              <span className="blacjd">We design </span>{' '}
-              <span className="orange">Impactful Products</span>{' '}
+              <span className="blacjd">We deliver amazing</span>{' '}
+              <span className="orange"> User Experience Products</span>{' '}
             </div>
           </div>
           <div>
             <div className="hearhear">
-              We work with establish brands, businesses & startups across the
-              world to create awesome products that impact users experience &
-              also generate <br /> revenue for the business in return.{' '}
+              We do everything to the best of our ability by putting your<br/> needs
+              first and striving for the most effective solutions to<br/> your
+              pressing business needs.
             </div>
             <div className="fjfujf">
               <button className="tenn99">Start Building</button>

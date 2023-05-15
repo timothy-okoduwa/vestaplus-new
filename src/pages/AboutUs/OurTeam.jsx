@@ -9,8 +9,11 @@ const OurTeam = () => {
   return (
     <div className="pushess">
       <div>
-        <div className="gettoknow">GET TO KNOW</div>
-        <div className="ourR">Our Team</div>
+        <div className="ourR">
+          {' '}
+          Our <span className='gdgd'>Team</span>
+        </div>
+        <div className=" gettoknow">GET TO KNOW</div>
       </div>
 
       <div>
@@ -21,7 +24,7 @@ const OurTeam = () => {
                 <div className="wawawa wawawa-1">
                   <img src={b} alt="" className="band" />
                 </div>
-                <div className="sly">Sylvester Nnachi</div>
+                <div className="slyy">Sylvester Nnachi</div>
                 <div className="product">Product Designer</div>
               </div>
             </div>
@@ -30,7 +33,7 @@ const OurTeam = () => {
                 <div className="wawawa wawawa-2">
                   <img src={c} alt="" className="band" />
                 </div>
-                <div className="sly">Chinedu Ogbonna</div>
+                <div className="slyy">Chinedu Ogbonna</div>
                 <div className="product">Digital Marketer</div>
               </div>
             </div>
@@ -39,7 +42,7 @@ const OurTeam = () => {
                 <div className="wawawa wawawa-1">
                   <img src={d} alt="" className="band" />
                 </div>
-                <div className="sly">Deborah Ehru</div>
+                <div className="slyy">Deborah Ehru</div>
                 <div className="product">UI/UX Designer</div>
               </div>
             </div>
@@ -48,8 +51,8 @@ const OurTeam = () => {
                 <div className="wawawa wawawa-2">
                   <img src={e} alt="" className="band" />
                 </div>
-                <div className="sly">Timothy Okoduwa</div>
-                <div className="product">Frontend Engineer</div>
+                <div className="slyy">Timothy Okoduwa</div>
+                <div className="product">Frontend Developer</div>
               </div>
             </div>
             <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
@@ -57,7 +60,7 @@ const OurTeam = () => {
                 <div className="wawawa wawawa-1">
                   <img src={f} alt="" className="band" />
                 </div>
-                <div className="sly">Blessing Ogbonna</div>
+                <div className="slyy">Blessing Ogbonna</div>
                 <div className="product">Graphics Designer</div>
               </div>
             </div>
@@ -66,7 +69,7 @@ const OurTeam = () => {
                 <div className="wawawa wawawa-2">
                   <img src={g} alt="" className="band" />
                 </div>
-                <div className="sly">Jude Nwosu</div>
+                <div className="slyy">Jude Nwosu</div>
                 <div className="product">Graphics Designer</div>
               </div>
             </div>

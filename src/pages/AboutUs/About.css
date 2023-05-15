@@ -3,12 +3,12 @@
   margin-bottom: 80px;
 }
 .gettoknow {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  text-align: center;
-  color: #121212;
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+text-align: center;
+color: #121212;
 }
 .ourR {
   font-family: 'Outfit';
@@ -78,7 +78,7 @@
   }
 }
 
-.sly {
+.slyy {
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
@@ -120,4 +120,7 @@
     display: flex;
     justify-content: center;
   }
+}
+.gdgd{
+  color: #007BFF;
 }

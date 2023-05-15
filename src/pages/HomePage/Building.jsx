@@ -9,7 +9,7 @@ import p from '../images/pstt.png';
 import cc from '../images/crypto.svg';
 import oo from '../images/coin.png';
 import { Zoom } from 'react-awesome-reveal';
-
+import { Link } from 'react-router-dom';
 const Building = () => {
   return (
     <div className="building">
@@ -26,7 +26,9 @@ const Building = () => {
             </div>
           </div>
           <div className="lifOf">
-            Trusted by some of the world leading brands
+            Crafting innovative solutions that anticipate emerging needs and
+            empower<br/> individuals and businesses to thrive in a rapidly evolving
+            world."
           </div>
         </div>
       </div>
@@ -52,7 +54,9 @@ const Building = () => {
                           <div className="presence2">Branding</div>
                         </div>
                         <div>
-                          <button className="sbb">Start Building</button>
+                          <Link to="/contact">
+                            <button className="sbb">Start Building</button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -87,7 +91,11 @@ const Building = () => {
                           <div className="presence2">Branding</div>
                         </div>
                         <div>
-                          <button className="sbbb mb-4">Start Building</button>
+                          <Link to="/contact">
+                            <button className="sbbb mb-4">
+                              Start Building
+                            </button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -120,7 +128,9 @@ const Building = () => {
                           {/* <div className="presence3"> </div> */}
                         </div>
                         <div>
-                          <button className="sbbb2 ">Start Building</button>
+                          <Link to="/contact">
+                            <button className="sbbb2 ">Start Building</button>
+                          </Link>
                         </div>
                       </div>
                     </div>
@@ -157,7 +167,9 @@ const Building = () => {
                           <div className="presence2">Branding</div>
                         </div>
                         <div>
-                          <button className="sbb2p">Start Building</button>
+                          <Link to="/contact">
+                            <button className="sbb2p">Start Building</button>
+                          </Link>
                         </div>
                       </div>
                     </div>

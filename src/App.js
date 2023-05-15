@@ -16,6 +16,7 @@ import CreateAdmin from './pages/Admin/CreateAdmin';
 import ProjectUpload from './pages/Admin/ProjectUpload';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from './firebase';
+import Blog from './pages/Blog/Blog';
 const App = () => {
 const [user, setUser] = useState([]);
 
@@ -33,7 +34,6 @@ useEffect(() => {
   return () => unsubscribe();
 }, []);
 
-console.log(user);
   return (
     <UserAuthContextProvider>
       <BrowserRouter>
@@ -51,6 +51,8 @@ console.log(user);
           <Route path="/:projectName" element={<ShowCase />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/create-admin" element={<CreateAdmin />} />
+          <Route path="/blog" element={<Blog />} />
+
 
           <Route
             path="/project-upload"
