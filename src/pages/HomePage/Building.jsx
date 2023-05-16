@@ -27,7 +27,8 @@ const Building = () => {
           </div>
           <div className="lifOf">
             Crafting innovative solutions that anticipate emerging needs and
-            empower<br/> individuals and businesses to thrive in a rapidly evolving
+            empower
+            <br /> individuals and businesses to thrive in a rapidly evolving
             world."
           </div>
         </div>
@@ -41,7 +42,7 @@ const Building = () => {
                 <div className="row mt-5">
                   <div className="col-12 col-lg-5">
                     <div className="tickets">
-                      <div>
+                      <div className="container">
                         <div>
                           <img src={l} alt="" style={{ width: '35%' }} />
                         </div>
@@ -77,29 +78,32 @@ const Building = () => {
             <div className="col-12 col-lg-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="loast">
-                  <div className="lplp">
-                    <div className="ynl">
-                      <div>
-                        <img src={s} alt="" />
-                      </div>
-                      <div className="memind">
-                        An E-learning platform for all ages.
-                      </div>
-                      <div>
-                        <div className="u-alone">
-                          <div className="presence">UI/UX Design</div>
-                          <div className="presence2">Branding</div>
+                  <div className="container">
+                    <div className="lplp">
+                      <div className="ynl">
+                        <div>
+                          <img src={s} alt="" />
+                        </div>
+                        <div className="memind">
+                          An E-learning platform for all ages.
                         </div>
                         <div>
-                          <Link to="/contact">
-                            <button className="sbbb mb-4">
-                              Start Building
-                            </button>
-                          </Link>
+                          <div className="u-alone">
+                            <div className="presence">UI/UX Design</div>
+                            <div className="presence2">Branding</div>
+                          </div>
+                          <div>
+                            <Link to="/contact">
+                              <button className="sbbb mb-4">
+                                Start Building
+                              </button>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   <div>
                     <div>
                       <img src={u} alt="" style={{ width: '100%' }} />
@@ -112,29 +116,32 @@ const Building = () => {
             <div className="col-12 col-lg-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="loast2">
-                  <div className="lplp">
-                    <div className="ynl">
-                      <div>
-                        <img src={b} alt="" />
-                      </div>
-                      <div className="memind">
-                        An online library with inspirationals books from famous
-                        achievers
-                      </div>
-                      <div>
-                        <div className="u-alone">
-                          <div className="presence">UI/UX Design</div>
-                          <div className="presence2">Branding</div>
-                          {/* <div className="presence3"> </div> */}
+                  <div className="container">
+                    <div className="lplp">
+                      <div className="ynl">
+                        <div>
+                          <img src={b} alt="" />
+                        </div>
+                        <div className="memind">
+                          An online library with inspirationals books from
+                          famous achievers
                         </div>
                         <div>
-                          <Link to="/contact">
-                            <button className="sbbb2 ">Start Building</button>
-                          </Link>
+                          <div className="u-alone">
+                            <div className="presence">UI/UX Design</div>
+                            <div className="presence2">Branding</div>
+                            {/* <div className="presence3"> </div> */}
+                          </div>
+                          <div>
+                            <Link to="/contact">
+                              <button className="sbbb2 ">Start Building</button>
+                            </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
+
                   <div>
                     <div>
                       <img src={p} alt="" style={{ width: '96%' }} />
@@ -153,7 +160,7 @@ const Building = () => {
                 <div className="row mt-5">
                   <div className="col-12 col-lg-5">
                     <div className="tickets">
-                      <div>
+                      <div className="container">
                         <div>
                           <img src={cc} alt="" style={{ width: '50%' }} />
                         </div>

@@ -14,11 +14,11 @@ const Blogs = () => {
             <div className="bui">
               {' '}
               <span className="bu">Read our </span>{' '}
-              <span className="il">Blog </span>
+              <span className="il">
+                Blog <img src={r} alt="" className="bel2" />{' '}
+              </span>
             </div>
-            <div>
-              <img src={r} alt="" className="bel2" />
-            </div>
+            <div></div>
           </div>
           <div className="lifOf">
             Explore our insightful blog, where we share valuable knowledge,

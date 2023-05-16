@@ -61,7 +61,7 @@
   background: #fcfcfc;
   border: 1.07889px solid #f1f1f1;
   border-radius: 40px;
-  height: 470px;
+  height: 500px;
 }
 .containerd {
   padding: 60px;
@@ -82,16 +82,24 @@
   font-size: 20px;
   line-height: 170%;
   margin-top: 20px;
-
+width: 100%;
   color: #000000;
+}
+@media screen and (max-width: 991px) {
+    .containerd {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  padding-top: 50px !important;
+}
 }
 @media screen and (max-width: 425px) {
   .usually {
     background: #fcfcfc;
     border: 1.07889px solid #f1f1f1;
     border-radius: 40px;
-    height: auto;
+    /* height: auto; */
   }
+
   .fullterms {
     background-image: url('../images/dback.svg');
     background-size: cover;
@@ -186,6 +194,8 @@
   font-size: 20px;
   line-height: 170%;
   color: #007bff;
+ 
+  width: 327px;
 }
 .crypto {
   font-family: 'Outfit';
@@ -201,6 +211,7 @@
   font-size: 20px;
   color: #f7931a;
   margin-top: 15px;
+    width: 327px;
 }
 .website {
   font-family: 'Outfit';
@@ -215,6 +226,7 @@
   font-weight: 400;
   font-size: 20px;
   color: #ed3324;
+    width: 327px;
 }
 .ecoo{
     font-family: 'Outfit';
@@ -229,6 +241,7 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 color: #61D748;
+  width: 327px;
 }
 .edu{
     font-family: 'Outfit';
@@ -243,4 +256,5 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 color: #36C9F7;
+  width: 327px;
 }

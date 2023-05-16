@@ -59,7 +59,7 @@ width: 50% !important;
     /* background-color: red; */
     padding-left: 0px !important;
     padding: 15px !important;
-    margin-top: 40px;
+    margin-top: 5px !important;
   }
   
   .will {
@@ -395,11 +395,7 @@ color: #121212;
 color: #007BFF;
 }
 
-.bel2 {
-  /* width: 60%; */
-  /* transform: rotate(13.77deg); */
-  margin-left: 10px;
-}
+
 .ccc{
     margin-top: 80px;
 }

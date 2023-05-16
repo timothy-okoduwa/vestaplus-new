@@ -46,14 +46,16 @@ cursor: pointer;
 }
 .okokok{
   display: flex;
+  flex-wrap: wrap;
 }
 .rigyt{
   margin-right: 30px !important;
   font-family: 'Outfit' !important;
 font-style: normal !important;
 font-weight: 400 !important;
-font-size: 16px !important;
+font-size: 16px ;
 color: #000000 !important;
+margin-bottom: 10px;
 }
 .key{
   margin-right: 20px;
@@ -294,12 +296,38 @@ font-size: 16px !important;
   padding-right: 150px;
   margin-top: 75px;
 }
+
+@media screen and (max-width:768px){
+  .title{
+ 
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px !important;
+  color: #3d3d3d;
+  margin-top: 45px !important;
+}
+.sly{
+  color: #0080FF;
+   font-size: 15px !important;
+}
+.rigyt{
+  margin-right: 30px !important;
+  font-family: 'Outfit' !important;
+font-style: normal !important;
+font-weight: 400 !important;
+font-size: 14px !important;
+color: #000000 !important;
+}
+}
+
+
 .title{
  
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
-  font-size: 35px !important;
+  font-size: 35px ;
   color: #3d3d3d;
   margin-top: 45px !important;
 }

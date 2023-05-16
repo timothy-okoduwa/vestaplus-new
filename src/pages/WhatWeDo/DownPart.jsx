@@ -149,11 +149,11 @@ const DownPart = () => {
                       </div>
                       <div className="crypto">Crypto & Web3</div>
                       <div className="humm">
-                        We design innovative crypto and <br /> Web3 products
+                        We design innovative crypto and   Web3 products
                         that enhance digital
-                        <br /> experiences, empowering users with
-                        <br />
-                        cutting-edge tools and decentralized <br /> solutions
+                          experiences, empowering users with
+                         
+                        cutting-edge tools and decentralized   solutions
                       </div>
                     </div>
                   </div>
@@ -170,9 +170,9 @@ const DownPart = () => {
                       </div>
                       <div className="website">Websites</div>
                       <div className="nomind">
-                        We help your business to build a<br /> websites/web
+                        We help your business to build a  websites/web
                         application that serves
-                        <br /> customers/ service needs, increase <br />
+                          customers/ service needs, increase  
                         business growth
                       </div>
                     </div>
@@ -191,10 +191,10 @@ const DownPart = () => {
                       <div className="ecoo">E-Commerce</div>
                       <div className="waitfor">
                         We design e-commerce products that
-                        <br /> enhance online shopping experiences,
-                        <br /> empowering businesses and consumers
-                        <br /> with seamless transactions and user-
-                        <br />
+                          enhance online shopping experiences,
+                          empowering businesses and consumers
+                          with seamless transactions and user-
+                         
                         friendly interfaces."
                       </div>
                     </div>
@@ -212,8 +212,8 @@ const DownPart = () => {
                       </div>
                       <div className="edu">EduTech</div>
                       <div className="die">
-                        We design educational technology<br/> products that enhance
-                        learning<br/> experiences and empower students<br/> and educators
+                        We design educational technology products that enhance
+                        learning experiences and empower students and educators
                       </div>
                     </div>
                   </div>
