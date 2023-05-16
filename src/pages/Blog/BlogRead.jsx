@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { useSelector } from 'react-redux';
 import MarkdownToJSX from 'markdown-to-jsx';
 import './Blog.css';
@@ -8,10 +8,29 @@ import {
   FaTwitter,
   FaLinkedin,
 } from 'react-icons/fa';
-import { HiArrowNarrowLeft } from 'react-icons/hi';
+import { HiArrowNarrowLeft, HiArrowNarrowUp } from 'react-icons/hi';
 import { useNavigate } from 'react-router-dom';
 import t from '../images/tbb.png';
 const BlogRead = () => {
+  const [showButton, setShowButton] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const threshold = 2024; // Adjust the threshold value as needed
+      setShowButton(scrollPosition > threshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
     const navigate = useNavigate();
     const move=()=>{
         navigate('/blog');
@@ -55,8 +74,16 @@ const BlogRead = () => {
       },
     },
   };
+
+
   return (
-    <div>
+    <div style={{ position: 'relative' }}>
+      <div
+        className={`opps ${showButton ? 'show' : ''}`}
+        onClick={handleScrollToTop}
+      >
+        <HiArrowNarrowUp />
+      </div>
       <div className="container">
         <div className="stress">
           <div className="backkik" onClick={move}>

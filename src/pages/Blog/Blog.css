@@ -66,6 +66,7 @@ margin-bottom: 30px;
 }
 
 
+
 .usToday{
   font-family: 'Outfit';
 font-style: normal;
@@ -339,4 +340,26 @@ color: #000000 !important;
   font-size: 19px !important;
   color: #3d3d3d;
   cursor: pointer;
+}
+
+.opps {
+  position: fixed;
+  bottom: 60px;
+  right: -60px; /* Start off-screen */
+  font-family: 'Outfit';
+  color: white;
+  background: #000000;
+  border-radius: 5px;
+  display: flex;
+  font-size: 24px !important;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: right 0.3s ease-out; /* Add transition */
+}
+
+.opps.show {
+  right: 60px; /* Slide in to the right */
 }
