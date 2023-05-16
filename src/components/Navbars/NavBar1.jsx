@@ -27,6 +27,7 @@ if (prod && prod.length) {
     location.pathname === '/whatwedo' ||
     location.pathname === '/project' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/about' ||
     location.pathname === '/contact';
@@ -34,12 +35,14 @@ if (prod && prod.length) {
     location.pathname === '/' ||
     location.pathname === '/project' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
     location.pathname === '/' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     location.pathname === '/whatwedo' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/about' ||
@@ -48,6 +51,7 @@ if (prod && prod.length) {
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/about' ||
     location.pathname === '/project';
@@ -61,6 +65,7 @@ if (prod && prod.length) {
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     // location.pathname === `/${user?.projectNames}` ||
     location.pathname === '/about' ||
     location.pathname === '/contact' ||

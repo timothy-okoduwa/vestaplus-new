@@ -26,6 +26,7 @@ const Footer = ({ prod }) => {
     location.pathname === '/project' ||
     location.pathname === '/about' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
   const hideInHomePage =
@@ -33,12 +34,14 @@ const Footer = ({ prod }) => {
     location.pathname === '/project' ||
     location.pathname === '/about' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
@@ -46,6 +49,7 @@ const Footer = ({ prod }) => {
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/project';
@@ -59,6 +63,7 @@ const Footer = ({ prod }) => {
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/blog' ||
+    location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||
     location.pathname === '/contact' ||
     location.pathname === '/project';
@@ -244,7 +249,7 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://dribbble.com/vestarplus"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Dribbble</div>
@@ -253,7 +258,7 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://www.behance.net/vestarplus"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Behance</div>
@@ -262,7 +267,7 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://www.linkedin.com/company/vestarplus/mycompany/"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Linkedin</div>
@@ -271,7 +276,7 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://www.instagram.com/vestarplus/"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Instagram</div>
@@ -280,7 +285,7 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://web.facebook.com/vestarplusng"
-                      target="_blank"
+                      target="_blank" rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Facebook</div>

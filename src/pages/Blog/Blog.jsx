@@ -6,25 +6,29 @@ import t from '../images/tbb.png';
 import t2 from '../images/temms.png';
 import t3 from '../images/tech1.png';
 import Card from 'react-bootstrap/Card';
-import Modal from 'react-bootstrap/Modal';
+// import Modal from 'react-bootstrap/Modal';
 import Skeleton from '@mui/material/Skeleton';
-import {
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaLinkedin,
-} from 'react-icons/fa';
-import { MdCancel } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import store from '../../Store';
+
+
 const Blog = () => {
+  const navigate = useNavigate()
   const [posts, setPosts] = useState([]);
-  const [open, setOpen] = useState(false);
-  const [selectedPost, setSelectedPost] = useState(null);
-  const [currentPage, setCurrentPage]= useState(0)
-  const handleOpen = (post) => {
-    setSelectedPost(post);
-    setOpen(true);
-  };
-  const handleClose = () => setOpen(false);
+
+
+  const [currentPage, setCurrentPage] = useState(0);
+ const handleOpen = (post) => {
+   store.dispatch({
+     type: 'SET_SELECTED_POST',
+     payload: post,
+   });
+
+   navigate(`/blog-read/${post.slug}`);
+ };
+
+
   const query = `
   query ($page: Int!) {
     user(username: "karllhughes") {
@@ -49,6 +53,15 @@ const Blog = () => {
   }
 `;
 
+const calculateReadingTime = (content) => {
+  const wordsPerMinute = 200; // Adjust this value as needed
+
+  const words = content.trim().split(/\s+/).length;
+  const readingTime = Math.ceil(words / wordsPerMinute);
+
+  return readingTime;
+};
+
   const fetchPosts = async (page = 0) => {
     const response = await fetch('https://api.hashnode.com', {
       method: 'POST',
@@ -70,7 +83,10 @@ const Blog = () => {
       throw new Error(data.errors[0].message);
     }
 
-    const newPosts = data.data.user.publication.posts;
+     const newPosts = data.data.user.publication.posts.map((post) => ({
+       ...post,
+       readingTime: calculateReadingTime(post.contentMarkdown),
+     }));
 
     if (newPosts.length === 0) {
       return []; // no more posts left
@@ -93,22 +109,22 @@ const Blog = () => {
     const formattedDate = date.toLocaleDateString('en-US', options);
     return formattedDate;
   };
-  const Image = ({ src, alt }) => (
-    <img
-      src={src}
-      alt={alt}
-      className="blog-post-image"
-      style={{ width: '100%' }}
-    />
-  );
+  // const Image = ({ src, alt }) => (
+  //   <img
+  //     src={src}
+  //     alt={alt}
+  //     className="blog-post-image"
+  //     style={{ width: '100%' }}
+  //   />
+  // );
 
-  const options = {
-    overrides: {
-      img: {
-        component: Image,
-      },
-    },
-  };
+  // const options = {
+  //   overrides: {
+  //     img: {
+  //       component: Image,
+  //     },
+  //   },
+  // };
 
   function getRandomImage() {
     const images = [t, t2, t3];
@@ -116,16 +132,15 @@ const Blog = () => {
     return images[index];
   }
 
-const handlePageChange = ({ selected }) => {
-  setCurrentPage(selected);
-};
-const itemsPerPage = 6
-const pageCount = Math.ceil(posts?.length/itemsPerPage)
+  const handlePageChange = ({ selected }) => {
+    setCurrentPage(selected);
+  };
+  const itemsPerPage = 6;
+  const pageCount = Math.ceil(posts?.length / itemsPerPage);
 
-const startIndex =currentPage*itemsPerPage
-const endIndex = startIndex + itemsPerPage
-const currentData = posts?.slice(startIndex, endIndex);
-
+  const startIndex = currentPage * itemsPerPage;
+  const endIndex = startIndex + itemsPerPage;
+  const currentData = posts?.slice(startIndex, endIndex);
 
   return (
     <>
@@ -139,91 +154,121 @@ const currentData = posts?.slice(startIndex, endIndex);
               <div className="container">
                 <div className="row">
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width='90%'
+                      width="100%"
+                      height={220}
+                      style={{ borderRadius: '8px 8px 0 0' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width="90%"
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width='50%'
+                      width="50%"
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
                   </div>
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width='90%'
+                      width="100%"
+                      height={220}
+                      style={{ borderRadius: '8px 8px 0 0' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width="90%"
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width='50%'
+                      width="50%"
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
                   </div>
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width='90%'
+                      width="100%"
+                      height={220}
+                      style={{ borderRadius: '8px 8px 0 0' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width="90%"
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width='50%'
+                      width="50%"
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
                   </div>
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width='90%'
+                      width="100%"
+                      height={220}
+                      style={{ borderRadius: '8px 8px 0 0' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width="90%"
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width='50%'
+                      width="50%"
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
                   </div>
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width='90%'
+                      width="100%"
+                      height={220}
+                      style={{ borderRadius: '8px 8px 0 0' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width="90%"
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width='50%'
+                      width="50%"
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
                   </div>
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width='90%'
+                      width="100%"
+                      height={220}
+                      style={{ borderRadius: '8px 8px 0 0' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width="90%"
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width='50%'
+                      width="50%"
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
@@ -252,7 +297,7 @@ const currentData = posts?.slice(startIndex, endIndex);
                           </Card.Title>
                           <Card.Text>
                             <div className="sept">
-                              {formatDate(post.dateAdded)}
+                              {formatDate(post.dateAdded)} 
                             </div>
                           </Card.Text>
                         </Card.Body>
@@ -265,104 +310,15 @@ const currentData = posts?.slice(startIndex, endIndex);
           )}
         </div>
       </div>
-      <>
-        <div>
-          <Modal show={open} onHide={handleClose} className="pt-5 " size="lg">
-            <div className="linee">
-              <MdCancel onClick={handleClose} />
-            </div>
-            <div>
-              {' '}
-              <Modal.Title className="titt">{selectedPost?.title}</Modal.Title>
-            </div>
-            <div className="okokok mt-4">
-              <div className="rigyt">
-                By <span className="sly">Sylvester Nnachi</span>
-              </div>
-              <div className="rigyt">
-                {' '}
-                {formatDate(selectedPost?.dateAdded)}
-              </div>
 
-              <div className="rigyt">4 Mins read</div>
-            </div>
-
-            <div className="okokok pt-3 pb-4">
-              <div className="key">
-                <a
-                  href="https://web.facebook.com/vestarplusng"
-                  target="_blank"
-                  style={{ textDecoration: 'none', color: 'black' }}
-                >
-                  <FaFacebookF />
-                </a>
-              </div>
-              <div className="key">
-                <a
-                  href="https://www.instagram.com/vestarplus/"
-                  target="_blank"
-                  style={{ textDecoration: 'none', color: 'black' }}
-                >
-                  <FaInstagram />
-                </a>
-              </div>
-              <div className="key">
-                <a
-                  href="https://twitter.com/vestarplus"
-                  target="_blank"
-                  style={{ textDecoration: 'none', color: 'black' }}
-                >
-                  <FaTwitter />
-                </a>
-              </div>
-              <div className="key">
-                <a
-                  href="https://www.linkedin.com/company/vestarplus/mycompany/"
-                  target="_blank"
-                  style={{ textDecoration: 'none', color: 'black' }}
-                >
-                  <FaLinkedin />
-                </a>
-              </div>
-            </div>
-
-            <img
-              src={selectedPost?.coverImage || getRandomImage()}
-              style={{ height: '340px', objectFit: 'cover', padding: '10px' }}
-            />
-
-            <Modal.Body>
-              {' '}
-              <MarkdownToJSX className="edeygo" options={options}>
-                {selectedPost?.contentMarkdown}
-              </MarkdownToJSX>
-            </Modal.Body>
-
-            <div className="btb">
-              <div className="usToday">Contact us today for your:</div>
-              <div className="baseat">
-                <div className="wert">Website Development</div>
-                <div className="bhu">Mobile App Development</div>
-              </div>
-              <div className="baseat">
-                <div className="ui">UI & UX Design</div>
-                <div className="graph">Graphics Design</div>
-              </div>
-
-              <div className="ohn ">
-                Let’s build something awesome together!
-              </div>
-              <div className="shilalo">
-                Email:project@vestarplus.com
-                <br /> Call: +234 802 2861 622
-              </div>
-            </div>
-          </Modal>
-        </div>
-      </>
       <div
         className="wrongs"
-        style={{ display: 'flex', justifyContent: 'center',marginTop:'-100px',marginBottom:'90px' }}
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          marginTop: '-100px',
+          marginBottom: '90px',
+        }}
       >
         <ReactPaginate
           pageCount={pageCount}

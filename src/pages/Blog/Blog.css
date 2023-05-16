@@ -33,7 +33,7 @@ cursor: pointer;
 }
 
 .edeygo{
-   padding:60px;
+  margin-top: 80px;
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 300;
@@ -46,8 +46,6 @@ cursor: pointer;
 }
 .okokok{
   display: flex;
-  padding-left: 60px;
-  padding-right: 60px;
 }
 .rigyt{
   margin-right: 30px !important;
@@ -61,7 +59,8 @@ color: #000000 !important;
   margin-right: 20px;
 }
 .btb{
-  padding: 60px;
+margin-top: 60px;
+margin-bottom: 30px;
 }
 
 
@@ -75,6 +74,7 @@ color: #000000;
 .baseat{
   display: flex;
 margin-top: 30px;
+flex-wrap: wrap;
 }
 .wert{
   margin-right: 20px;
@@ -168,22 +168,14 @@ margin-bottom: 30px;
 
 @media screen and (max-width:991px)
 {
-
-.edeygo{
-   padding:20px;
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  color: #3d3d3d;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-
+.stress{
+  
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  margin-top: 75px;
 }
-.btb{
-  padding: 20px;
-}
+
+
 .titt {
   padding-top: 20px;
   padding-left: 20px;
@@ -195,11 +187,7 @@ margin-bottom: 30px;
   color: #3d3d3d;
   margin-top: 45px !important;
 }
-.okokok{
-  display: flex;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 }
 .loading{
   display: flex;
@@ -298,4 +286,29 @@ font-size: 16px !important;
 
 .page-link {
   margin-left: 20px !important;
+}
+
+
+.stress{
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-top: 75px;
+}
+.title{
+ 
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px !important;
+  color: #3d3d3d;
+  margin-top: 45px !important;
+}
+
+.backkik{
+   font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px !important;
+  color: #3d3d3d;
+  cursor: pointer;
 }

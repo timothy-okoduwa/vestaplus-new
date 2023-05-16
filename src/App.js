@@ -17,6 +17,7 @@ import ProjectUpload from './pages/Admin/ProjectUpload';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from './firebase';
 import Blog from './pages/Blog/Blog';
+import BlogRead from './pages/Blog/BlogRead';
 const App = () => {
 const [user, setUser] = useState([]);
 
@@ -52,7 +53,7 @@ useEffect(() => {
           <Route path="/admin" element={<Admin />} />
           <Route path="/create-admin" element={<CreateAdmin />} />
           <Route path="/blog" element={<Blog />} />
-
+          <Route path="/blog-read/:slug" element={<BlogRead />} />
 
           <Route
             path="/project-upload"
