@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import MarkdownToJSX from 'markdown-to-jsx';
+import ReactPaginate from 'react-paginate';
 import './Blog.css';
 import t from '../images/tbb.png';
 import t2 from '../images/temms.png';
@@ -18,6 +19,7 @@ const Blog = () => {
   const [posts, setPosts] = useState([]);
   const [open, setOpen] = useState(false);
   const [selectedPost, setSelectedPost] = useState(null);
+  const [currentPage, setCurrentPage]= useState(0)
   const handleOpen = (post) => {
     setSelectedPost(post);
     setOpen(true);
@@ -113,6 +115,18 @@ const Blog = () => {
     const index = Math.floor(Math.random() * images.length);
     return images[index];
   }
+
+const handlePageChange = ({ selected }) => {
+  setCurrentPage(selected);
+};
+const itemsPerPage = 6
+const pageCount = Math.ceil(posts?.length/itemsPerPage)
+
+const startIndex =currentPage*itemsPerPage
+const endIndex = startIndex + itemsPerPage
+const currentData = posts?.slice(startIndex, endIndex);
+
+
   return (
     <>
       <div className="container">
@@ -125,46 +139,91 @@ const Blog = () => {
               <div className="container">
                 <div className="row">
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width={300} height={220} />
+                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width={250}
+                      width='90%'
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width={150}
+                      width='50%'
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
                   </div>
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width={300} height={220} />
+                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width={250}
+                      width='90%'
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width={150}
+                      width='50%'
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
                   </div>
                   <div className="col-12 col-lg-4 mb-5">
-                    <Skeleton variant="rectangular" width={300} height={220} />
+                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
                     <Skeleton
                       variant="rectangular"
-                      width={250}
+                      width='90%'
                       height={20}
                       style={{ marginTop: '20px' }}
                     />
                     <Skeleton
                       variant="rectangular"
-                      width={150}
+                      width='50%'
+                      height={13}
+                      style={{ marginTop: '10px' }}
+                    />
+                  </div>
+                  <div className="col-12 col-lg-4 mb-5">
+                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
+                    <Skeleton
+                      variant="rectangular"
+                      width='90%'
+                      height={20}
+                      style={{ marginTop: '20px' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width='50%'
+                      height={13}
+                      style={{ marginTop: '10px' }}
+                    />
+                  </div>
+                  <div className="col-12 col-lg-4 mb-5">
+                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
+                    <Skeleton
+                      variant="rectangular"
+                      width='90%'
+                      height={20}
+                      style={{ marginTop: '20px' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width='50%'
+                      height={13}
+                      style={{ marginTop: '10px' }}
+                    />
+                  </div>
+                  <div className="col-12 col-lg-4 mb-5">
+                    <Skeleton variant="rectangular" width='100%' height={220} style={{borderRadius:'8px 8px 0 0'}} />
+                    <Skeleton
+                      variant="rectangular"
+                      width='90%'
+                      height={20}
+                      style={{ marginTop: '20px' }}
+                    />
+                    <Skeleton
+                      variant="rectangular"
+                      width='50%'
                       height={13}
                       style={{ marginTop: '10px' }}
                     />
@@ -175,7 +234,7 @@ const Blog = () => {
           ) : (
             <div className="bgp">
               <div className="row">
-                {posts.map((post) => (
+                {currentData.map((post) => (
                   <div className="col-12 col-lg-4 mb-4">
                     <div>
                       <Card
@@ -301,6 +360,26 @@ const Blog = () => {
           </Modal>
         </div>
       </>
+      <div
+        className="wrongs"
+        style={{ display: 'flex', justifyContent: 'center',marginTop:'-100px',marginBottom:'90px' }}
+      >
+        <ReactPaginate
+          pageCount={pageCount}
+          onPageChange={handlePageChange}
+          containerClassName="pagination"
+          pageClassName="page-item"
+          pageLinkClassName="page-link"
+          activeClassName="active"
+          previousClassName="page-item"
+          previousLinkClassName="page-link"
+          previousLabel="<"
+          nextClassName="page-item"
+          nextLinkClassName="page-link"
+          nextLabel=">"
+          disabledClassName="disabledd"
+        />
+      </div>
     </>
   );
 };
