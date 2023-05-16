@@ -1,77 +1,145 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { Zoom } from 'react-awesome-reveal';
+import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import CircularProgress from '@mui/material/CircularProgress';
 const MapForm = () => {
+  const form = useRef();
+  const [isSending, setIsSending] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    // Start the loading state
+    setIsSending(true);
+
+    emailjs
+      .sendForm(
+        'service_ftgftgc',
+        'template_z5i8lmj',
+        form.current,
+        'u8vDqSiFMIsp3Rw6F'
+      )
+      .then(
+        (result) => {
+          toast('Your email has been sent 😉!');
+          form.current.reset();
+        },
+        (error) => {
+          toast('Sorry, something went wrong 😞!');
+        }
+      )
+      .finally(() => {
+        // Reset the loading state
+        setIsSending(false);
+      });
+  };
+  const isFormEmpty = () => {
+    const { user_name, phone_number, email, message } = form.current.elements;
+    return (
+      user_name.value.trim() === '' ||
+      phone_number.value.trim() === '' ||
+      email.value.trim() === '' ||
+      message.value.trim() === ''
+    );
+  };
+
+
   return (
     <div className="pushes">
       <div>
         <div className="row">
           <div className="col-12 col-lg-6 mb-5">
+            <form ref={form} onSubmit={sendEmail}>
+              <ToastContainer />
+              <Zoom duration="800" triggerOnce="true">
+                <div>
+                  <div className="mb-4">
+                    <div className="labell">Full Name </div>
+                    <input
+                      type="text"
+                      className="takila"
+                      placeholder="Enter Full Name "
+                      name="user_name"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <div className="labell">Phone </div>
+                    <input
+                      type="text"
+                      className="takila"
+                      placeholder="Enter your phone number"
+                      name="phone_number"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <div className="labell">Email </div>
+                    <input
+                      type="text"
+                      className="takila"
+                      placeholder="Enter Email Address"
+                      name="email"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <div className="labell">Message </div>
+                    <textarea
+                      type="text"
+                      className="takila2"
+                      placeholder="Enter your Message"
+                      name="message"
+                    />
+                  </div>
+                  <div className="mb-4">
+                    <button
+                      className="subb"
+                      type="submit"
+                      value="Send"
+                      disabled={isSending || isFormEmpty()}
+                    >
+                      {isSending ? (
+                        <CircularProgress
+                          style={{
+                            height: '30px',
+                            width: '30px',
+                            color: 'white',
+                          }}
+                        />
+                      ) : (
+                        'Submit'
+                      )}
+                    </button>
+                  </div>
+                </div>
+              </Zoom>
+            </form>
+          </div>
+          <div className="col-12 col-lg-6">
             <Zoom duration="800" triggerOnce="true">
               <div>
-                <div className="mb-4">
-                  <div className="labell">Full Name </div>
-                  <input
-                    type="text"
-                    className="takila"
-                    placeholder="Enter Full Name "
-                  />
+                <div className="terapy">
+                  <iframe
+                    title="map"
+                    width="100%"
+                    height="100%"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=95, Coker Road, Coker Lagos Nigeria.&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                  ></iframe>
                 </div>
-                <div className="mb-4">
-                  <div className="labell">Phone </div>
-                  <input
-                    type="text"
-                    className="takila"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-                <div className="mb-4">
-                  <div className="labell">Email </div>
-                  <input
-                    type="text"
-                    className="takila"
-                    placeholder="Enter Email Address"
-                  />
-                </div>
-                <div className="mb-4">
-                  <div className="labell">Message </div>
-                  <textarea
-                    type="text"
-                    className="takila2"
-                    placeholder="Enter your Message"
-                  />
-                </div>
-                <div className="mb-4">
-                  <button className="subb">Submit</button>
+                <div className="shana">
+                  <div className="tryin">Visit Us</div>
+                  <div className="coker">
+                    95, Coker Road,
+                    <br /> Coker Lagos Nigeria.
+                  </div>
                 </div>
               </div>
             </Zoom>
-          </div>
-          <div className="col-12 col-lg-6">
-             <Zoom duration="800" triggerOnce="true">
-                <div>
-              <div className="terapy">
-                <iframe
-                  title="map"
-                  width="100%"
-                  height="100%"
-                  id="gmap_canvas"
-                  src="https://maps.google.com/maps?q=95, Coker Road, Coker Lagos Nigeria.&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                  frameborder="0"
-                  scrolling="no"
-                  marginheight="0"
-                  marginwidth="0"
-                ></iframe>
-              </div>
-              <div className="shana">
-                <div className="tryin">Visit Us</div>
-                <div className="coker">
-                  95, Coker Road,
-                  <br /> Coker Lagos Nigeria.
-                </div>
-              </div>
-            </div>
-             </Zoom>
-          
           </div>
         </div>
       </div>
