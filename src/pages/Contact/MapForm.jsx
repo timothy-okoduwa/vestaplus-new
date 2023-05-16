@@ -23,11 +23,29 @@ const MapForm = () => {
       )
       .then(
         (result) => {
-          toast('Your email has been sent 😉!');
+          toast.success('Your email has been sent 😉!', {
+            position: 'top-left',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          });
           form.current.reset();
         },
         (error) => {
-          toast('Sorry, something went wrong 😞!');
+          toast.warn('Sorry, something went wrong 😞!', {
+            position: 'top-left',
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: 'light',
+          });
         }
       )
       .finally(() => {
@@ -35,16 +53,6 @@ const MapForm = () => {
         setIsSending(false);
       });
   };
-  const isFormEmpty = () => {
-    const { user_name, phone_number, email, message } = form.current.elements;
-    return (
-      user_name.value.trim() === '' ||
-      phone_number.value.trim() === '' ||
-      email.value.trim() === '' ||
-      message.value.trim() === ''
-    );
-  };
-
 
   return (
     <div className="pushes">
@@ -92,12 +100,7 @@ const MapForm = () => {
                     />
                   </div>
                   <div className="mb-4">
-                    <button
-                      className="subb"
-                      type="submit"
-                      value="Send"
-                      disabled={isSending || isFormEmpty()}
-                    >
+                    <button className="subb" type="submit" value="Send">
                       {isSending ? (
                         <CircularProgress
                           style={{
