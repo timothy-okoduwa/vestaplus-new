@@ -299,6 +299,29 @@ font-size: 16px !important;
 }
 
 @media screen and (max-width:768px){
+
+  .opps {
+  position: fixed;
+  bottom: 60px;
+  right: -60px; /* Start off-screen */
+  font-family: 'Outfit';
+  color: white;
+  background: #000000;
+  border-radius: 5px;
+  display: flex;
+  font-size: 24px !important;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  transition: right 0.3s ease-out; /* Add transition */
+}
+
+.opps.show {
+  right: 13px !important; /* Slide in to the right */
+}
+
   .title{
  
   font-family: 'Outfit';
