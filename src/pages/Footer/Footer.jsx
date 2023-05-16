@@ -108,34 +108,91 @@ const Footer = ({ prod }) => {
                         <div className="letss">Let’s talk about your goals</div>
                         <div className="reje">
                           {hideInWhatPage ? null : (
-                            <button className="magnify">
-                              Book 30 Minutes Session
-                            </button>
+                            <a
+                              href="https://calendly.com/vestarplus"
+                              style={{ textDecoration: 'none', color: 'white' }}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <button className="magnify">
+                                Book 30 Minutes Session
+                              </button>
+                            </a>
                           )}
                           {hideInHomePage ? null : (
-                            <button className="magnify rehyy">
-                              Book 30 Minutes Session
-                            </button>
+                            <a
+                              href="https://calendly.com/vestarplus"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'white',
+                              }}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <button className="magnify rehyy">
+                                Book 30 Minutes Session
+                              </button>
+                            </a>
                           )}
                           {hideInWhatAndHomePage ? null : (
-                            <button className="magnify whthome">
-                              Book 30 Minutes Session
-                            </button>
+                            <a
+                              href="https://calendly.com/vestarplus"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'white',
+                              }}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <button className="magnify whthome">
+                                Book 30 Minutes Session
+                              </button>
+                            </a>
                           )}
                           {hideInWhatAndHomeAndProductPage ? null : (
-                            <button className="magnify con">
-                              Book 30 Minutes Session
-                            </button>
+                            <a
+                              href="https://calendly.com/vestarplus"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'white',
+                              }}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <button className="magnify con">
+                                Book 30 Minutes Session
+                              </button>
+                            </a>
                           )}
                           {hideInWhatAndHomeAndContactProjectPage ? null : (
-                            <button className="magnify ">
-                              Book 30 Minutes Session
-                            </button>
+                            <a
+                              href="https://calendly.com/vestarplus"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'white',
+                              }}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <button className="magnify ">
+                                Book 30 Minutes Session
+                              </button>
+                            </a>
                           )}
                           {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
-                            <button className="magnify reda">
-                              Book 30 Minutes Session
-                            </button>
+                            <a
+                              href="https://calendly.com/vestarplus"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'white',
+                              }}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <button className="magnify reda">
+                                Book 30 Minutes Session
+                              </button>
+                            </a>
                           )}
                           {hideInWhatPage ? null : (
                             <Link
@@ -249,7 +306,8 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://dribbble.com/vestarplus"
-                      target="_blank" rel="noreferrer"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Dribbble</div>
@@ -258,7 +316,8 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://www.behance.net/vestarplus"
-                      target="_blank" rel="noreferrer"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Behance</div>
@@ -267,7 +326,8 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://www.linkedin.com/company/vestarplus/mycompany/"
-                      target="_blank" rel="noreferrer"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Linkedin</div>
@@ -276,7 +336,8 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://www.instagram.com/vestarplus/"
-                      target="_blank" rel="noreferrer"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Instagram</div>
@@ -285,7 +346,8 @@ const Footer = ({ prod }) => {
                   <div className="col">
                     <a
                       href="https://web.facebook.com/vestarplusng"
-                      target="_blank" rel="noreferrer"
+                      target="_blank"
+                      rel="noreferrer"
                       style={{ textDecoration: 'none' }}
                     >
                       <div className="dribb">Facebook</div>
