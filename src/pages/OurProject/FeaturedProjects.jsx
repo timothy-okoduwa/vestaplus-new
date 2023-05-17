@@ -1,12 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import f from '../images/fin.png';
-import l from '../images/finacery logo.svg';
-import s from '../images/scl.svg';
-import u from '../images/ugat.png';
-import b from '../images/booklib.svg';
-import p from '../images/pstt.png';
-import cc from '../images/crypto.svg';
-import oo from '../images/coin.png';
 import { Zoom } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 import { doc, onSnapshot } from 'firebase/firestore';

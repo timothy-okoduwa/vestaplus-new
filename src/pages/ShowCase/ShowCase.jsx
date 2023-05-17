@@ -37,6 +37,7 @@ const ShowCase = () => {
   useEffect(() => {
     document.title = ' Vestarplus | ShowCase ';
   }, []);
+  console.log(business);
   return (
     <div>
       <div className="container">

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import MarkdownToJSX from 'markdown-to-jsx';
 import './Blog.css';
@@ -31,10 +31,10 @@ const BlogRead = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-    const navigate = useNavigate();
-    const move=()=>{
-        navigate('/blog');
-    }
+  const navigate = useNavigate();
+  const move = () => {
+    navigate('/blog');
+  };
   const selectedPost = useSelector((state) => state.selectedPost);
 
   if (!selectedPost) {
@@ -61,7 +61,7 @@ const BlogRead = () => {
   const Image = ({ src, alt }) => (
     <img
       src={src}
-      alt={alt}
+      alt={alt || 'ok'}
       className="blog-post-image"
       style={{ width: '100%' }}
     />
@@ -75,7 +75,6 @@ const BlogRead = () => {
     },
   };
 
-
   return (
     <div style={{ position: 'relative' }}>
       <div
@@ -86,8 +85,10 @@ const BlogRead = () => {
       </div>
       <div className="container">
         <div className="stress">
-          <div className="backkik" onClick={move}>
-            <HiArrowNarrowLeft /> Back
+          <div className="">
+            <div onClick={move} className=' slotsss'>
+              <HiArrowNarrowLeft /> Back
+            </div>
           </div>
           <div className="title">{title}</div>
           <div>
@@ -153,6 +154,7 @@ const BlogRead = () => {
                   marginTop: '50px',
                   borderRadius: '9px 9px 0 0',
                 }}
+                alt="gh"
               />
             </div>
             <div>

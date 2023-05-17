@@ -13,7 +13,6 @@ import { db, storage } from '../../firebase';
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
 import {
-  getStorage,
   ref,
   uploadBytesResumable,
   getDownloadURL,

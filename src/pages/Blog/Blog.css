@@ -17,8 +17,8 @@
   text-align: end;
   margin-top: -50px;
   font-size: 30px;
-color: rgb(255, 255, 255);
-cursor: pointer;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 .titt {
   padding-top: 20px;
@@ -32,7 +32,7 @@ cursor: pointer;
   margin-top: 45px !important;
 }
 
-.edeygo{
+.edeygo {
   margin-top: 80px;
   font-family: 'Outfit';
   font-style: normal;
@@ -42,157 +42,145 @@ cursor: pointer;
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
 }
-.okokok{
+.okokok {
   display: flex;
   flex-wrap: wrap;
 }
-.rigyt{
+.rigyt {
   margin-right: 30px !important;
   font-family: 'Outfit' !important;
-font-style: normal !important;
-font-weight: 400 !important;
-font-size: 16px ;
-color: #000000 !important;
-margin-bottom: 10px;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px;
+  color: #000000 !important;
+  margin-bottom: 10px;
 }
-.key{
+.key {
   margin-right: 20px;
 }
-.btb{
-margin-top: 60px;
-margin-bottom: 30px;
+.btb {
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
-
-
-.usToday{
-  font-family: 'Outfit';
-font-style: normal;
-font-weight: 600;
-font-size: 30px;
-color: #000000;
-}
-.baseat{
-  display: flex;
-margin-top: 30px;
-flex-wrap: wrap;
-}
-.wert{
-  margin-right: 20px;
-  font-family: 'Outfit';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-color: #000000;
-background: #E7E8E9;
-width: 190px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-border-radius: 34.1733px;
-}
-.ui{
-  margin-right: 20px;
-  font-family: 'Outfit';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-color: #000000;
-background: #E7E8E9;
-width: 154px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-border-radius: 34.1733px;
-}
-
-
-.graph{
-
-  font-family: 'Outfit';
-font-style: normal;
-font-weight: 300;
-font-size: 14px;
-
-width: 160px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-color: #000000;
-background: #E7E8E9;
-border-radius: 34.1733px;
-}
-.bhu{
-
-  font-family: 'Outfit';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-color: #000000;
-background: #E7E8E9;
-width: 220px;
-height: 40px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-border-radius: 34.1733px;
-}
-.sly{
-  color: #0080FF;
-}
-.ohn{
-  font-family: 'Outfit';
-font-style: normal;
-font-weight: 500;
-font-size: 30px;
-margin-top: 30px;
-
-color: #000000;
-}
-.shilalo{
-  margin-top: 14px;
-  font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 19px;
-color: #000000;
-margin-bottom: 30px;
-}
-
-
-
-@media screen and (max-width:991px)
-{
-.stress{
-  
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  margin-top: 75px;
-}
-
-
-.titt {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+.usToday {
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
-  font-size: 25px !important;
-  color: #3d3d3d;
-  margin-top: 45px !important;
+  font-size: 30px;
+  color: #000000;
+}
+.baseat {
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.wert {
+  margin-right: 20px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  background: #e7e8e9;
+  width: 190px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 34.1733px;
+}
+.ui {
+  margin-right: 20px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  color: #000000;
+  background: #e7e8e9;
+  width: 154px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 34.1733px;
 }
 
+.graph {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+
+  width: 160px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background: #e7e8e9;
+  border-radius: 34.1733px;
 }
-.loading{
+.bhu {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #000000;
+  background: #e7e8e9;
+  width: 220px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 34.1733px;
+}
+.sly {
+  color: #0080ff;
+}
+.ohn {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 30px;
+
+  color: #000000;
+}
+.shilalo {
+  margin-top: 14px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 991px) {
+  .stress {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-top: 75px;
+  }
+
+  .titt {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px !important;
+    color: #3d3d3d;
+    margin-top: 45px !important;
+  }
+}
+.loading {
   display: flex;
   justify-content: center;
   margin-top: 90px;
@@ -210,148 +198,142 @@ margin-bottom: 30px;
   text-decoration: none;
   outline: none !important;
   border: none !important;
-  font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 
 .pagination .active a {
   color: white;
-    font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 
 .pagination .disabledd a {
   color: gray;
-    font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 
 .pagination .active {
   color: #000000 !important;
-    font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 .pagination .active a {
   color: #ffffff;
   background: #000000;
   border-radius: 5px;
-    font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 .pagination .active a :hover {
   color: #ffffff;
   background: #000000;
   border-radius: 5px;
-    font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 .pagination .page-item:first-child .page-link {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
   margin-left: 10px;
-    font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 
 .pagination .page-item:last-child .page-link {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
   margin-left: 10px;
-    font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
 
 .pagination .page-link:focus,
 .pagination .page-link:hover {
   margin-left: 10px;
-    font-family: 'outfit'!important;
-font-style: normal !important;
-font-weight: 500 !important;
-font-size: 16px !important;
+  font-family: 'outfit' !important;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
 }
-
 
 .page-link {
   margin-left: 20px !important;
 }
 
-
-.stress{
+.stress {
   padding-left: 150px;
   padding-right: 150px;
   margin-top: 75px;
 }
 
-@media screen and (max-width:768px){
-
+@media screen and (max-width: 768px) {
   .opps {
-  position: fixed;
-  bottom: 60px;
-  right: -60px; /* Start off-screen */
-  font-family: 'Outfit';
-  color: white;
-  background: #000000;
-  border-radius: 5px;
-  display: flex;
-  font-size: 24px !important;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  transition: right 0.3s ease-out; /* Add transition */
+    position: fixed;
+    bottom: 60px;
+    right: -60px; /* Start off-screen */
+    font-family: 'Outfit';
+    color: white;
+    background: #000000;
+    border-radius: 5px;
+    display: flex;
+    font-size: 24px !important;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: right 0.3s ease-out; /* Add transition */
+  }
+
+  .opps.show {
+    right: 13px !important; /* Slide in to the right */
+  }
+
+  .title {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px !important;
+    color: #3d3d3d;
+    margin-top: 45px !important;
+  }
+  .sly {
+    color: #0080ff;
+    font-size: 15px !important;
+  }
+  .rigyt {
+    margin-right: 30px !important;
+    font-family: 'Outfit' !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    color: #000000 !important;
+  }
 }
 
-.opps.show {
-  right: 13px !important; /* Slide in to the right */
-}
-
-  .title{
- 
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 25px !important;
-  color: #3d3d3d;
-  margin-top: 45px !important;
-}
-.sly{
-  color: #0080FF;
-   font-size: 15px !important;
-}
-.rigyt{
-  margin-right: 30px !important;
-  font-family: 'Outfit' !important;
-font-style: normal !important;
-font-weight: 400 !important;
-font-size: 14px !important;
-color: #000000 !important;
-}
-}
-
-
-.title{
- 
+.title {
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
-  font-size: 35px ;
+  font-size: 35px;
   color: #3d3d3d;
   margin-top: 45px !important;
 }
@@ -385,4 +367,13 @@ color: #000000 !important;
 
 .opps.show {
   right: 60px; /* Slide in to the right */
+}
+.slotsss {
+  width: fit-content;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px !important;
+  color: #3d3d3d;
+  cursor: pointer;
 }

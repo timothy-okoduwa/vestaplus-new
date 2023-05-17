@@ -1,8 +1,4 @@
 import React from 'react'
-import s from '../images/sch.png'
-import c from '../images/certin.png'
-import o from '../images/all.png'
-import scr from '../images/screens.png'
 const Rest = ({ project }) => {
   return project ? (
     <div className="stbyu">
