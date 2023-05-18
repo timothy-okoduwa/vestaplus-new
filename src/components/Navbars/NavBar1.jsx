@@ -8,16 +8,16 @@ import { Link, useLocation } from 'react-router-dom';
 
 const NavBar1 = ({ prod }) => {
   const location = useLocation();
-const projectNames = [];
+  const projectNames = [];
 
-if (prod && prod.length) {
-  for (let i = 0; i < prod.length; i++) {
-    const project = prod[i];
-    if (project && project.projectName) {
-      projectNames.push(project.projectName);
+  if (prod && prod.length) {
+    for (let i = 0; i < prod.length; i++) {
+      const project = prod[i];
+      if (project && project.projectName) {
+        projectNames.push(project.projectName);
+      }
     }
   }
-}
 
   const hideAll =
     location.pathname === '/project-upload' ||
@@ -74,13 +74,13 @@ if (prod && prod.length) {
     <>
       {hideAll ? null : (
         <div>
-          <Navbar className="pt-4 pb-4" expand="lg">
+          <Navbar className="pt-3 pb-3" expand="xl">
             <Container>
-              <Navbar.Brand>
+              <div>
                 <Link to="/">
                   <img src={a} alt="" className="ohohoh" />
                 </Link>
-              </Navbar.Brand>
+              </div>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <div className="sure">
@@ -136,37 +136,35 @@ if (prod && prod.length) {
                           </a>
                         )}
                         {hideInWhatAndHomeAndProjectPage ? null : (
-                            <a
+                          <a
                             href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
                             target="_blank"
                             rel="noreferrer"
                           >
-                             <button className="cafmu contact">
-                            Start Building
-                          </button>
+                            <button className="cafmu contact">
+                              Start Building
+                            </button>
                           </a>
-                         
                         )}
                         {hideInWhatAndHomeAndContactProjectPage ? null : (
-                            <a
+                          <a
                             href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
                             target="_blank"
                             rel="noreferrer"
                           >
                             <button className="cafmu">Start Building </button>
                           </a>
-                          
-                          
                         )}
                         {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
-                            <a
+                          <a
                             href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
                             target="_blank"
                             rel="noreferrer"
                           >
-                              <button className="cafmu daba">Start Building</button>
+                            <button className="cafmu daba">
+                              Start Building
+                            </button>
                           </a>
-                        
                         )}
                       </div>
                     </div>

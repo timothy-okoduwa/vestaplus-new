@@ -16,6 +16,7 @@
   border-radius: 12px;
   outline: none;
   border: none;
+     margin-bottom: 10px;
 }
 .tenn299 {
   width: 144px;
@@ -30,6 +31,24 @@
   outline: none;
   border: none;
   margin-left: 35px;
+     margin-bottom: 10px;
+}
+@media screen and (max-width:346px){
+  .tenn299 {
+  width: 144px;
+  height: 50px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fc7a31;
+  background: rgba(255, 173, 74, 0.22);
+  border-radius: 12px;
+  outline: none;
+  border: none;
+ margin-left: 7px;
+     margin-bottom: 10px;
+}
 }
 .sby {
   padding-top: 140px;
@@ -82,14 +101,65 @@
   font-size: 20px;
   line-height: 170%;
   margin-top: 20px;
-width: 100%;
+  width: 100%;
   color: #000000;
 }
 @media screen and (max-width: 991px) {
-    .containerd {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-  padding-top: 50px !important;
+  .containerd {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    padding-top: 50px !important;
+  }
+  .haveot {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    text-align: center;
+    color: #121212;
+    line-height: 70px !important;
+  }
+  .goof {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 170%;
+    color: #007bff;
+    width: 100% !important;
+  }
+  .humm {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f7931a;
+    margin-top: 15px;
+    width: 100% !important;
+  }
+  .nomind {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #ed3324;
+  width: 100% !important;
+}
+.waitfor {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #61d748;
+   width: 100% !important;
+}
+.die {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #36c9f7;
+   width: 100% !important;
 }
 }
 @media screen and (max-width: 425px) {
@@ -115,34 +185,33 @@ width: 100%;
     height: auto !important;
   }
   .fullterms3 {
-  background-image: url('../images/webback.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 40px;
- height: auto !important;
+    background-image: url('../images/webback.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    height: auto !important;
+  }
+  .fullterms4 {
+    background-image: url('../images/eback.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    height: auto !important;
+  }
+  .fullterms5 {
+    background-image: url('../images/eduback.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 40px;
+    height: auto !important;
+  }
 }
-.fullterms4 {
-  background-image: url('../images/eback.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 40px;
- height: auto !important;
-}
-.fullterms5 {
-  background-image: url('../images/eduback.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 40px;
- height: auto !important;
-}
-
-}
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .hopesay {
-  /* transform: rotate(13.77deg); */
-  margin-left: -10px;
-  width: 15% !important;
-}
+    /* transform: rotate(13.77deg); */
+    margin-left: -10px;
+    width: 15% !important;
+  }
 }
 
 .hopesay {
@@ -203,7 +272,7 @@ width: 100%;
   font-size: 20px;
   line-height: 170%;
   color: #007bff;
- 
+
   width: 327px;
 }
 .crypto {
@@ -220,7 +289,7 @@ width: 100%;
   font-size: 20px;
   color: #f7931a;
   margin-top: 15px;
-    width: 327px;
+  width: 327px;
 }
 .website {
   font-family: 'Outfit';
@@ -235,35 +304,35 @@ width: 100%;
   font-weight: 400;
   font-size: 20px;
   color: #ed3324;
-    width: 327px;
-}
-.ecoo{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-color: #61D748;
-}
-.waitfor{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-color: #61D748;
   width: 327px;
 }
-.edu{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-color: #36C9F7;
+.ecoo {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #61d748;
 }
-.die{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-color: #36C9F7;
+.waitfor {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #61d748;
+  width: 327px;
+}
+.edu {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  color: #36c9f7;
+}
+.die {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #36c9f7;
   width: 327px;
 }

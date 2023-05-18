@@ -260,7 +260,7 @@ const Footer = ({ prod }) => {
                   <div className="col-12 col-lg-4">
                     <div>
                       <div>
-                        <img src={v} alt="" />
+                        <img src={v} alt="" style={{width:'100%'}} />
                         <div className="collab">
                           Let's collaborate! Hire our team to build
                           <br /> amazing, user friendly products for

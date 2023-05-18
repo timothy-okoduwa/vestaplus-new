@@ -149,11 +149,9 @@ const DownPart = () => {
                       </div>
                       <div className="crypto">Crypto & Web3</div>
                       <div className="humm">
-                        We design innovative crypto and   Web3 products
-                        that enhance digital
-                          experiences, empowering users with
-                         
-                        cutting-edge tools and decentralized   solutions
+                        We design innovative crypto and Web3 products that
+                        enhance digital experiences, empowering users with
+                        cutting-edge tools and decentralized solutions
                       </div>
                     </div>
                   </div>
@@ -170,10 +168,9 @@ const DownPart = () => {
                       </div>
                       <div className="website">Websites</div>
                       <div className="nomind">
-                        We help your business to build a  websites/web
-                        application that serves
-                          customers/ service needs, increase  
-                        business growth
+                        We help your business to build a websites/web
+                        application that serves customers/ service needs,
+                        increase business growth
                       </div>
                     </div>
                   </div>
@@ -190,12 +187,10 @@ const DownPart = () => {
                       </div>
                       <div className="ecoo">E-Commerce</div>
                       <div className="waitfor">
-                        We design e-commerce products that
-                          enhance online shopping experiences,
-                          empowering businesses and consumers
-                          with seamless transactions and user-
-                         
-                        friendly interfaces."
+                        We design e-commerce products that enhance online
+                        shopping experiences, empowering businesses and
+                        consumers with seamless transactions and user- friendly
+                        interfaces."
                       </div>
                     </div>
                   </div>
