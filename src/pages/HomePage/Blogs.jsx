@@ -1,5 +1,5 @@
 import React from 'react';
-import r from '../images/book.png';
+import r from '../images/books.png';
 import t from '../images/tech1.png';
 import tp from '../images/temms.png';
 import tb from '../images/tbb.png';

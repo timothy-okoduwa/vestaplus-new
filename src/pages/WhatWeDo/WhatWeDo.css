@@ -135,11 +135,20 @@ width: 100%;
   border-radius: 40px;
  height: auto !important;
 }
+
+}
+@media screen and (max-width:768px){
+  .hopesay {
+  /* transform: rotate(13.77deg); */
+  margin-left: -10px;
+  width: 15% !important;
+}
 }
 
 .hopesay {
-  transform: rotate(13.77deg);
-  margin-left: -44px;
+  /* transform: rotate(13.77deg); */
+  margin-left: -10px;
+  width: 6%;
 }
 .olo {
   margin-top: -20px;

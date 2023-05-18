@@ -4,7 +4,7 @@ import s from '../images/screen.svg';
 import m from '../images/mobile.svg';
 import w from '../images/web.svg';
 import { Zoom } from 'react-awesome-reveal';
-import r from '../images/rocky.png';
+import r from '../images/rocket.png';
 import d from '../images/doller.svg';
 import bit from '../images/bitcoin.svg';
 import wb from '../images/webb.svg';
@@ -113,7 +113,7 @@ const DownPart = () => {
               <img src={r} alt="" className="hopesay" />
             </span>
           </div>
-          <div className="tuss olo">
+          <div className="tuss olo mt-3">
             Our expertise in creating innovative solutions tailored to meet
             diverse needs and deliver exceptional value
           </div>

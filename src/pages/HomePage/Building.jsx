@@ -1,5 +1,5 @@
 import React from 'react';
-import r from '../images/rocky.png';
+import r from '../images/rocket.png';
 import f from '../images/fin.png';
 import l from '../images/finacery logo.svg';
 import s from '../images/scl.svg';
@@ -18,12 +18,12 @@ const Building = () => {
           <div className="lighr">
             <div className="bui">
               {' '}
-              <span className="bu">Building for </span>{' '}
-              <span className="il">the future</span>
+              Building for{' '}
+              <span className="il">
+                the future <img src={r} alt="" className="bel" />
+              </span>
             </div>
-            <div>
-              <img src={r} alt="" className="bel" />
-            </div>
+           
           </div>
           <div className="lifOf">
             Crafting innovative solutions that anticipate emerging needs and

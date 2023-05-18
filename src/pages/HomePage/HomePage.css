@@ -168,17 +168,21 @@ background: #FCFCFC;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
+    color: #121212;
 }
-.bu {
-  color: #121212;
-}
+
 .il {
   color: #007bff;
 }
 .bel {
-  width: 100%;
-  transform: rotate(13.77deg);
-  margin-left: -10px;
+  width: 16%;
+  /* transform: rotate(13.77deg); */
+  margin-left: 10px;
+}
+.bel2 {
+  width: 9%;
+  /* transform: rotate(13.77deg); */
+  margin-left: 10px;
 }
 .lifOf {
   font-family: 'Outfit';
