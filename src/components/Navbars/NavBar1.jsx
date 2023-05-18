@@ -105,28 +105,68 @@ if (prod && prod.length) {
 
                       <div className="ibe">
                         {hideInWhatPage ? null : (
-                          <button className="cafmu">Start Building</button>
+                          <a
+                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <button className="cafmu">Start Building</button>
+                          </a>
                         )}
                         {hideInHomePage ? null : (
-                          <button className="cafmu whatwedo">
-                            Start Building
-                          </button>
+                          <a
+                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <button className="cafmu whatwedo">
+                              Start Building
+                            </button>
+                          </a>
                         )}
                         {hideInWhatAndHomePage ? null : (
-                          <button className="cafmu project">
-                            Start Building
-                          </button>
+                          <a
+                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <button className="cafmu project">
+                              Start Building
+                            </button>
+                          </a>
                         )}
                         {hideInWhatAndHomeAndProjectPage ? null : (
-                          <button className="cafmu contact">
+                            <a
+                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                             <button className="cafmu contact">
                             Start Building
                           </button>
+                          </a>
+                         
                         )}
                         {hideInWhatAndHomeAndContactProjectPage ? null : (
-                          <button className="cafmu">Start Building </button>
+                            <a
+                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <button className="cafmu">Start Building </button>
+                          </a>
+                          
+                          
                         )}
                         {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
-                          <button className="cafmu daba">Start Building</button>
+                            <a
+                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                              <button className="cafmu daba">Start Building</button>
+                          </a>
+                        
                         )}
                       </div>
                     </div>

@@ -13,12 +13,20 @@ const WhatFirst = () => {
           </div>
           <div>
             <div className="hearhear">
-              We do everything to the best of our ability by putting your<br/> needs
-              first and striving for the most effective solutions to<br/> your
-              pressing business needs.
+              We do everything to the best of our ability by putting your
+              <br /> needs first and striving for the most effective solutions
+              to
+              <br /> your pressing business needs.
             </div>
             <div className="fjfujf">
-              <button className="tenn99">Start Building</button>
+              <a
+                href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="tenn99">Start Building</button>
+              </a>
+
               <Link to="/contact" style={{ textDecoration: 'none' }}>
                 <button className="tenn299">Contact Us</button>
               </Link>

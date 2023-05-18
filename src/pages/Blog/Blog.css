@@ -345,6 +345,8 @@
   font-size: 19px !important;
   color: #3d3d3d;
   cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 
 .opps {
@@ -376,4 +378,21 @@
   font-size: 19px !important;
   color: #3d3d3d;
   cursor: pointer;
+  background-color: rgba(255, 0, 0, 0);
+padding: 6px;
+border-radius: 6px;
+  transition:  0.3s ease-out !important;
+}
+.slotsss:hover {
+  width: fit-content;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px !important;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: lightgray;
+padding: 6px;
+border-radius: 6px;
+  transition:  0.3s ease-out !important;
 }

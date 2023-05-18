@@ -18,7 +18,14 @@ const FirstCon = () => {
             <div className="emilo mt-3">Email: project@vestarplus.com</div>
             <div className="emilo">Call: +234 802 286 1622 or</div>
             <div className="fjfujf">
-              <button className="tenn sbc">Start Building</button>
+              <a
+                href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="tenn sbc">Start Building</button>
+              </a>
+
               <Link to="/contact" style={{ textDecoration: 'none' }}>
                 <button className="tenn2 sbc2">Contact Us</button>
               </Link>

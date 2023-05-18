@@ -20,12 +20,19 @@ const FirstShow = ({ project }) => {
           <div>
             <div className="hearhear">{project.projectLongText}</div>
             <div className="fjfujf">
-              <button
+                              <a
+                  href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                   <button
                 className="tenn surv"
                 style={{ background: project.buttoncolor1 }}
               >
                 Start Building
               </button>
+                </a>
+             
               <Link
                 to="/contact"
                 style={{

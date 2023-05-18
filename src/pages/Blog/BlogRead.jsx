@@ -11,6 +11,7 @@ import {
 import { HiArrowNarrowLeft, HiArrowNarrowUp } from 'react-icons/hi';
 import { useNavigate } from 'react-router-dom';
 import t from '../images/tbb.png';
+import m from '../images/man-shrugging.png';
 const BlogRead = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -41,7 +42,13 @@ const BlogRead = () => {
     // Handle the case when there's no post data available
     return (
       <div style={{ textAlign: 'center' }}>
-        No blog post found.
+        <div>
+          <div>
+            {' '}
+            <img src={m} alt="shrig" style={{ width: '5%' }} />
+          </div>
+          No blog post found.
+        </div>
         <div className="backkik" onClick={move}>
           <HiArrowNarrowLeft /> Back to blog
         </div>

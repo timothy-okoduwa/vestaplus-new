@@ -19,7 +19,14 @@ const HomeFirst = () => {
               also generate <br /> revenue for the business in return.{' '}
             </div>
             <div className="fjfujf">
-              <button className="tenn">Start Building</button>
+                              <a
+                  href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className="tenn">Start Building</button>
+                </a>
+              
               <Link to="/contact" style={{ textDecoration: 'none' }}>
                 <button className="tenn2">Contact Us</button>
               </Link>

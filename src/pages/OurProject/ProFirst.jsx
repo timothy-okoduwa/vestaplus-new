@@ -20,7 +20,14 @@ const ProFirst = () => {
                 digital interactions to new heights
               </div>
               <div className="fjfujf">
-                <button className="tenn sb">Start Building</button>
+                                <a
+                  href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                   <button className="tenn sb">Start Building</button>
+                </a>
+               
                 <Link to="/contact" style={{ textDecoration: 'none' }}>
                   <button className="tenn2 sb2">Contact Us</button>
                 </Link>
