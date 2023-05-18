@@ -312,7 +312,7 @@ const calculateReadingTime = (content) => {
       </div>
 
       <div
-        className="wrongs"
+        className=" container wrongs"
         style={{
           display: 'flex',
           justifyContent: 'center',
