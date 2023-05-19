@@ -29,7 +29,7 @@ const Building = () => {
             Crafting innovative solutions that anticipate emerging needs and
             empower
             <br /> individuals and businesses to thrive in a rapidly evolving
-            world."
+            world.
           </div>
         </div>
       </div>
