@@ -23,11 +23,11 @@ const HomeFirst = () => {
               </div>
               <div className="fjfujf">
                 <a
-                  href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
+                  href="https://calendly.com/vestarplus"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <button className="tenn">Start Building</button>
+                  <button className="tenn">Book 30 Minutes Session</button>
                 </a>
 
                 <Link to="/contact" style={{ textDecoration: 'none' }}>

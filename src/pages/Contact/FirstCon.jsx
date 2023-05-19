@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 const FirstCon = () => {
   return (
     <div>
@@ -17,7 +17,7 @@ const FirstCon = () => {
             </div>
             <div className="emilo mt-3">Email: project@vestarplus.com</div>
             <div className="emilo">Call: +234 802 286 1622 or</div>
-            <div className="fjfujf">
+            {/* <div className="fjfujf">
               <a
                 href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
                 target="_blank"
@@ -29,7 +29,7 @@ const FirstCon = () => {
               <Link to="/contact" style={{ textDecoration: 'none' }}>
                 <button className="tenn2 sbc2">Contact Us</button>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="col-12 col-lg-5"></div>

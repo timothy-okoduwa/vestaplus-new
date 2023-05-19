@@ -24,37 +24,37 @@ const OurClient = () => {
             <div className="row">
                 <div className="col-12 col-sm-3 mb-5 ">
                     <div className='will'>
-                        <img src={g} alt='' className='will2' />
+                        <img src={g} alt='' className='will1t1' />
                     </div>
                 </div>
                 <div className="col-12 col-sm-3 mb-5 ">
                       <div className='will'>
-                        <img src={t} alt="" className='will2' />
+                        <img src={t} alt="" className='will1t2' />
                     </div>
                 </div>
                 <div className="col-12 col-sm-3 mb-5 ">
                       <div className='will'>
-                        <img src={m} alt="" className='will2' />
+                        <img src={m} alt="" className='will1t3' />
                     </div>
                 </div>
                 <div className="col-12 col-sm-3 mb-5 ">
                       <div className='will'>
-                        <img src={o} alt="" className='will2' />
+                        <img src={o} alt="" className='will1t4' />
                     </div>
                 </div>
                 <div className="col-12 col-sm-3 mb-5 ">
                       <div className='will'>
-                        <img src={p} alt="" className='will2' />
+                        <img src={p} alt="" className='will1t5' />
                     </div>
                 </div>
                 <div className="col-12 col-sm-3 mb-5 ">
                       <div className='will'>
-                        <img src={i} alt="" className='will2' />
+                        <img src={i} alt="" className='will1t6' />
                     </div>
                 </div>
                 <div className="col-12 col-sm-3 mb-5 ">
                       <div className='will'>
-                        <img src={b} alt="" className='will2' />
+                        <img src={b} alt="" className='will1t7' />
                     </div>
                 </div>
             </div>

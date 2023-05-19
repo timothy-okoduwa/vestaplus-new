@@ -19,14 +19,14 @@ const HomeFirst = () => {
               also generate <br /> revenue for the business in return.{' '}
             </div>
             <div className="fjfujf">
-                              <a
-                  href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <button className="tenn">Start Building</button>
-                </a>
-              
+              <a
+                href="https://calendly.com/vestarplus"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button className="tenn">Book 30 Minutes Session</button>
+              </a>
+
               <Link to="/contact" style={{ textDecoration: 'none' }}>
                 <button className="tenn2">Contact Us</button>
               </Link>

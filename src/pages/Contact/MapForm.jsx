@@ -16,10 +16,10 @@ const MapForm = () => {
 
     emailjs
       .sendForm(
-        'service_ftgftgc',
-        'template_z5i8lmj',
+        'service_byyuwql',
+        'template_d1duudt',
         form.current,
-        'u8vDqSiFMIsp3Rw6F'
+        'XwYNL5h2iURg7ulSr'
       )
       .then(
         (result) => {

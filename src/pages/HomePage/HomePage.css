@@ -72,13 +72,37 @@ width: 50% !important;
     display: flex !important;
     justify-content: center !important;
   }
-  .will2 {
-    width: 30% !important;
-    object-fit: contain;
-  }
+.will1t1 {
+  width: 30% !important;
+  object-fit: contain;
+}
+.will1t2 {
+  width: 30% !important;
+  object-fit: contain;
+}
+.will1t3 {
+  width: 30% !important;
+  object-fit: contain;
+}
+.will1t4 {
+  width: 20% !important;
+  object-fit: contain;
+}
+.will1t5 {
+  width: 30% !important;
+  object-fit: contain;
+}
+.will1t6 {
+  width: 20% !important;
+  object-fit: contain;
+}
+.will1t7 {
+  width: 20% !important;
+  object-fit: contain;
+}
 }
 .tenn {
-  width: 144px;
+ width: 210px;
   height: 50px;
   font-family: 'Outfit';
   font-style: normal;
@@ -99,7 +123,7 @@ width: 50% !important;
     font-weight: 500;
   font-size: 16px;
   color: #007bff;
-  background: rgba(0, 123, 255, 0.22);
+  background: #EFF6FF;
   border-radius: 12px;
   outline: none;
   border: none;
@@ -115,7 +139,7 @@ width: 50% !important;
     font-weight: 500;
   font-size: 16px;
   color: #007bff;
-  background: rgba(0, 123, 255, 0.22);
+  background: #EFF6FF;
   border-radius: 12px;
   outline: none;
   border: none;
@@ -170,8 +194,32 @@ background: #FCFCFC;
 .will {
   width: 100%;
 }
-.will2 {
-  width: 70%;
+.will1t1 {
+  width: 60%;
+  object-fit: contain;
+}
+.will1t2 {
+  width: 60%;
+  object-fit: contain;
+}
+.will1t3 {
+  width: 60%;
+  object-fit: contain;
+}
+.will1t4 {
+  width: 40%;
+  object-fit: contain;
+}
+.will1t5 {
+  width: 50%;
+  object-fit: contain;
+}
+.will1t6 {
+  width: 40%;
+  object-fit: contain;
+}
+.will1t7 {
+  width: 40%;
   object-fit: contain;
 }
 .building {
@@ -193,8 +241,15 @@ background: #FCFCFC;
 .il {
   color: #007bff;
 }
+@media screen and (max-width:768px){
+  .bel {
+  width: 13% !important;
+  /* transform: rotate(13.77deg); */
+  margin-left: 10px;
+}
+}
 .bel {
-  width: 16%;
+  width: 7%;
   /* transform: rotate(13.77deg); */
   margin-left: 10px;
 }

@@ -56,7 +56,7 @@
   background: #fc7a31;
 }
 .ong {
-  background: rgba(255, 173, 74, 0.22) !important;
+  background: rgba(255, 174, 74, 0.117) !important;
   color: #fc7a31 !important;
 }
 .capmi {
@@ -67,7 +67,7 @@
   font-weight: 500;
   font-size: 16px;
   color: #007bff;
-  background: rgba(0, 123, 255, 0.22);
+  background: #EFF6FF;;
   border-radius: 12px;
   outline: none;
   border: none;
@@ -137,7 +137,7 @@
   background-color:#ED3324 ;
 }
 .wathome2{
-  background: rgba(237, 51, 36, 0.22);
+background: rgba(237, 49, 36, 0.089);
   color: #ED3324;
 }
 .contactcc{
@@ -147,7 +147,7 @@ color:#03BC52 ;
 background-color: #03BC52;
 }
 .con2{
-background: rgba(3, 188, 82, 0.22);
+background: rgba(3, 188, 83, 0.113);
 color: #03BC52;
 }
 .dbhu{
@@ -157,6 +157,6 @@ color: #03BC52;
   background-color: #0A5076;
 }
 .reda2{
-background: rgba(10, 80, 118, 0.22);
+background: rgba(10, 80, 118, 0.055);
 color: #0A5076;
 }

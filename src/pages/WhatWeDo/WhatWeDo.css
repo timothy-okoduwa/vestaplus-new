@@ -5,7 +5,7 @@
   color: #fc7a31;
 }
 .tenn99 {
-  width: 144px;
+  width: 210px;
   height: 50px;
   font-family: 'Outfit';
   font-style: normal;
@@ -26,7 +26,7 @@
   font-weight: 500;
   font-size: 16px;
   color: #fc7a31;
-  background: rgba(255, 173, 74, 0.22);
+  background: rgba(255, 174, 74, 0.117);
   border-radius: 12px;
   outline: none;
   border: none;
@@ -42,7 +42,7 @@
   font-weight: 500;
   font-size: 16px;
   color: #fc7a31;
-  background: rgba(255, 173, 74, 0.22);
+  background: rgba(255, 174, 74, 0.117);
   border-radius: 12px;
   outline: none;
   border: none;
@@ -210,14 +210,14 @@
   .hopesay {
     /* transform: rotate(13.77deg); */
     margin-left: -10px;
-    width: 15% !important;
+    width: 7% !important;
   }
 }
 
 .hopesay {
   /* transform: rotate(13.77deg); */
   margin-left: -10px;
-  width: 6%;
+  width: 5%;
 }
 .olo {
   margin-top: -20px;

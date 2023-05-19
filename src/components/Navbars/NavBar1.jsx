@@ -105,66 +105,42 @@ const NavBar1 = ({ prod }) => {
 
                       <div className="ibe">
                         {hideInWhatPage ? null : (
-                          <a
-                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <Link to="contact">
                             <button className="cafmu">Start Building</button>
-                          </a>
+                          </Link>
                         )}
                         {hideInHomePage ? null : (
-                          <a
-                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <Link to="contact">
                             <button className="cafmu whatwedo">
                               Start Building
                             </button>
-                          </a>
+                          </Link>
                         )}
                         {hideInWhatAndHomePage ? null : (
-                          <a
-                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <Link to="contact">
                             <button className="cafmu project">
                               Start Building
                             </button>
-                          </a>
+                          </Link>
                         )}
                         {hideInWhatAndHomeAndProjectPage ? null : (
-                          <a
-                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <Link to="contact">
                             <button className="cafmu contact">
                               Start Building
                             </button>
-                          </a>
+                          </Link>
                         )}
                         {hideInWhatAndHomeAndContactProjectPage ? null : (
-                          <a
-                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <Link to="contact">
                             <button className="cafmu">Start Building </button>
-                          </a>
+                          </Link>
                         )}
                         {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
-                          <a
-                            href="https://gsejoahb81c.typeform.com/to/wtht8QUx"
-                            target="_blank"
-                            rel="noreferrer"
-                          >
+                          <Link to="contact">
                             <button className="cafmu daba">
                               Start Building
                             </button>
-                          </a>
+                          </Link>
                         )}
                       </div>
                     </div>
