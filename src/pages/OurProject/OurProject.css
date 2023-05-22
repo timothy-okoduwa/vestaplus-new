@@ -16,10 +16,10 @@ color: #ED3324;
     font-family: 'Outfit';
 font-style: normal;
 font-weight: 500;
-font-size: 64px;
+font-size: 47px;
 text-align: center;
 color: #121212;
-line-height: 70px;
+/* line-height: 70px; */
 }
 .strategy{
     color: #ED3324;
@@ -68,4 +68,15 @@ margin-top:20px ;
   outline: none;
   border: none;
   margin-top: 23px;
+}
+@media screen and (max-width:991px){
+    .skills{
+    font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 32px !important;
+text-align: center;
+color: #121212;
+/* line-height: 70px; */
+}
 }

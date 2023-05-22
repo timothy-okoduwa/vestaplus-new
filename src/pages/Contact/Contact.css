@@ -54,6 +54,34 @@
   color: #565656;
 }
 @media screen and (max-width: 991px) {
+  .tryin {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px !important;
+  color: #121212;
+}
+.coker {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px !important;
+  color: #121212;
+}
+  .shana {
+  margin-top: 40px;
+    text-align: center !important;
+    
+}
+  .emilo {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 3px;
+  color: #121212;
+  text-align: center !important;
+}
   .takila {
     border: 0.5px solid #3f3b3b;
     border-radius: 10px;

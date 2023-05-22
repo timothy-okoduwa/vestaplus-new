@@ -14,7 +14,7 @@ color: #121212;
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 500;
-  font-size: 62px;
+  font-size: 47px;
   margin-top: 8px;
   text-align: center;
   color: #121212;
@@ -112,6 +112,23 @@ color: #121212;
   justify-content: flex-end;
 }
 @media screen and (max-width: 991px) {
+  .ourR {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px !important;
+  margin-top: 8px;
+  text-align: center;
+  color: #121212;
+}
+.gettoknow {
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 17px !important;
+text-align: center;
+color: #121212;
+}
   .starte {
     display: flex;
     justify-content: center;
