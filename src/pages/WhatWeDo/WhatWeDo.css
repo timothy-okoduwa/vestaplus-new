@@ -56,8 +56,8 @@
 .haveot {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 500;
-  font-size: 47px;
+  font-weight: 600 !important;
+  font-size: 47px !important;
   text-align: center;
   color: #121212;
 }
@@ -145,8 +145,8 @@
   .haveot {
     font-family: 'Outfit';
     font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 600 !important;
+    font-size: 32px !important;
     text-align: center;
     color: #121212;
     /* line-height: 70px !important; */
@@ -292,7 +292,7 @@
 .Fintech {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 40px;
   color: #007bff;
   margin-top: 10px;

@@ -15,8 +15,8 @@ color: #ED3324;
 .skills{
     font-family: 'Outfit';
 font-style: normal;
-font-weight: 500;
-font-size: 47px;
+font-weight: 600 !important;
+font-size: 47px !important;
 text-align: center;
 color: #121212;
 /* line-height: 70px; */
@@ -73,7 +73,7 @@ margin-top:20px ;
     .skills{
     font-family: 'Outfit';
 font-style: normal;
-font-weight: 500;
+font-weight: 600;
 font-size: 32px !important;
 text-align: center;
 color: #121212;

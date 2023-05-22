@@ -5,10 +5,11 @@
 .sched {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600 !important;
+  font-size: 47px !important;
   color: #121212;
   /* line-height: 100px; */
+  width: 500px;
 }
 
 .my_kige{
@@ -74,8 +75,8 @@
   .comppp {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 16px;
   padding-bottom: 10px !important;
 border-bottom: 1px solid #ADADAD;
   color: #121212;
@@ -83,10 +84,11 @@ border-bottom: 1px solid #ADADAD;
   .sched {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 500;
-  font-size: 29px;
+  font-weight: 600;
+  font-size: 32px !important;
   color: #121212;
   text-align: center !important;
+  width: 100% !important;
 }
 }
 .know {
@@ -129,7 +131,7 @@ border-bottom: 1px solid #ADADAD;
   color: #fc7a31 !important;
 }
 .capmi {
-  width: 127px;
+  width: 210px;
   height: 50px;
   font-family: 'Outfit';
   font-style: normal;
@@ -152,10 +154,10 @@ border-bottom: 1px solid #ADADAD;
 .comppp {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: bold;
+    font-size: 16px;
   padding-bottom: 20px;
- color: #ADADAD;
+ color: #000000;
 }
 .wghat {
   font-family: 'Outfit';

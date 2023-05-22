@@ -35,8 +35,8 @@
   .our {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600 !important;
+  font-size: 32px !important;
   text-align: center !important;
 }
 .trud {
@@ -65,8 +65,8 @@
   .bui {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600 !important;
+  font-size: 32px !important;
   color: #121212;
     text-align: center !important;
 }
@@ -240,8 +240,8 @@
 .our {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 47px;
 }
 .ta {
   color: #121212;
@@ -301,8 +301,8 @@
 .bui {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 500;
-  font-size: 32px;
+  font-weight: 600;
+  font-size: 47px;
   color: #121212;
 }
 
@@ -461,6 +461,7 @@
 .loast {
   background: #36c9f7;
   border-radius: 43px;
+ 
 }
 .loast2 {
   background: #171818;

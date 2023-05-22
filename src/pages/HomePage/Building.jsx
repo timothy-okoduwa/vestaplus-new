@@ -52,11 +52,7 @@ const Building = () => {
                           <div className="presence">UI/UX Design</div>
                           <div className="presence2">Branding</div>
                         </div>
-                        <div>
-                          <Link to="/contact">
-                            <button className="sbb">Start Building</button>
-                          </Link>
-                        </div>
+                        <div></div>
                       </div>
                     </div>
                   </div>
@@ -90,13 +86,7 @@ const Building = () => {
                             <div className="presence">UI/UX Design</div>
                             <div className="presence2">Branding</div>
                           </div>
-                          <div>
-                            <Link to="/contact">
-                              <button className="sbbb mb-4">
-                                Start Building
-                              </button>
-                            </Link>
-                          </div>
+                          <div style={{marginTop:'38px'}}></div>
                         </div>
                       </div>
                     </div>
@@ -130,11 +120,7 @@ const Building = () => {
                             <div className="presence2">Branding</div>
                             {/* <div className="presence3"> </div> */}
                           </div>
-                          <div>
-                            <Link to="/contact">
-                              <button className="sbbb2 ">Start Building</button>
-                            </Link>
-                          </div>
+                          <div></div>
                         </div>
                       </div>
                     </div>
@@ -171,11 +157,7 @@ const Building = () => {
                           <div className="presence">UI/UX Design</div>
                           <div className="presence2">Branding</div>
                         </div>
-                        <div>
-                          <Link to="/contact">
-                            <button className="sbb2p">Start Building</button>
-                          </Link>
-                        </div>
+                        <div></div>
                       </div>
                     </div>
                   </div>
