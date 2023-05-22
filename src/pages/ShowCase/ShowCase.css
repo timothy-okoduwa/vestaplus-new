@@ -48,3 +48,39 @@
 
   color: #121212;
 }
+@media screen and (max-width:991px){
+  .over {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #121212;
+  text-align: center !important;
+}
+.always {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 18px;
+  color: #121212;
+    text-align: center !important;
+}
+.mbs {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+    text-align: center !important;
+  color: #121212;
+}
+.fame {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 16px;
+    text-align: center !important;
+  color: #121212;
+}
+}

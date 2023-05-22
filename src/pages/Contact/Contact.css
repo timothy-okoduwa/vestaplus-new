@@ -85,6 +85,9 @@
  justify-content: center;
  align-items: center;
 }
+.subb.disabled {
+  cursor: not-allowed;
+}
 
 .terapy {
   /* background-color: rebeccapurple; */

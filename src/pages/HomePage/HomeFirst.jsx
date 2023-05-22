@@ -16,7 +16,7 @@ const HomeFirst = () => {
             <div className="hearhear">
               We work with establish brands, businesses & startups across the
               world to create awesome products that impact users experience &
-              also generate <br /> revenue for the business in return.{' '}
+              also generate revenue for the business in return.{' '}
             </div>
             <div className="fjfujf">
               <a

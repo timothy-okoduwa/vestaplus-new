@@ -14,9 +14,9 @@ const WhatFirst = () => {
           <div>
             <div className="hearhear">
               We do everything to the best of our ability by putting your
-              <br /> needs first and striving for the most effective solutions
+               needs first and striving for the most effective solutions
               to
-              <br /> your pressing business needs.
+               your pressing business needs.
             </div>
             <div className="fjfujf">
               <a

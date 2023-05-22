@@ -22,6 +22,7 @@
   font-size: 18px;
   margin-top: 15px;
   color: #121212;
+  width: 500px;
 }
 .fjfujf {
   /* background-color: red; */
@@ -31,13 +32,33 @@
   justify-content: space-between; */
 }
 @media screen and (max-width: 991px) {
-  .designD {
+  .lifOf {
   font-family: 'Outfit';
   font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 60px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #121212;
+    width: 100% !important;
+    text-align: center !important;
 }
+  .hearhear {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 15px;
+    color: #121212;
+    text-align: center !important;
+     width: 100% !important;
+  }
+  .designD {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center !important;
+  }
   .lplp {
     display: flex;
     justify-content: center;
@@ -51,8 +72,8 @@
   .u-alone {
     margin-top: 18px;
     display: flex;
-/* background-color: red; */
-width: 50% !important;
+    /* background-color: red; */
+    width: 50% !important;
     flex-wrap: nowrap;
   }
   .tickets {
@@ -61,7 +82,7 @@ width: 50% !important;
     padding: 15px !important;
     margin-top: 5px !important;
   }
-  
+
   .will {
     display: flex !important;
     justify-content: center !important;
@@ -72,41 +93,41 @@ width: 50% !important;
     display: flex !important;
     justify-content: center !important;
   }
-.will1t1 {
-  width: 30% !important;
-  object-fit: contain;
-}
-.will1t2 {
-  width: 30% !important;
-  object-fit: contain;
-}
-.will1t3 {
-  width: 30% !important;
-  object-fit: contain;
-}
-.will1t4 {
-  width: 20% !important;
-  object-fit: contain;
-}
-.will1t5 {
-  width: 30% !important;
-  object-fit: contain;
-}
-.will1t6 {
-  width: 20% !important;
-  object-fit: contain;
-}
-.will1t7 {
-  width: 20% !important;
-  object-fit: contain;
-}
+  .will1t1 {
+    width: 30% !important;
+    object-fit: contain;
+  }
+  .will1t2 {
+    width: 30% !important;
+    object-fit: contain;
+  }
+  .will1t3 {
+    width: 30% !important;
+    object-fit: contain;
+  }
+  .will1t4 {
+    width: 20% !important;
+    object-fit: contain;
+  }
+  .will1t5 {
+    width: 30% !important;
+    object-fit: contain;
+  }
+  .will1t6 {
+    width: 20% !important;
+    object-fit: contain;
+  }
+  .will1t7 {
+    width: 20% !important;
+    object-fit: contain;
+  }
 }
 .tenn {
- width: 210px;
+  width: 210px;
   height: 50px;
   font-family: 'Outfit';
   font-style: normal;
-    font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   color: #ffffff;
   background: #007bff;
@@ -120,32 +141,32 @@ width: 50% !important;
   height: 50px;
   font-family: 'Outfit';
   font-style: normal;
-    font-weight: 500;
+  font-weight: 500;
   font-size: 16px;
   color: #007bff;
-  background: #EFF6FF;
+  background: #eff6ff;
   border-radius: 12px;
   outline: none;
   border: none;
   margin-left: 35px;
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-@media screen and (max-width:346px){
+@media screen and (max-width: 346px) {
   .tenn2 {
-  width: 144px;
-  height: 50px;
-  font-family: 'Outfit';
-  font-style: normal;
+    width: 144px;
+    height: 50px;
+    font-family: 'Outfit';
+    font-style: normal;
     font-weight: 500;
-  font-size: 16px;
-  color: #007bff;
-  background: #EFF6FF;
-  border-radius: 12px;
-  outline: none;
-  border: none;
-  margin-left: 7px;
+    font-size: 16px;
+    color: #007bff;
+    background: #eff6ff;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    margin-left: 7px;
     margin-bottom: 10px;
-}
+  }
 }
 .heart {
   margin-top: 70px;
@@ -166,7 +187,7 @@ width: 50% !important;
 
 .OurClient {
   padding-top: 120px;
-background: #FCFCFC;
+  background: #fcfcfc;
   padding-bottom: 40px;
 }
 .our {
@@ -235,18 +256,18 @@ background: #FCFCFC;
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
-    color: #121212;
+  color: #121212;
 }
 
 .il {
   color: #007bff;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width: 768px) {
   .bel {
-  width: 13% !important;
-  /* transform: rotate(13.77deg); */
-  margin-left: 10px;
-}
+    width: 13% !important;
+    /* transform: rotate(13.77deg); */
+    margin-left: 10px;
+  }
 }
 .bel {
   width: 7%;
@@ -264,6 +285,8 @@ background: #FCFCFC;
   font-weight: 400;
   font-size: 20px;
   color: #121212;
+
+  width: 600px;
 }
 .takes {
   margin-top: 90px;
@@ -281,7 +304,7 @@ background: #FCFCFC;
 .waiting-for2 {
   width: 100%;
   /* height: 500px; */
-  background: #FFBB55;
+  background: #ffbb55;
   border-radius: 43px;
 }
 .nono {
@@ -381,7 +404,7 @@ background: #FCFCFC;
   color: #ffffff;
   width: 136.58px;
   height: 43.62px;
-  background: #0A0C4E;
+  background: #0a0c4e;
   border-radius: 4.5753px;
   margin-bottom: 35px;
 }
@@ -406,13 +429,12 @@ background: #FCFCFC;
 }
 .ynl {
   width: 400px;
- 
 }
-@media screen and (min-width:1200px){
+@media screen and (min-width: 1200px) {
   .ynl {
-  width: 450px !important;
-  /* background-color: red; */
-}
+    width: 450px !important;
+    /* background-color: red; */
+  }
 }
 .memind {
   margin-top: 14px;
@@ -448,55 +470,52 @@ background: #FCFCFC;
   text-align: center;
   width: 136.58px;
   height: 43.62px;
-  background: #FF003D;
+  background: #ff003d;
   border-radius: 4.5753px;
   color: #ffffff;
   outline: none;
   border: none;
   margin-top: 23px;
 }
-.Blogs{
-    padding-top: 160px;
-    padding-bottom: 40px;
+.Blogs {
+  padding-top: 160px;
+  padding-bottom: 40px;
 }
-.goodenough{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: bold;
-font-size: 60px;
+.goodenough {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+}
+.redd {
+  color: #121212;
+}
+.bluee {
+  color: #007bff;
+}
 
+.ccc {
+  margin-top: 80px;
 }
-.redd{
-color: #121212;
+.tecc {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #3d3d3d;
 }
-.bluee{
-color: #007BFF;
+.Programming {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #121212;
 }
-
-
-.ccc{
-    margin-top: 80px;
-}
-.tecc{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-color: #3d3d3d;
-
-}
-.Programming{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-color: #121212;
-}
-.sept{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-color: #565656;
-margin-top: 10px;
+.sept {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #565656;
+  margin-top: 10px;
 }

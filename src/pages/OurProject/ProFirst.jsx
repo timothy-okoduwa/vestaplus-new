@@ -1,12 +1,11 @@
 import React from 'react';
-import { Fade } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 const ProFirst = () => {
   return (
     <div>
       <div className="row">
         <div className="col-12 col-lg-8">
-          <Fade direction="down" triggerOnce="true">
+          
             <div>
               <div className="designD">
                 <span className="blacjd">We design</span>{' '}
@@ -33,7 +32,7 @@ const ProFirst = () => {
                 </Link>
               </div>
             </div>
-          </Fade>
+         
         </div>
         <div className="col-12 col-lg-4"></div>
       </div>

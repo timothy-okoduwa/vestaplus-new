@@ -7,6 +7,10 @@ import CircularProgress from '@mui/material/CircularProgress';
 const MapForm = () => {
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
+  const [message, setMessgae] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,7 +37,10 @@ const MapForm = () => {
             progress: undefined,
             theme: 'light',
           });
-          form.current.reset();
+             setName('');
+             setEmail('');
+             setPhoneNumber('');
+             setMessgae('');
         },
         (error) => {
           toast.warn('Sorry, something went wrong 😞!', {
@@ -52,6 +59,7 @@ const MapForm = () => {
         // Reset the loading state
         setIsSending(false);
       });
+   
   };
 
   return (
@@ -70,6 +78,8 @@ const MapForm = () => {
                       className="takila"
                       placeholder="Enter Full Name "
                       name="user_name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
                     />
                   </div>
                   <div className="mb-4">
@@ -79,6 +89,8 @@ const MapForm = () => {
                       className="takila"
                       placeholder="Enter your phone number"
                       name="phone_number"
+                      value={phoneNumber}
+                      onChange={(e) => setPhoneNumber(e.target.value)}
                     />
                   </div>
                   <div className="mb-4">
@@ -88,6 +100,8 @@ const MapForm = () => {
                       className="takila"
                       placeholder="Enter Email Address"
                       name="email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                     />
                   </div>
                   <div className="mb-4">
@@ -97,10 +111,21 @@ const MapForm = () => {
                       className="takila2"
                       placeholder="Enter your Message"
                       name="message"
+                      value={message}
+                      onChange={(e) => setMessgae(e.target.value)}
                     />
                   </div>
                   <div className="mb-4">
-                    <button className="subb" type="submit" value="Send">
+                    <button
+                      className={`subb ${
+                        !name || !email || !phoneNumber || !message
+                          ? 'disabled'
+                          : ''
+                      }`}
+                      type="submit"
+                      value="Send"
+                      disabled={!name || !email || !phoneNumber || !message}
+                    >
                       {isSending ? (
                         <CircularProgress
                           style={{

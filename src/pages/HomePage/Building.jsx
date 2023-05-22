@@ -23,12 +23,10 @@ const Building = () => {
                 the future <img src={r} alt="" className="bel" />
               </span>
             </div>
-           
           </div>
           <div className="lifOf">
             Crafting innovative solutions that anticipate emerging needs and
-            empower
-            <br /> individuals and businesses to thrive in a rapidly evolving
+            empower individuals and businesses to thrive in a rapidly evolving
             world.
           </div>
         </div>

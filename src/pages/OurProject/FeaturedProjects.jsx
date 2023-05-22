@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Zoom } from 'react-awesome-reveal';
 import { Link } from 'react-router-dom';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../../firebase';
@@ -28,7 +27,7 @@ const FeaturedProjects = () => {
           <div className="row">
             {user?.project?.map((prod) => (
               <div className="col-12 col-lg-6 mb-5">
-                <Zoom duration="800" triggerOnce={true}>
+              
                   <Link
                     to={`/${prod.projectName}`}
                     style={{ textDecoration: 'none' }}
@@ -79,7 +78,7 @@ const FeaturedProjects = () => {
                       </div>
                     </div>
                   </Link>
-                </Zoom>
+            
               </div>
             ))}
           </div>

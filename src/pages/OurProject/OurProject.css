@@ -19,6 +19,7 @@ font-weight: 500;
 font-size: 64px;
 text-align: center;
 color: #121212;
+line-height: 70px;
 }
 .strategy{
     color: #ED3324;
@@ -30,6 +31,7 @@ font-weight: 400;
 font-size: 20px;
 text-align: center;
 color: #121212;
+margin-top:20px ;
 }
 .truru{
     margin-top: 90px;

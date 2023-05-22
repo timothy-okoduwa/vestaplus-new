@@ -21,7 +21,7 @@ const OurTeam = () => {
           <div className="row">
             <div className="col-12 col-lg-4 mb-5 heyye">
               <div>
-                <div className="wawawa wawawa-1">
+                <div className="wawawa ">
                   <img src={b} alt="" className="band" />
                 </div>
                 <div className="slyy">Sylvester Nnachi</div>
@@ -30,7 +30,7 @@ const OurTeam = () => {
             </div>
             <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
               <div>
-                <div className="wawawa wawawa-2">
+                <div className="wawawa">
                   <img src={c} alt="" className="band" />
                 </div>
                 <div className="slyy">Chinedu Ogbonna</div>
@@ -39,7 +39,7 @@ const OurTeam = () => {
             </div>
             <div className="col-12 col-lg-4 mb-5 starte">
               <div>
-                <div className="wawawa wawawa-1">
+                <div className="wawawa ">
                   <img src={d} alt="" className="band" />
                 </div>
                 <div className="slyy">Deborah Ehru</div>
@@ -48,7 +48,7 @@ const OurTeam = () => {
             </div>
             <div className="col-12 col-lg-4 mb-5 d-flex heyye">
               <div>
-                <div className="wawawa wawawa-2">
+                <div className="wawawa">
                   <img src={e} alt="" className="band" />
                 </div>
                 <div className="slyy">Timothy Okoduwa</div>
@@ -57,8 +57,8 @@ const OurTeam = () => {
             </div>
             <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
               <div>
-                <div className="wawawa wawawa-1">
-                  <img src={f} alt="" className="band" />
+                <div className="wawawa ">
+                  <img src='' alt="" className="band" />
                 </div>
                 <div className="slyy">Blessing Ogbonna</div>
                 <div className="product">Graphics Designer</div>
@@ -66,7 +66,7 @@ const OurTeam = () => {
             </div>
             <div className="col-12 col-lg-4 mb-5 starte">
               <div>
-                <div className="wawawa wawawa-2">
+                <div className="wawawa">
                   <img src={g} alt="" className="band" />
                 </div>
                 <div className="slyy">Jude Nwosu</div>

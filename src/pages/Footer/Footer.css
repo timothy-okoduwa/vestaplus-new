@@ -10,7 +10,47 @@
   color: #121212;
   line-height: 100px;
 }
+
+.my_kige{
+  width: 100%;
+}
 @media screen and (max-width:991px){
+  .ijn{
+    display: flex;
+    justify-content: center;
+  }
+  .collab {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-top: 6px;
+  color: #565656;
+  margin-bottom: 60px;
+  text-align: center !important;
+}
+  .my_kige{
+  width: 70%;
+}
+  .wghat {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 30px;
+  margin-top: 19px !important;
+  color: #121212;
+  cursor: pointer;
+}
+  .comppp {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding-bottom: 10px !important;
+border-bottom: 1px solid black;
+  color: #121212;
+}
   .sched {
   font-family: 'Outfit';
   font-style: normal;
@@ -85,7 +125,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 
   color: #121212;
 }
