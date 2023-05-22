@@ -17,10 +17,12 @@ const DownPart = () => {
         <div className="haveot">
           What <span className="padr">we do</span>{' '}
         </div>
-        <div className="tuss">
-          Our expertise spans design and tech, enabling us to create innovative
-          products
-          <br /> that drive growth, enhance efficiency, and exceed expectations
+        <div className="ewoowo">
+          <div className="tuss">
+            Our expertise spans design and tech, enabling us to create
+            innovative products that drive growth, enhance efficiency, and
+            exceed expectations
+          </div>
         </div>
       </div>
 
@@ -113,10 +115,13 @@ const DownPart = () => {
               <img src={r} alt="" className="hopesay" />
             </span>
           </div>
-          <div className="tuss olo mt-3">
+          <div className="ewoowo">
+             <div className="tuss olo mt-3">
             Our expertise in creating innovative solutions tailored to meet
             diverse needs and deliver exceptional value
           </div>
+          </div>
+         
         </div>
         <div className="mkir">
           <div className="row">

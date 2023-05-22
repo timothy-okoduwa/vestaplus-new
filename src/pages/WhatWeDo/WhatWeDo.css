@@ -72,6 +72,12 @@
   text-align: center;
   color: #121212;
   margin-top: 6px;
+  text-align: center;
+  width: 700px;
+}
+.ewoowo{
+  display: flex;
+  justify-content: center;
 }
 .mkir {
   margin-top: 100px;
@@ -105,6 +111,18 @@
   color: #000000;
 }
 @media screen and (max-width: 991px) {
+  .tuss {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #121212;
+  margin-top: 6px;
+
+  text-align: center;
+  width: 100% !important;
+}
   .containerd {
     padding-left: 20px !important;
     padding-right: 20px !important;
