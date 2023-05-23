@@ -311,6 +311,8 @@ color: #FFFFFF;
   font-weight: 600;
   font-size: 47px;
   color: #121212;
+  /* background-color: red; */
+  width: 100%;
 }
 
 .il {
