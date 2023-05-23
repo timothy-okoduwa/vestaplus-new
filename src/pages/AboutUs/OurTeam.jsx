@@ -19,7 +19,7 @@ const OurTeam = () => {
       <div>
         <div className="oikuj">
           <div className="row">
-            <div className="col-12 col-lg-4 mb-5 heyye">
+            <div className="col-12 col-md-4 mb-5 heyye">
               <div>
                 <div className="wawawa ">
                   <img src={b} alt="images" className="band" />
@@ -28,7 +28,7 @@ const OurTeam = () => {
                 <div className="product">Product Designer</div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
+            <div className="col-12 col-md-4 mb-5 d-flex justify-content-center">
               <div>
                 <div className="wawawa">
                   <img src={c} alt="images" className="band" />
@@ -37,7 +37,7 @@ const OurTeam = () => {
                 <div className="product">Digital Marketer</div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 mb-5 starte">
+            <div className="col-12 col-md-4 mb-5 starte">
               <div>
                 <div className="wawawa ">
                   <img src={d} alt="images" className="band" />
@@ -46,7 +46,7 @@ const OurTeam = () => {
                 <div className="product">UI/UX Designer</div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 mb-5 d-flex heyye">
+            <div className="col-12 col-md-4 mb-5 d-flex heyye">
               <div>
                 <div className="wawawa">
                   <img src={e} alt="images" className="band" />
@@ -55,7 +55,7 @@ const OurTeam = () => {
                 <div className="product">Frontend Developer</div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 mb-5 d-flex justify-content-center">
+            <div className="col-12 col-md-4 mb-5 d-flex justify-content-center">
               <div>
                 <div className="wawawa ">
                   <img src={f} alt="images" className="band" />
@@ -64,7 +64,7 @@ const OurTeam = () => {
                 <div className="product">Product Manager</div>
               </div>
             </div>
-            <div className="col-12 col-lg-4 mb-5 starte">
+            <div className="col-12 col-md-4 mb-5 starte">
               <div>
                 <div className="wawawa">
                   <img src={g} alt="images" className="band" />

@@ -27,58 +27,61 @@ const FeaturedProjects = () => {
           <div className="row">
             {user?.project?.map((prod) => (
               <div className="col-12 col-lg-6 mb-5">
-              
-                  <Link
-                    to={`/${prod.projectName}`}
-                    style={{ textDecoration: 'none' }}
+                <Link
+                  to={`/${prod.projectName}`}
+                  style={{ textDecoration: 'none' }}
+                >
+                  <div
+                    className="loastf"
+                    style={{ background: prod.projectCardColor }}
                   >
-                    <div
-                      className="loastf"
-                      style={{ background: prod.projectCardColor }}
-                    >
-                      <div className="lplp">
-                        <div className="ynl">
-                          <div>
-                            <img src={prod.logoImage} alt="" />
-                          </div>
-                          <div className="memind">{prod?.shortDescription}</div>
-                          <div>
-                            <div className="u-alone">
-                              {prod.ux && (
-                                <div className="presence">{prod.ux}</div>
-                              )}
-
-                              {prod.branding && (
-                                <div className="presence2">{prod.branding}</div>
-                              )}
-
-                              {prod.web && (
-                                <div className="presence2">{prod.web}</div>
-                              )}
-                            </div>
-                            <div>
-                              <button
-                                className="sbbbf mb-4"
-                                style={{ background: prod.cardButtonColor }}
-                              >
-                                Start Building
-                              </button>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
+                    <div className="lplp">
+                      <div className="ynl">
                         <div>
-                          <img
-                            src={prod.thubNail}
-                            alt=""
-                            style={{ width: '100%' }}
-                          />
+                          <img src={prod.logoImage} alt="" />
+                          <div className="Financery">{prod?.projectName}</div>
+                        </div>
+                        <div className="memind">{prod?.shortDescription}</div>
+                        <div>
+                          <div className="u-alone">
+                            {prod.ux && (
+                              <div className="presence">{prod.ux}</div>
+                            )}
+
+                            {prod.branding && (
+                              <div className="presence2">{prod.branding}</div>
+                            )}
+
+                            {prod.web && (
+                              <div className="presence2">{prod.web}</div>
+                            )}
+                          </div>
+                          <div>
+                            <button
+                              className="sbbbf mb-4"
+                              style={{ background: prod.cardButtonColor }}
+                            >
+                              Start Building
+                            </button>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </Link>
-            
+                    <div>
+                      <div>
+                        <img
+                          src={prod.thubNail}
+                          alt=""
+                          style={{
+                            width: '100%',
+                            objectFit: 'contain',
+                            borderRadius: '43px',
+                          }}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </Link>
               </div>
             ))}
           </div>

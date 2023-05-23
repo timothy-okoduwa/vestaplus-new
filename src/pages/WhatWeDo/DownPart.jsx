@@ -28,7 +28,7 @@ const DownPart = () => {
 
       <div className="mkir">
         <div className="row">
-          <div className="col-12 col-lg-6 mb-5">
+          <div className="col-12 col-md-6 mb-5">
             <Zoom duration="800" triggerOnce="true">
               <div className="usually">
                 <div className="containerd">
@@ -46,13 +46,13 @@ const DownPart = () => {
               </div>
             </Zoom>
           </div>
-          <div className="col-12 col-lg-6 mb-5">
+          <div className="col-12 col-md-6 mb-5">
             <Zoom duration="800" triggerOnce="true">
               <div className="usually">
                 <div className="containerd">
                   <div>
                     <div>
-                      <img src={s} alt="" />
+                      <img src={s} alt=""  />
                     </div>
                     <div className="brandd">UX Design</div>
                     <div className="whiyr">
@@ -65,7 +65,7 @@ const DownPart = () => {
               </div>
             </Zoom>
           </div>
-          <div className="col-12 col-lg-6 mb-5">
+          <div className="col-12 col-md-6 mb-5">
             <Zoom duration="800" triggerOnce="true">
               {' '}
               <div className="usually">
@@ -85,7 +85,7 @@ const DownPart = () => {
               </div>
             </Zoom>
           </div>
-          <div className="col-12 col-lg-6 mb-5">
+          <div className="col-12 col-md-6 mb-5">
             <Zoom duration="800" triggerOnce="true">
               {' '}
               <div className="usually">
@@ -116,16 +116,15 @@ const DownPart = () => {
             </span>
           </div>
           <div className="ewoowo">
-             <div className="tuss olo mt-3">
-            Our expertise in creating innovative solutions tailored to meet
-            diverse needs and deliver exceptional value
+            <div className="tuss olo mt-3">
+              Our expertise in creating innovative solutions tailored to meet
+              diverse needs and deliver exceptional value
+            </div>
           </div>
-          </div>
-         
         </div>
         <div className="mkir">
           <div className="row">
-            <div className="col-12 col-lg-6 mb-5">
+            <div className="col-12 col-md-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="fullterms">
                   <div className="containerd">
@@ -134,7 +133,7 @@ const DownPart = () => {
                         <img src={d} alt="" />
                       </div>
                       <div className="Fintech">Fintech</div>
-                      <div className="goof">
+                      <div className="goof fincolor">
                         We design fintech products that enhance financial
                         experiences, empowering individuals and businesses with
                         secure and user-friendly financial solutions
@@ -144,7 +143,7 @@ const DownPart = () => {
                 </div>
               </Zoom>
             </div>
-            <div className="col-12 col-lg-6 mb-5">
+            <div className="col-12 col-md-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="fullterms2">
                   <div className="containerd">
@@ -153,7 +152,7 @@ const DownPart = () => {
                         <img src={bit} alt="" />
                       </div>
                       <div className="crypto">Crypto & Web3</div>
-                      <div className="humm">
+                      <div className="goof cryptocolor">
                         We design innovative crypto and Web3 products that
                         enhance digital experiences, empowering users with
                         cutting-edge tools and decentralized solutions
@@ -163,7 +162,7 @@ const DownPart = () => {
                 </div>
               </Zoom>
             </div>
-            <div className="col-12 col-lg-6 mb-5">
+            <div className="col-12 col-md-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="fullterms3">
                   <div className="containerd">
@@ -172,7 +171,7 @@ const DownPart = () => {
                         <img src={wb} alt="" />
                       </div>
                       <div className="website">Websites</div>
-                      <div className="nomind">
+                      <div className="goof webcolor">
                         We help your business to build a websites/web
                         application that serves customers/ service needs,
                         increase business growth
@@ -182,7 +181,7 @@ const DownPart = () => {
                 </div>
               </Zoom>
             </div>
-            <div className="col-12 col-lg-6 mb-5">
+            <div className="col-12 col-md-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="fullterms4">
                   <div className="containerd">
@@ -191,7 +190,7 @@ const DownPart = () => {
                         <img src={ecom} alt="" />
                       </div>
                       <div className="ecoo">E-Commerce</div>
-                      <div className="waitfor">
+                      <div className="goof ecolor">
                         We design e-commerce products that enhance online
                         shopping experiences, empowering businesses and
                         consumers with seamless transactions and user- friendly
@@ -202,7 +201,7 @@ const DownPart = () => {
                 </div>
               </Zoom>
             </div>
-            <div className="col-12 col-lg-6 mb-5">
+            <div className="col-12 col-md-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="fullterms5">
                   <div className="containerd">
@@ -211,7 +210,7 @@ const DownPart = () => {
                         <img src={edu} alt="" />
                       </div>
                       <div className="edu">EduTech</div>
-                      <div className="die">
+                      <div className="goof educolor">
                         We design educational technology products that enhance
                         learning experiences and empower students and educators
                       </div>

@@ -63,7 +63,7 @@ const Rest = ({ project }) => {
         </div>
         <div style={{ marginTop: '90px', marginBottom: '190px' }}>
           <div>
-            <img src={project.webImage} alt="" style={{ width: '100%' }} />
+            <img src={project.webImage2} alt="" style={{ width: '100%' }} />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import r from '../images/rocket.png';
 import f from '../images/fin.png';
-import l from '../images/finacery logo.svg';
+import l from '../images/finlogo.svg';
 import s from '../images/scl.svg';
 import u from '../images/ugat.png';
 import b from '../images/booklib.svg';
@@ -9,7 +9,6 @@ import p from '../images/pstt.png';
 import cc from '../images/crypto.svg';
 import oo from '../images/coin.png';
 import { Zoom } from 'react-awesome-reveal';
-import { Link } from 'react-router-dom';
 const Building = () => {
   return (
     <div className="building">
@@ -38,11 +37,12 @@ const Building = () => {
             <div className="waiting-for">
               <div className="containerr-fluid">
                 <div className="row mt-5">
-                  <div className="col-12 col-lg-5">
+                  <div className="col-12 col-md-5">
                     <div className="tickets">
                       <div className="container">
                         <div>
-                          <img src={l} alt="" style={{ width: '35%' }} />
+                          <img src={l} alt="" style={{ width: '20%' }} />
+                          <div className="Financery">Financery</div>
                         </div>
                         <div className="startl">
                           Financery Dashboard- Manage all your finance, crypto
@@ -56,7 +56,7 @@ const Building = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 col-lg-7">
+                  <div className="col-12 col-md-7">
                     <div>
                       <img src={f} alt="" className="nono" />
                     </div>
@@ -69,14 +69,15 @@ const Building = () => {
 
         <div className="caving">
           <div className="row">
-            <div className="col-12 col-lg-6 mb-5">
+            <div className="col-12 col-md-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="loast">
                   <div className="container">
                     <div className="lplp">
                       <div className="ynl">
                         <div>
-                          <img src={s} alt="" />
+                          <img src={s} alt="" style={{ width: '15%' }} />
+                          <div className="Financery">schoolgate</div>
                         </div>
                         <div className="memind">
                           An E-learning platform for all ages.
@@ -86,7 +87,7 @@ const Building = () => {
                             <div className="presence">UI/UX Design</div>
                             <div className="presence2">Branding</div>
                           </div>
-                          <div style={{marginTop:'38px'}}></div>
+                          <div style={{ marginTop: '38px' }}></div>
                         </div>
                       </div>
                     </div>
@@ -94,21 +95,30 @@ const Building = () => {
 
                   <div>
                     <div>
-                      <img src={u} alt="" style={{ width: '100%' }} />
+                      <img
+                        src={u}
+                        alt=""
+                        style={{
+                          width: '100%',
+                          objectFit: 'contain',
+                          borderRadius: '43px',
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
               </Zoom>
             </div>
 
-            <div className="col-12 col-lg-6 mb-5">
+            <div className="col-12 col-md-6 mb-5">
               <Zoom duration="800" triggerOnce="true">
                 <div className="loast2">
                   <div className="container">
                     <div className="lplp">
                       <div className="ynl">
                         <div>
-                          <img src={b} alt="" />
+                          <img src={b} alt="" style={{ width: '15%' }} />
+                          <div className="Financery">booklib</div>
                         </div>
                         <div className="memind">
                           An online library with inspirationals books from
@@ -128,7 +138,15 @@ const Building = () => {
 
                   <div>
                     <div>
-                      <img src={p} alt="" style={{ width: '96%' }} />
+                      <img
+                        src={p}
+                        alt=""
+                        style={{
+                          width: '100%',
+                          objectFit: 'contain',
+                          borderRadius: '43px',
+                        }}
+                      />
                     </div>
                   </div>
                 </div>
@@ -142,16 +160,18 @@ const Building = () => {
             <div className="waiting-for2">
               <div className="containerr-fluid">
                 <div className="row mt-5">
-                  <div className="col-12 col-lg-5">
+                  <div className="col-12 col-md-5">
                     <div className="tickets">
                       <div className="container">
                         <div>
-                          <img src={cc} alt="" style={{ width: '50%' }} />
+                          <img src={cc} alt="" style={{ width: '20%' }} />
+                          <div className="Financery">CryptoCowrie</div>
                         </div>
                         <div className="startl">
-                          Start a ride hailing business, or Logistics startup
-                          today. Let's build your product from start to finish,
-                          go to market in 8 weeks.
+                          CryptoCowrie enable users to manage digital wallets,
+                          buy/sell cryptocurrencies, track portfolios, trade on
+                          exchanges, access market data, ensure security, and
+                          participate in decentralised finance.
                         </div>
                         <div className="u-alone">
                           <div className="presence">UI/UX Design</div>
@@ -161,7 +181,7 @@ const Building = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 col-lg-7">
+                  <div className="col-12 col-md-7">
                     <div>
                       <img src={oo} alt="" className="nono" />
                     </div>

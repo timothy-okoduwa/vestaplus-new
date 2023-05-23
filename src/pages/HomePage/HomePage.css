@@ -32,6 +32,13 @@
   justify-content: space-between; */
 }
 @media screen and (max-width: 991px) {
+  .Financery{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 29px !important;
+color: #FFFFFF;
+}
   .our {
   font-family: 'Outfit';
   font-style: normal;
@@ -566,4 +573,11 @@
   font-size: 14px;
   color: #565656;
   margin-top: 10px;
+}
+.Financery{
+  font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 44px;
+color: #FFFFFF;
 }

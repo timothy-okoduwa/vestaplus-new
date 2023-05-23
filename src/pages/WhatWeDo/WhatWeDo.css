@@ -95,8 +95,7 @@
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 50px;
+  font-size: 36px;
   color: #000000;
   margin-top: 10px;
 }
@@ -157,42 +156,9 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 170%;
-    color: #007bff;
     width: 100% !important;
   }
-  .humm {
-    font-family: 'Outfit';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    color: #f7931a;
-    margin-top: 15px;
-    width: 100% !important;
-  }
-  .nomind {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: #ed3324;
-  width: 100% !important;
-}
-.waitfor {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: #61d748;
-   width: 100% !important;
-}
-.die {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: #36c9f7;
-   width: 100% !important;
-}
+  
 }
 @media screen and (max-width: 425px) {
   .usually {
@@ -303,9 +269,23 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 170%;
-  color: #007bff;
-
   width: 327px;
+}
+
+.fincolor{
+   color: #007bff;
+}
+.cryptocolor{
+  color: #EA8307;
+}
+.webcolor{
+  color: #C73124;
+}
+.ecolor{
+  color: #4EBB37;
+}
+.educolor{
+color: #36C9F7;
 }
 .crypto {
   font-family: 'Outfit';
@@ -314,15 +294,7 @@
   font-size: 40px;
   color: #f7931a;
 }
-.humm {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: #f7931a;
-  margin-top: 15px;
-  width: 327px;
-}
+
 .website {
   font-family: 'Outfit';
   font-style: normal;
@@ -330,14 +302,7 @@
   font-size: 40px;
   color: #ed3324;
 }
-.nomind {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: #ed3324;
-  width: 327px;
-}
+
 .ecoo {
   font-family: 'Outfit';
   font-style: normal;
@@ -345,26 +310,10 @@
   font-size: 40px;
   color: #61d748;
 }
-.waitfor {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: #61d748;
-  width: 327px;
-}
 .edu {
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
   color: #36c9f7;
-}
-.die {
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  color: #36c9f7;
-  width: 327px;
 }
