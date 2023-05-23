@@ -99,7 +99,7 @@ const Footer = ({ prod }) => {
                             </span>
                           )}
                           {hideInWhatAndHomeAndContactProjectPage ? null : (
-                            <span className="know ">talk with us.</span>
+                            <span className="know wiilo ">talk with us.</span>
                           )}
                           {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
                             <span className="know dbhu">talk with us.</span>
@@ -174,7 +174,7 @@ const Footer = ({ prod }) => {
                               target="_blank"
                               rel="noreferrer"
                             >
-                              <button className="magnify ">
+                              <button className="magnify tenne">
                                 Book 30 Minutes Session
                               </button>
                             </a>
@@ -233,7 +233,7 @@ const Footer = ({ prod }) => {
                               to="/contact"
                               style={{ textDecoration: 'none' }}
                             >
-                              <button className="capmi ">Contact Us</button>
+                              <button className="capmi stud">Contact Us</button>
                             </Link>
                           )}
                           {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
@@ -260,10 +260,10 @@ const Footer = ({ prod }) => {
                   <div className="col-12 col-lg-4">
                     <div>
                       <div>
-                        <div className='ijn'>
-                          <img src={v} alt="" className='my_kige' />
+                        <div className="ijn">
+                          <img src={v} alt="" className="my_kige" />
                         </div>
-                        
+
                         <div className="collab">
                           Let's collaborate! Hire our team to build
                           <br /> amazing, user friendly products for

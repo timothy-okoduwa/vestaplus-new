@@ -23,11 +23,21 @@ color: #121212;
   margin-top: 70px;
   /* background-color: red; */
 }
+.change{
+  color: #fac734;
+}
+.tenne{
+  background:#fac734 ;
+}
+.stud{
+   background:#fac8341b ;
+     color: #fac734;
+}
 .wawawa {
   height: 350px;
   width: 220px;
   border-radius: 94px;
-  background: #F4FAFF;
+  background: #fbfbfb;
   border-radius: 94px;
 
   /* Set initial position */
@@ -139,5 +149,5 @@ color: #121212;
   }
 }
 .gdgd{
-  color: #007BFF;
+color: #fac734;
 }

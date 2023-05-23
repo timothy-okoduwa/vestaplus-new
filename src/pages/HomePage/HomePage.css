@@ -320,20 +320,20 @@ color: #FFFFFF;
 }
 @media screen and (max-width: 768px) {
   .bel {
-    width: 13% !important;
+    width: 4% !important;
     /* transform: rotate(13.77deg); */
-    margin-left: 10px;
+    /* margin-left: 10px; */
   }
 }
 .bel {
-  width: 7%;
+  width: 3%;
   /* transform: rotate(13.77deg); */
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 .bel2 {
-  width: 9%;
+  width: 4%;
   /* transform: rotate(13.77deg); */
-  margin-left: 10px;
+  margin-left: 0px;
 }
 .lifOf {
   font-family: 'Outfit';

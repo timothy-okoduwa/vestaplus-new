@@ -8,7 +8,7 @@ const HomeFirst = () => {
           <div>
             <div className="designD">
               <span className="blacjd">We are an</span>{' '}
-              <span className="bliure">Innovative Team </span>{' '}
+              <span className="bliure change">Innovative Team </span>{' '}
             </div>
           </div>
           <div>
@@ -23,11 +23,11 @@ const HomeFirst = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <button className="tenn">Book 30 Minutes Session</button>
+                <button className="tenn tenne">Book 30 Minutes Session</button>
               </a>
 
               <Link to="/contact" style={{ textDecoration: 'none' }}>
-                <button className="tenn2">Contact Us</button>
+                <button className="tenn2 stud">Contact Us</button>
               </Link>
             </div>
           </div>

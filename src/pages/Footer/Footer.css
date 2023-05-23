@@ -9,7 +9,7 @@
   font-size: 47px !important;
   color: #121212;
   /* line-height: 100px; */
-  width: 500px;
+  width: 100%;
 }
 
 .my_kige{
@@ -229,4 +229,14 @@ color: #03BC52;
 .reda2{
 background: rgba(10, 80, 118, 0.055);
 color: #0A5076;
+}
+.tenne{
+  background:#fac734 ;
+}
+.stud{
+   background:#fac8341b ;
+     color: #fac734;
+}
+.wiilo{
+      color: #fac734;
 }

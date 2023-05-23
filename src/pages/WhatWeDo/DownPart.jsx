@@ -112,7 +112,7 @@ const DownPart = () => {
           <div className="haveot">
             Products we have <span className="padr"> Built so far</span>{' '}
             <span>
-              <img src={r} alt="" className="hopesay" />
+              <img src={r} alt="" className="bel" />
             </span>
           </div>
           <div className="ewoowo">

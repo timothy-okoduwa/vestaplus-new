@@ -132,7 +132,7 @@ const NavBar1 = ({ prod }) => {
                         )}
                         {hideInWhatAndHomeAndContactProjectPage ? null : (
                           <Link to="contact">
-                            <button className="cafmu">Start Building </button>
+                            <button className="cafmu jaja">Start Building </button>
                           </Link>
                         )}
                         {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
