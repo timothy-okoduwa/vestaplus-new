@@ -59,7 +59,17 @@ const NavBar1 = ({ prod }) => {
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     projectNames.includes(location.pathname.substring(1)) ||
+   
     location.pathname === '/contact' ||
+    location.pathname === '/about' ||
+    location.pathname === '/project';
+  const hideInWhatAndHomeAndContactAndBlogProjectPage =
+    location.pathname === '/' ||
+    location.pathname === '/whatwedo' ||
+    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/blog-read') ||
+    location.pathname === '/contact' ||
+    location.pathname === '/blog' ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactAndAboutProjectPage =
     location.pathname === '/' ||
@@ -130,9 +140,16 @@ const NavBar1 = ({ prod }) => {
                             </button>
                           </Link>
                         )}
+                        {hideInWhatAndHomeAndContactAndBlogProjectPage ? null : (
+                          <Link to="contact">
+                            <button className="cafmu jaja">
+                              Start Building{' '}
+                            </button>
+                          </Link>
+                        )}
                         {hideInWhatAndHomeAndContactProjectPage ? null : (
                           <Link to="contact">
-                            <button className="cafmu jaja">Start Building </button>
+                            <button className="cafmu ">Start Building </button>
                           </Link>
                         )}
                         {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (

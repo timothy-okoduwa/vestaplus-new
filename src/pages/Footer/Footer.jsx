@@ -56,8 +56,17 @@ const Footer = ({ prod }) => {
   const hideInWhatAndHomeAndContactProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
-    location.pathname === '/contact' ||
     projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname === '/contact' ||
+    location.pathname === '/about' ||
+    location.pathname === '/project';
+  const hideInWhatAndHomeAndContactAndBlogProjectPage =
+    location.pathname === '/' ||
+    location.pathname === '/whatwedo' ||
+    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/blog-read') ||
+    location.pathname === '/contact' ||
+    location.pathname === '/blog' ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactAndAboutProjectPage =
     location.pathname === '/' ||
@@ -99,6 +108,9 @@ const Footer = ({ prod }) => {
                             </span>
                           )}
                           {hideInWhatAndHomeAndContactProjectPage ? null : (
+                            <span className="know  ">talk with us.</span>
+                          )}
+                          {hideInWhatAndHomeAndContactAndBlogProjectPage ? null : (
                             <span className="know wiilo ">talk with us.</span>
                           )}
                           {hideInWhatAndHomeAndContactAndAboutProjectPage ? null : (
@@ -174,6 +186,21 @@ const Footer = ({ prod }) => {
                               target="_blank"
                               rel="noreferrer"
                             >
+                              <button className="magnify ">
+                                Book 30 Minutes Session
+                              </button>
+                            </a>
+                          )}
+                          {hideInWhatAndHomeAndContactAndBlogProjectPage ? null : (
+                            <a
+                              href="https://calendly.com/vestarplus"
+                              style={{
+                                textDecoration: 'none',
+                                color: 'white',
+                              }}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <button className="magnify tenne">
                                 Book 30 Minutes Session
                               </button>
@@ -229,6 +256,14 @@ const Footer = ({ prod }) => {
                             </Link>
                           )}
                           {hideInWhatAndHomeAndContactProjectPage ? null : (
+                            <Link
+                              to="/contact"
+                              style={{ textDecoration: 'none' }}
+                            >
+                              <button className="capmi ">Contact Us</button>
+                            </Link>
+                          )}
+                          {hideInWhatAndHomeAndContactAndBlogProjectPage ? null : (
                             <Link
                               to="/contact"
                               style={{ textDecoration: 'none' }}
