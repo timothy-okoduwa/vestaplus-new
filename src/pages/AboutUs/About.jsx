@@ -16,5 +16,5 @@ const About = () => {
     </div>
   )
 }
-
+//? former color #fac734, new color #DD9A1D
 export default About
