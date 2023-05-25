@@ -20,8 +20,8 @@ const DownPart = () => {
         <div className="ewoowo">
           <div className="tuss">
             Our expertise spans design and tech, enabling us to create
-            innovative products that drive growth, enhance efficiency, and
-            exceed expectations
+            innovative products that drive growth, enhance efficiency and
+            exceed expectations.
           </div>
         </div>
       </div>
@@ -56,7 +56,7 @@ const DownPart = () => {
                     </div>
                     <div className="brandd">UX Design</div>
                     <div className="whiyr">
-                      We design human centered products to attract audience and
+                      We design human centred products to attract audience and
                       make your product awesome by using proven design
                       processes.
                     </div>
@@ -76,9 +76,9 @@ const DownPart = () => {
                     </div>
                     <div className="brandd">Mobile App Development</div>
                     <div className="whiyr">
-                      We help you develop mobile application that give your
+                      We help you develop mobile application that gives your
                       users awesome experience and generate leads, and increase
-                      sales
+                      sales.
                     </div>
                   </div>
                 </div>
@@ -97,7 +97,7 @@ const DownPart = () => {
                     <div className="brandd">Web App Development</div>
                     <div className="whiyr">
                       We help your business to build a web application that
-                      serves customers/ service needs, increase business growth
+                      serves customers/ service needs and also increase business growth.
                     </div>
                   </div>
                 </div>
@@ -117,8 +117,8 @@ const DownPart = () => {
           </div>
           <div className="ewoowo">
             <div className="tuss olo mt-3">
-              Our expertise in creating innovative solutions tailored to meet
-              diverse needs and deliver exceptional value
+              Our expertise major in creating innovative solutions tailored to meet
+              diverse needs and deliver exceptional value.
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ const DownPart = () => {
                       <div className="goof fincolor">
                         We design fintech products that enhance financial
                         experiences, empowering individuals and businesses with
-                        secure and user-friendly financial solutions
+                        secure and user-friendly financial solutions.
                       </div>
                     </div>
                   </div>
@@ -155,7 +155,7 @@ const DownPart = () => {
                       <div className="goof cryptocolor">
                         We design innovative crypto and Web3 products that
                         enhance digital experiences, empowering users with
-                        cutting-edge tools and decentralized solutions
+                        cutting-edge tools and decentralized solutions.
                       </div>
                     </div>
                   </div>
@@ -173,8 +173,8 @@ const DownPart = () => {
                       <div className="website">Websites</div>
                       <div className="goof webcolor">
                         We help your business to build a websites/web
-                        application that serves customers/ service needs,
-                        increase business growth
+                        application that serves customers/ service needs and
+                        increase business growth.
                       </div>
                     </div>
                   </div>
@@ -194,7 +194,7 @@ const DownPart = () => {
                         We design e-commerce products that enhance online
                         shopping experiences, empowering businesses and
                         consumers with seamless transactions and user- friendly
-                        interfaces."
+                        interfaces.
                       </div>
                     </div>
                   </div>
@@ -212,7 +212,7 @@ const DownPart = () => {
                       <div className="edu">EduTech</div>
                       <div className="goof educolor">
                         We design educational technology products that enhance
-                        learning experiences and empower students and educators
+                        learning experiences and empower students and educators.
                       </div>
                     </div>
                   </div>

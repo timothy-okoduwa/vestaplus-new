@@ -15,7 +15,7 @@ const HomeFirst = () => {
             <div className="hearhear">
               We are a forward thinking product design agency, that uses design,
               innovation and technology to bulid UX products, engaging websites
-              and brands for clients world-wide
+              and brands for clients world-wide.
             </div>
             <div className="fjfujf">
               <a

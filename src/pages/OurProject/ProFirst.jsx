@@ -16,7 +16,7 @@ const ProFirst = () => {
               <div className="hearhear">
                 We specialise in delivering exceptional user experience
                 products that captivate, engage, and delight users,
-                 elevating their digital interactions to new heights
+                 elevating their digital interactions to new heights.
               </div>
               <div className="fjfujf">
                 <a

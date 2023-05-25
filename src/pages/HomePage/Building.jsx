@@ -122,7 +122,7 @@ const Building = () => {
                         </div>
                         <div className="memind">
                           An online library with inspirationals books from
-                          famous achievers
+                          famous achievers.
                         </div>
                         <div>
                           <div className="u-alone">

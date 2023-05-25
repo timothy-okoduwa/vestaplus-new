@@ -23,7 +23,7 @@ const Blogs = () => {
           <div className="lifOf">
             Explore our insightful blog, where we share valuable knowledge,
             industry trends, and expert perspectives to keep you informed
-            and inspired
+            and inspired.
           </div>
         </div>
       </div>
