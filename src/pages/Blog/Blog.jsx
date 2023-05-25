@@ -14,24 +14,24 @@ import store from '../../Store';
 
 
 const Blog = () => {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
 
-
   const [currentPage, setCurrentPage] = useState(0);
- const handleOpen = (post) => {
-   store.dispatch({
-     type: 'SET_SELECTED_POST',
-     payload: post,
-   });
+  const handleOpen = (post) => {
+    store.dispatch({
+      type: 'SET_SELECTED_POST',
+      payload: post,
+    });
 
-   navigate(`/blog-read/${post.slug}`);
- };
-
+    navigate(`/blog-read/${post.slug}`);
+  };
+  
+  //!karllhughes
 
   const query = `
   query ($page: Int!) {
-    user(username: "karllhughes") {
+    user(username: "vestarplus") {
       name
       publication {
         posts(page: $page) {
@@ -53,14 +53,14 @@ const Blog = () => {
   }
 `;
 
-const calculateReadingTime = (content) => {
-  const wordsPerMinute = 200; // Adjust this value as needed
+  const calculateReadingTime = (content) => {
+    const wordsPerMinute = 200; // Adjust this value as needed
 
-  const words = content.trim().split(/\s+/).length;
-  const readingTime = Math.ceil(words / wordsPerMinute);
+    const words = content.trim().split(/\s+/).length;
+    const readingTime = Math.ceil(words / wordsPerMinute);
 
-  return readingTime;
-};
+    return readingTime;
+  };
 
   const fetchPosts = async (page = 0) => {
     const response = await fetch('https://api.hashnode.com', {
@@ -83,10 +83,10 @@ const calculateReadingTime = (content) => {
       throw new Error(data.errors[0].message);
     }
 
-     const newPosts = data.data.user.publication.posts.map((post) => ({
-       ...post,
-       readingTime: calculateReadingTime(post.contentMarkdown),
-     }));
+    const newPosts = data.data.user.publication.posts.map((post) => ({
+      ...post,
+      readingTime: calculateReadingTime(post.contentMarkdown),
+    }));
 
     if (newPosts.length === 0) {
       return []; // no more posts left
@@ -297,7 +297,7 @@ const calculateReadingTime = (content) => {
                           </Card.Title>
                           <Card.Text>
                             <div className="sept">
-                              {formatDate(post.dateAdded)} 
+                              {formatDate(post.dateAdded)}
                             </div>
                           </Card.Text>
                         </Card.Body>
