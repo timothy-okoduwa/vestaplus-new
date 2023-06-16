@@ -6,7 +6,8 @@ import Building from './Building';
 import Blogs from './Blogs';
 const HomePage = () => {
   useEffect(() => {
-    document.title = 'Vestarplus | The Established Company';
+    document.title =
+      'UX Design | Web Development | Mobile Development Agency in Lagos Nigeria';
   }, []);
   return (
     <div className="hands">

@@ -110,6 +110,14 @@
   margin-bottom: 18px;
   display: flex;
   align-items: center;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: all 0.3s ease;
+     border: 2px solid #e1e2e300;
+     justify-content: space-between;
+}
+.zapp{
+font-size: 19px;
 }
 .active {
    height: 100%;
@@ -120,7 +128,10 @@
   display: flex;
   align-items: center;
   border: 2px solid #e1e2e3;
-
+  transform: translateY(10px);
+    box-sizing: border-box;
+    cursor: pointer;
+     justify-content: space-between;
 }
 .invest {
   font-family: 'Outfit';
@@ -152,7 +163,7 @@
   position: sticky !important;
   top: 60px !important;
   overflow-y: hidden;
-  height: 600px;
+  height: 750px;
 
 }
 /* .image-container{

@@ -1,42 +1,32 @@
 import React, { useState, useEffect, useRef } from 'react';
 import classNames from 'classnames';
-
-// import r from '../images/schgate.mp4';
-// import p from '../images/Project Summary.png';
-// import s from '../images/sitemap.png';
-// import m from '../images/Mobile prototype.png';
-// import u from '../images/User Persona.png';
-// import uf from '../images/User Flow.png';
-// import sg from '../images/Style guide.png';
-
+import { IoIosArrowDroprightCircle } from 'react-icons/io';
 const cllaUDetails = [
   {
-    title: ' Project Summary',
+    title: 'Project Summary',
   },
   {
-    title: '  User Persona',
+    title: 'User Persona',
   },
   {
-    title: '   User Flow',
+    title: 'User Flow',
   },
   {
-    title: '    Sitemap',
+    title: 'Sitemap',
   },
   {
-    title: '     Wireframe/Sketches',
+    title: 'Wireframe/Sketches',
   },
   {
-    title: '     Style Guide',
+    title: 'Style Guide',
   },
   {
-    title: '    High Fidelity (Mobile)',
+    title: 'High Fidelity (Mobile)',
   },
   {
-    title: '     High Fidelity (Web)',
+    title: 'High Fidelity (Web)',
   },
 ];
-
-// const images = [p, s, sg, m, u, uf, m];
 
 const Rest = ({ project }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(-1);
@@ -45,7 +35,7 @@ const Rest = ({ project }) => {
   useEffect(() => {
     const handleScroll = () => {
       const windowHeight = window.innerHeight;
-      const scrollPosition = window.scrollY + windowHeight / 5;
+      const scrollPosition = window.scrollY + windowHeight / 10;
       const imageContainerOffsetTop =
         document.querySelector('.image-container')?.offsetTop;
 
@@ -58,13 +48,6 @@ const Rest = ({ project }) => {
         );
 
         setCurrentImageIndex(visibleImageIndex);
-
-        // Scroll the childhood div to the position of the active class
-        const activeClassElement = document.querySelector('.clla-u.active');
-        if (activeClassElement && childhoodRef.current) {
-          const activeClassOffsetTop = activeClassElement.offsetTop;
-          childhoodRef.current.scrollTop = activeClassOffsetTop;
-        }
       }
     };
 
@@ -73,6 +56,29 @@ const Rest = ({ project }) => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  const handleCllaUClick = (index) => {
+    setCurrentImageIndex(index);
+
+    // Scroll the page to the corresponding image
+    const imageContainer = document.querySelector('.image-container');
+    if (imageContainer) {
+      const imageElements = imageContainer.querySelectorAll('img');
+      if (imageElements.length > index) {
+        const imageElement = imageElements[index];
+        const imageOffsetTop = imageElement.offsetTop;
+        const imageContainerOffsetTop = imageContainer.offsetTop;
+        const scrollPosition = imageOffsetTop - imageContainerOffsetTop;
+
+        imageContainer.scrollTop = scrollPosition;
+
+        window.scrollTo({
+          top: imageContainerOffsetTop + scrollPosition,
+          behavior: 'smooth',
+        });
+      }
+    }
+  };
 
   return project ? (
     <div className="stbyu">
@@ -111,13 +117,7 @@ const Rest = ({ project }) => {
               <div className="col-12 col-md-8">
                 <div className="image-container">
                   {project?.ProImages?.map((image, index) => (
-                    <div
-                      key={index}
-
-                      // style={{
-                      //   display: index === currentImageIndex ? 'block' : 'none',
-                      // }}
-                    >
+                    <div key={index}>
                       <img
                         src={image}
                         alt=""
@@ -137,9 +137,13 @@ const Rest = ({ project }) => {
                             active: index === currentImageIndex,
                           })}
                           key={index}
+                          onClick={() => handleCllaUClick(index)}
                         >
                           <div className="sitemap">{detail.title}</div>
                           {/* <div className="invest">{detail.description}</div> */}
+                          <div>
+                            <IoIosArrowDroprightCircle className='zapp'/>
+                          </div>
                         </div>
                       ))}
                     </div>
