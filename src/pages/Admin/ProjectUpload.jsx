@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Admin.css';
 import TextField from '@mui/material/TextField';
 import TextareaAutosize from '@mui/base/TextareaAutosize';
 import { BiUpload } from 'react-icons/bi';
+import { FaCloudUploadAlt } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
 import MaterialButton from '@mui/material/Button';
 import Form from 'react-bootstrap/Form';
@@ -12,11 +13,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import { db, storage } from '../../firebase';
 import { v4 as uuidv4 } from 'uuid';
 import { useNavigate } from 'react-router-dom';
-import {
-  ref,
-  uploadBytesResumable,
-  getDownloadURL,
-} from 'firebase/storage';
+import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 const ProjectUpload = () => {
   // ! this states are for the project card
 
@@ -54,18 +51,12 @@ const ProjectUpload = () => {
   const [thumbNailImage, setThumbNailImage] = useState([]);
   const [selectedThumbNailImage, setSelectedThumbNailImage] = useState(null);
 
-  const [bigImage, setBigImage] = useState([]);
-  const [selectedBigImage, setSelectedBigImage] = useState(null);
+  const [bigVideo, setbigVideo] = useState([]);
+  const [selectedbigVideo, setSelectedbigVideo] = useState(null);
 
-  const [typographyImage, setTypographyImage] = useState([]);
-  const [selectedTypographyImage, setSelectedTypographyImage] = useState(null);
-
-  const [mobileImage2, setMobileImage2] = useState([]);
-  const [selectedMobileImage2, setSelectedMobileImage2] = useState(null);
-
-  const [webImage, setWebImage] = useState([]);
-  const [selectedWebImage, setSelectedWebImage] = useState(null);
-
+  const [productImages, setProductImages] = useState([]);
+  const [selectedImage, setSelectedImage] = useState(null);
+  const [isButtonClicked, setIsButtonClicked] = useState(false);
   //? images function
 
   const [info, setInfo] = useState({ error: null, loading: false });
@@ -80,112 +71,51 @@ const ProjectUpload = () => {
 
   const addProject = async () => {
     setInfo({ ...info, error: null, loading: true });
+    setIsButtonClicked(true);
+    const proImages = [];
+    const uploadTasks = [];
 
-    const webimg = [];
-    //upload multiple image to firebase storage
-    for (let i = 0; i < webImage.length; i++) {
-      const fileName = webImage[i] ? webImage[i].name : null;
+    for (let i = 0; i < productImages.length; i++) {
+      const fileName = productImages[i] ? productImages[i].name : null;
 
       if (fileName) {
-        const imagesRef = ref(storage, `images/${fileName}`);
+        const imagesRef = ref(
+          storage,
+          `images/productImages/${uuid}/${fileName}`
+        );
         const fileRef = ref(imagesRef);
-        const uploadTask = uploadBytesResumable(fileRef, webImage[i]);
+        const uploadTask = uploadBytesResumable(fileRef, productImages[i]);
 
-        let totalBytesTransferred = 0;
-        let totalBytes = 0;
+        uploadTasks.push(uploadTask);
 
         uploadTask.on('state_changed', (snapshot) => {
-          // Keep track of the total bytes transferred and total bytes of all files
-          totalBytesTransferred += snapshot.bytesTransferred;
-          totalBytes += snapshot.totalBytes;
-
-          // Calculate the overall progress percentage
           const progress = Math.round(
-            (totalBytesTransferred / totalBytes) * 100
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100
           );
-          console.log(`Upload is ${progress}% done`);
-          setUploadProgress(progress);
+          console.log(`Upload of image ${i} is ${progress}% done`);
+          setUploadProgress((prevProgress) => {
+            const updatedProgress = [...prevProgress];
+            updatedProgress[i] = progress;
+            return updatedProgress;
+          });
         });
 
         const snapshot = await uploadTask;
         const downloadURL = await getDownloadURL(snapshot.ref);
 
-        webimg.push(downloadURL);
+        proImages.push(downloadURL);
       }
     }
-    const mobile = [];
-    //upload multiple image to firebase storage
-    for (let i = 0; i < mobileImage2.length; i++) {
-      const fileName = mobileImage2[i] ? mobileImage2[i].name : null;
 
-      if (fileName) {
-        const imagesRef = ref(storage, `images/${fileName}`);
-        const fileRef = ref(imagesRef);
-        const uploadTask = uploadBytesResumable(fileRef, mobileImage2[i]);
-
-        let totalBytesTransferred = 0;
-        let totalBytes = 0;
-
-        uploadTask.on('state_changed', (snapshot) => {
-          // Keep track of the total bytes transferred and total bytes of all files
-          totalBytesTransferred += snapshot.bytesTransferred;
-          totalBytes += snapshot.totalBytes;
-
-          // Calculate the overall progress percentage
-          const progress = Math.round(
-            (totalBytesTransferred / totalBytes) * 100
-          );
-          console.log(`Upload is ${progress}% done`);
-          setUploadProgress(progress);
-        });
-
-        const snapshot = await uploadTask;
-        const downloadURL = await getDownloadURL(snapshot.ref);
-
-        mobile.push(downloadURL);
-      }
-    }
-    const Typo = [];
-    //upload multiple image to firebase storage
-    for (let i = 0; i < typographyImage.length; i++) {
-      const fileName = typographyImage[i] ? typographyImage[i].name : null;
-
-      if (fileName) {
-        const imagesRef = ref(storage, `images/${fileName}`);
-        const fileRef = ref(imagesRef);
-        const uploadTask = uploadBytesResumable(fileRef, typographyImage[i]);
-
-        let totalBytesTransferred = 0;
-        let totalBytes = 0;
-
-        uploadTask.on('state_changed', (snapshot) => {
-          // Keep track of the total bytes transferred and total bytes of all files
-          totalBytesTransferred += snapshot.bytesTransferred;
-          totalBytes += snapshot.totalBytes;
-
-          // Calculate the overall progress percentage
-          const progress = Math.round(
-            (totalBytesTransferred / totalBytes) * 100
-          );
-          console.log(`Upload is ${progress}% done`);
-          setUploadProgress(progress);
-        });
-
-        const snapshot = await uploadTask;
-        const downloadURL = await getDownloadURL(snapshot.ref);
-
-        Typo.push(downloadURL);
-      }
-    }
     const big = [];
     //upload multiple image to firebase storage
-    for (let i = 0; i < bigImage.length; i++) {
-      const fileName = bigImage[i] ? bigImage[i].name : null;
+    for (let i = 0; i < bigVideo.length; i++) {
+      const fileName = bigVideo[i] ? bigVideo[i].name : null;
 
       if (fileName) {
         const imagesRef = ref(storage, `images/${fileName}`);
         const fileRef = ref(imagesRef);
-        const uploadTask = uploadBytesResumable(fileRef, bigImage[i]);
+        const uploadTask = uploadBytesResumable(fileRef, bigVideo[i]);
 
         let totalBytesTransferred = 0;
         let totalBytes = 0;
@@ -289,12 +219,10 @@ const ProjectUpload = () => {
       buttoncolor2: buttoncolor2,
       buttonTextcolor2: buttonTextcolor2,
       overView: overView,
+      ProImages: proImages,
       logoImage: images,
       thubNail: thumb,
-      bigImage: big,
-      typographyImage: Typo,
-      mobileImage: mobile,
-      webImage: webimg,
+      bigVideo: big,
       theProblem: theProblem,
       mobileScreen: mobileScreen,
       webScreen: webScreen,
@@ -336,32 +264,80 @@ const ProjectUpload = () => {
     }
   };
 
-  const handleBigImageChange = (e) => {
+  const handlebigVideoChange = (e) => {
     if (e.target.files[0]) {
-      setSelectedBigImage(e.target.files[0]);
-      setBigImage([e.target.files[0]]);
+      setSelectedbigVideo(e.target.files[0]);
+      setbigVideo([e.target.files[0]]);
     }
   };
 
-  const handleTypographImageChange = (e) => {
-    if (e.target.files[0]) {
-      setSelectedTypographyImage(e.target.files[0]);
-      setTypographyImage([e.target.files[0]]);
+  useEffect(() => {
+    setUploadProgress(new Array(productImages.length).fill(0));
+  }, [productImages]);
+
+  function allowDrop(event) {
+    event.preventDefault();
+  }
+
+  const drop = (event) => {
+    event.preventDefault();
+    const images = [];
+    const maxImages = 10; // maximum number of images
+    const files = event.dataTransfer.files;
+
+    if (files.length > maxImages) {
+      for (let i = 0; i < maxImages; i++) {
+        const file = files[i];
+        const imgUrl = URL.createObjectURL(file);
+        setSelectedImage(imgUrl);
+        images.push(file);
+      }
+    } else {
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        const imgUrl = URL.createObjectURL(file);
+        setSelectedImage(imgUrl);
+        images.push(file);
+      }
     }
+
+    setProductImages(images);
+  };
+  const handleSelect = (event) => {
+    const images = [];
+    const maxImages = 10; // maximum number of images
+
+    if (event.target.files.length > maxImages) {
+      for (let i = 0; i < maxImages; i++) {
+        const file = event.target.files[i];
+        const imgUrl = URL.createObjectURL(file);
+        setSelectedImage(imgUrl);
+        images.push(file);
+      }
+    } else {
+      for (let i = 0; i < event.target.files.length; i++) {
+        const file = event.target.files[i];
+        const imgUrl = URL.createObjectURL(file);
+        setSelectedImage(imgUrl);
+       images.push(file);
+      }
+    }
+
+    setProductImages(images);
   };
 
-  const handleMobileImage2Change = (e) => {
-    if (e.target.files[0]) {
-      setSelectedMobileImage2(e.target.files[0]);
-      setMobileImage2([e.target.files[0]]);
-    }
-  };
+  function handleClick(event) {
+    // Trigger click on input element to open file selection dialog
+    event.preventDefault();
+    const fileInput = document.getElementById('file-input');
+    fileInput.click();
+  }
 
-  const handleWebImageChange = (e) => {
-    if (e.target.files[0]) {
-      setSelectedWebImage(e.target.files[0]);
-      setWebImage([e.target.files[0]]);
-    }
+  const handleDeleteImage = (index) => {
+    const updatedImages = [...productImages];
+    updatedImages.splice(index, 1);
+    setProductImages(updatedImages);
+    // add this line to prevent the default form submission behavior
   };
 
   return (
@@ -405,7 +381,7 @@ const ProjectUpload = () => {
                                 <div className="row jikl">
                                   {logoImage.map((image, index) => (
                                     <div
-                                      className="col-6  "
+                                      className="col-12  "
                                       key={index}
                                       style={{
                                         position: 'relative',
@@ -414,14 +390,14 @@ const ProjectUpload = () => {
                                       <img
                                         src={URL.createObjectURL(image)}
                                         alt={`Product mage ${index}`}
-                                        className="tambo img-fluid"
+                                        className="tambo"
                                         style={{
                                           borderRadius: '9px',
                                           border: '1px solid lightgrey',
-                                          objectFit: 'cover',
+                                          objectFit: 'contain',
                                           margin: '5px',
-                                          // set image height
-                                          width: '100%', // set image width to fill the column
+                                      
+                                          width: '100%',
                                         }}
                                       />
                                     </div>
@@ -539,7 +515,7 @@ const ProjectUpload = () => {
                               <div className="row jikl">
                                 {thumbNailImage.map((image2, index) => (
                                   <div
-                                    className="col-6  "
+                                    className="col-12  "
                                     key={index}
                                     style={{
                                       position: 'relative',
@@ -690,29 +666,29 @@ const ProjectUpload = () => {
                         <div className="col-12 col-lg-4">
                           <div className="mb-5">
                             <div className="push-down container">
-                              <div className="hiih"> Project big image</div>
+                              <div className="hiih"> Project big video</div>
 
                               <div className="row jikl">
-                                {bigImage.map((image3, index) => (
+                                {bigVideo.map((video, index) => (
                                   <div
-                                    className="col-6  "
+                                    className="col-12"
                                     key={index}
                                     style={{
                                       position: 'relative',
                                     }}
                                   >
-                                    <img
-                                      src={URL.createObjectURL(image3)}
-                                      alt={`Product mage ${index}`}
+                                    <video
+                                      src={URL.createObjectURL(video)}
+                                      alt={`Product video ${index}`}
                                       className="tambo img-fluid"
                                       style={{
                                         borderRadius: '9px',
-                                        border: '1px solid lightgrey',
+
                                         objectFit: 'cover',
-                                        margin: '5px',
-                                        // set image height
-                                        width: '100%', // set image width to fill the column
+                                        marginTop: '10px',
+                                        width: '100%',
                                       }}
+                                      controls
                                     />
                                   </div>
                                 ))}
@@ -740,9 +716,9 @@ const ProjectUpload = () => {
                                         id="uploadBig"
                                         type="file"
                                         required
-                                        accept="image/*"
+                                        accept="video/*"
                                         style={{ display: 'none' }}
-                                        onChange={handleBigImageChange}
+                                        onChange={handlebigVideoChange}
                                       />
                                     </Button>
                                   </div>
@@ -757,241 +733,141 @@ const ProjectUpload = () => {
                               className="kuki"
                               aria-label="minimum height"
                               minRows={4.5}
-                              placeholder="project overview  "
+                              placeholder="project Summary  "
                               style={{ width: '100%' }}
                               value={overView}
                               onChange={(e) => setOverView(e.target.value)}
                             />
                           </div>
                         </div>
-                        <div className="col-12 col-lg-4">
-                          <div className="mb-5">
-                            <TextareaAutosize
-                              className="kuki"
-                              aria-label="minimum height"
-                              minRows={4.5}
-                              placeholder="project 'the problem'   "
-                              style={{ width: '100%' }}
-                              value={theProblem}
-                              onChange={(e) => setTheProblem(e.target.value)}
-                            />
-                          </div>
-                        </div>
-                        <div className="col-12 col-lg-4">
-                          <div className="mb-5">
-                            <div className="push-down container">
-                              <div className="hiih">
-                                {' '}
-                                Project style Guide image
+                        <div className="col-12">
+                          <div className="borer container brilliant">
+                            <div className="Media">Media</div>
+                            <div className="own-eyes">
+                              <div className="upload-images">
+                                Upload Product Images
                               </div>
-
-                              <div className="row jikl">
-                                {typographyImage.map((image3, index) => (
-                                  <div
-                                    className="col-6  "
-                                    key={index}
-                                    style={{
-                                      position: 'relative',
-                                    }}
-                                  >
-                                    <img
-                                      src={URL.createObjectURL(image3)}
-                                      alt={`Product mage ${index}`}
-                                      className="tambo img-fluid"
-                                      style={{
-                                        borderRadius: '9px',
-                                        border: '1px solid lightgrey',
-                                        objectFit: 'cover',
-                                        margin: '5px',
-                                        // set image height
-                                        width: '100%', // set image width to fill the column
-                                      }}
-                                    />
-                                  </div>
-                                ))}
-
-                                <div className="">
-                                  <div className="realise">
-                                    <Button
-                                      as="label"
-                                      htmlFor="uploadTypo"
-                                      style={{
-                                        cursor: 'pointer',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        borderRadius: '18px',
-                                      }}
-                                    >
-                                      <BiUpload
-                                        style={{
-                                          fontSize: '20px',
-                                          marginRight: '10px',
-                                        }}
-                                      />
-                                      upload image
-                                      <Form.Control
-                                        id="uploadTypo"
-                                        type="file"
-                                        required
-                                        accept="image/*"
-                                        style={{ display: 'none' }}
-                                        onChange={handleTypographImageChange}
-                                      />
-                                    </Button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-12 col-lg-4">
-                          <div className="mb-5">
-                            <TextareaAutosize
-                              className="kuki"
-                              aria-label="minimum height"
-                              minRows={4.5}
-                              placeholder="project mobile screen   "
-                              style={{ width: '100%' }}
-                              value={mobileScreen}
-                              onChange={(e) => setMobileScreen(e.target.value)}
-                            />
-                          </div>
-                        </div>
-                        <div className="col-12 col-lg-4">
-                          <div className="mb-5">
-                            <div className="push-down container">
-                              <div className="hiih"> Project mobile images</div>
-
-                              <div className="row jikl">
-                                {mobileImage2.map((image5, index) => (
-                                  <div
-                                    className="col-6  "
-                                    key={index}
-                                    style={{
-                                      position: 'relative',
-                                    }}
-                                  >
-                                    <img
-                                      src={URL.createObjectURL(image5)}
-                                      alt={`Product mage ${index}`}
-                                      className="tambo img-fluid"
-                                      style={{
-                                        borderRadius: '9px',
-                                        border: '1px solid lightgrey',
-                                        objectFit: 'cover',
-                                        margin: '5px',
-                                        // set image height
-                                        width: '100%', // set image width to fill the column
-                                      }}
-                                    />
-                                  </div>
-                                ))}
-                                <div className="">
-                                  <div className="realise">
-                                    <Button
-                                      as="label"
-                                      htmlFor="uploadMobile"
-                                      style={{
-                                        cursor: 'pointer',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        borderRadius: '18px',
-                                      }}
-                                    >
-                                      <BiUpload
-                                        style={{
-                                          fontSize: '20px',
-                                          marginRight: '10px',
-                                        }}
-                                      />
-                                      upload image
-                                      <Form.Control
-                                        id="uploadMobile"
-                                        type="file"
-                                        required
-                                        accept="image/*"
-                                        style={{ display: 'none' }}
-                                        onChange={handleMobileImage2Change}
-                                      />
-                                    </Button>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="col-12 col-lg-4">
-                          <div className="mb-5">
-                            <TextareaAutosize
-                              className="kuki"
-                              aria-label="minimum height"
-                              minRows={4.5}
-                              placeholder="project web screen   "
-                              style={{ width: '100%' }}
-                              value={webScreen}
-                              onChange={(e) => setWebScreen(e.target.value)}
-                            />
-                          </div>
-                        </div>
-                        <div className="col-12 col-lg-4">
-                          <div className="mb-5">
-                            <div className="push-down container">
-                              <div className="hiih"> Project web images</div>
-
-                              <div className="row jikl">
-                                {webImage.map((image3, index) => (
-                                  <div
-                                    className="col-6  "
-                                    key={index}
-                                    style={{
-                                      position: 'relative',
-                                    }}
-                                  >
-                                    <img
-                                      src={URL.createObjectURL(image3)}
-                                      alt={`Product mage ${index}`}
-                                      className="tambo img-fluid"
-                                      style={{
-                                        borderRadius: '9px',
-                                        border: '1px solid lightgrey',
-                                        objectFit: 'cover',
-                                        margin: '5px',
-                                        // set image height
-                                        width: '100%', // set image width to fill the column
-                                      }}
-                                    />
-                                  </div>
-                                ))}
-
-                                <div className="">
-                                  <div className="realise">
-                                    <Button
-                                      as="label"
-                                      htmlFor="uploadWeb"
-                                      style={{
-                                        cursor: 'pointer',
-                                        display: 'flex',
-                                        alignItems: 'center',
-                                        borderRadius: '18px',
-                                      }}
-                                    >
-                                      <BiUpload
-                                        style={{
-                                          fontSize: '20px',
-                                          marginRight: '10px',
-                                        }}
-                                      />
-                                      upload image
-                                      <Form.Control
-                                        id="uploadWeb"
-                                        type="file"
-                                        required
-                                        accept="image/*"
-                                        style={{ display: 'none' }}
-                                        onChange={handleWebImageChange}
-                                      />
-                                    </Button>
-                                  </div>
+                              <div>
+                                <div
+                                  className="dashed"
+                                  onDragOver={allowDrop}
+                                  onDrop={drop}
+                                >
+                                  {productImages.length === 0 && (
+                                    <div className="moddd">
+                                      <div className="uppl">
+                                        Upload your Product Images Here (10
+                                        Images Max)
+                                      </div>
+                                      <div className="faint">
+                                        Drag files here or Click “Upload” to
+                                        open your “File Manager”
+                                      </div>
+                                      <div className="mt-3">
+                                        <FaCloudUploadAlt className="cloud" />
+                                      </div>
+                                      <div className="highg">
+                                        <button
+                                          className="uppp"
+                                          onClick={handleClick}
+                                        >
+                                          Upload Images
+                                        </button>
+                                        <input
+                                          type="file"
+                                          id="file-input"
+                                          multiple
+                                          accept="image/*"
+                                          onChange={handleSelect}
+                                          style={{ display: 'none' }}
+                                        />
+                                      </div>
+                                    </div>
+                                  )}
+                                  {productImages?.length > 0 && (
+                                    <div>
+                                      <div className="row">
+                                        {productImages?.map((image, index) => (
+                                          <div
+                                            className="col d-flex justify-content-center"
+                                            key={index}
+                                          >
+                                            <div
+                                              className="my-3"
+                                              style={{ position: 'relative' }}
+                                            >
+                                              <img
+                                                src={URL.createObjectURL(image)}
+                                                alt="Uploaded"
+                                                className="happed"
+                                              />
+                                              <div
+                                                style={{
+                                                  position: 'absolute',
+                                                  top: '50%',
+                                                  left: '50%',
+                                                  transform:
+                                                    'translate(-50%, -50%)',
+                                                }}
+                                              >
+                                                <div
+                                                  className="pRogress"
+                                                  style={{
+                                                    background: '#000000',
+                                                    borderRadius: '50%',
+                                                    display: 'flex',
+                                                    justifyContent: 'center',
+                                                    alignItems: 'center',
+                                                    height: '40px',
+                                                    width: '40px',
+                                                  }}
+                                                >
+                                                  {uploadProgress[index] >
+                                                    0 && (
+                                                    <CircularProgress
+                                                      style={{
+                                                        height: '25px',
+                                                        width: '25px',
+                                                        color: 'white',
+                                                      }}
+                                                      variant="determinate"
+                                                      value={
+                                                        uploadProgress[index]
+                                                      }
+                                                    />
+                                                  )}
+                                                </div>
+                                              </div>
+                                              {!isButtonClicked && (
+                                                <div
+                                                  style={{
+                                                    position: 'absolute',
+                                                    top: '10px',
+                                                    right: '10px',
+                                                    height: '34px',
+                                                    width: '34px',
+                                                    borderRadius: '50%',
+                                                    background: '#F6F6F7',
+                                                    display: 'flex',
+                                                    justifyContent: 'center',
+                                                    alignItems: 'center',
+                                                    cursor: 'pointer',
+                                                    color: 'black',
+                                                    fontWeight: 'bolder',
+                                                  }}
+                                                  onClick={(index) =>
+                                                    handleDeleteImage(index)
+                                                  }
+                                                >
+                                                  X
+                                                </div>
+                                              )}
+                                            </div>
+                                          </div>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  )}
                                 </div>
                               </div>
                             </div>
