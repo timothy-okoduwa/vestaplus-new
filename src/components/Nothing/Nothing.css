@@ -1,0 +1,46 @@
+.biud {
+  display: flex;
+
+  margin-top: -30px;
+  flex-direction: column;
+  align-items: center;
+}
+.four {
+  font-size: 330px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 500;
+  animation: zoomInOut 2s infinite;
+
+  z-index: -1;
+}
+.ibe2 {
+  margin-top: -50px;
+}
+.wyben {
+  margin-top: 60px;
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .four {
+    font-size: 140px;
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+  }
+  .ibe2 {
+    margin-top: 50px;
+  }
+}

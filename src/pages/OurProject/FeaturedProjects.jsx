@@ -28,7 +28,7 @@ const FeaturedProjects = () => {
             {user?.project?.map((prod) => (
               <div className="col-12 col-lg-6 mb-5">
                 <Link
-                  to={`/${prod.projectName}`}
+                  to={`/more/${prod.projectName}`}
                   style={{ textDecoration: 'none' }}
                 >
                   <div

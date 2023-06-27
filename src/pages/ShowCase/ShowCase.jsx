@@ -8,7 +8,6 @@ import { db } from '../../firebase';
 const ShowCase = () => {
   const { projectName } = useParams();
   const [project, setProject] = useState(null);
-  const [business, setBusiness] = useState(null);
 
   useEffect(() => {
     const getProduct = async () => {
@@ -23,7 +22,6 @@ const ShowCase = () => {
           if (product) {
             // console.log(product); // Add this line to check if the product state is being set
             setProject(product || {});
-            setBusiness(businessData || {});
           }
         });
       } catch (error) {
@@ -37,7 +35,7 @@ const ShowCase = () => {
   useEffect(() => {
     document.title = ' Vestarplus | ShowCase ';
   }, []);
-  console.log(business);
+  // console.log(business);
   return (
     <div>
       <div className="container">

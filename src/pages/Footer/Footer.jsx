@@ -20,6 +20,7 @@ const Footer = ({ prod }) => {
   const hideAll =
     location.pathname === '/create-admin' ||
     location.pathname === '/project-upload' ||
+    location.pathname.startsWith('/404') ||
     location.pathname === '/admin';
   const hideInWhatPage =
     location.pathname === '/whatwedo' ||
@@ -27,43 +28,48 @@ const Footer = ({ prod }) => {
     location.pathname === '/about' ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/contact';
   const hideInHomePage =
     location.pathname === '/' ||
     location.pathname === '/project' ||
+    location.pathname.startsWith('/404') ||
     location.pathname === '/about' ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname.startsWith('/404') ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/contact';
   const hideInWhatAndHomeAndProductPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname.startsWith('/404') ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/404') ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/contact' ||
     location.pathname === '/about' ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactAndBlogProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
+    location.pathname.startsWith('/404') ||
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/contact' ||
     location.pathname === '/blog' ||
@@ -71,6 +77,7 @@ const Footer = ({ prod }) => {
   const hideInWhatAndHomeAndContactAndAboutProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname.startsWith('/404') ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||

@@ -22,7 +22,9 @@ const NavBar1 = ({ prod }) => {
   const hideAll =
     location.pathname === '/project-upload' ||
     location.pathname === '/create-admin' ||
+    location.pathname.startsWith('/404') ||
     location.pathname === '/admin';
+
   const hideInWhatPage =
     location.pathname === '/whatwedo' ||
     location.pathname === '/project' ||
@@ -37,6 +39,7 @@ const NavBar1 = ({ prod }) => {
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||
+    location.pathname === '/noth' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
@@ -46,39 +49,47 @@ const NavBar1 = ({ prod }) => {
     location.pathname === '/whatwedo' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/about' ||
+    location.pathname === '/noth' ||
     location.pathname === '/contact';
   const hideInWhatAndHomeAndProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
+    location.pathname === '/noth' ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname === '/about' ||
+    location.pathname === '/noth' ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactProjectPage =
     location.pathname === '/' ||
+    location.pathname === '/noth' ||
     location.pathname === '/whatwedo' ||
     projectNames.includes(location.pathname.substring(1)) ||
-   
     location.pathname === '/contact' ||
     location.pathname === '/about' ||
+    location.pathname === '/noth' ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactAndBlogProjectPage =
     location.pathname === '/' ||
+    location.pathname === '/noth' ||
     location.pathname === '/whatwedo' ||
     projectNames.includes(location.pathname.substring(1)) ||
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/contact' ||
     location.pathname === '/blog' ||
+    location.pathname === '/noth' ||
     location.pathname === '/project';
   const hideInWhatAndHomeAndContactAndAboutProjectPage =
     location.pathname === '/' ||
     location.pathname === '/whatwedo' ||
     location.pathname === '/blog' ||
+    location.pathname === '/noth' ||
     location.pathname.startsWith('/blog-read') ||
     // location.pathname === `/${user?.projectNames}` ||
     location.pathname === '/about' ||
     location.pathname === '/contact' ||
+    location.pathname === '/noth' ||
     location.pathname === '/project';
   return (
     <>
