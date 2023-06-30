@@ -380,10 +380,8 @@ const ProjUpload2 = () => {
       {' '}
       <div className="container mt-5">
         <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-          <img src={v} alt="" />
-          <button className="cafmu" onClick={move}>
-            Logout
-          </button>
+          <img src={v} alt="" onClick={move} style={{ cursor: 'pointer' }} />
+          <button className="cafmu">Logout</button>
         </div>
         <div className="mt-5">
           <div className="pcpc">Upload Project</div>

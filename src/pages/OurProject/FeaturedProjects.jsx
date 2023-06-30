@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { doc, onSnapshot } from 'firebase/firestore';
 import { db } from '../../firebase';
+
 const FeaturedProjects = () => {
   const [user, setUser] = useState([]);
 
@@ -13,14 +14,17 @@ const FeaturedProjects = () => {
         setUser(docSnap?.data());
       }
     });
+
     return () => unsubscribe();
   }, []);
+
   console.log(user);
+
   return (
     <div className="mentor">
       <div>
         <div className="skills">
-          Featured <span className="strategy">Projects</span>{' '}
+          Featured <span className="strategy">Projects</span>
         </div>
         <div className="funn">Some of our works and projects</div>
         <div className="truru">
@@ -38,23 +42,28 @@ const FeaturedProjects = () => {
                     <div className="lplp">
                       <div className="ynl">
                         <div>
-                          <img src={prod.logoImage} alt="" />
-                          <div className="Financery">{prod?.projectName}</div>
+                          <div className="seses">
+                            <img
+                              src={prod.logoImage}
+                              alt=""
+                              style={{ width: '100%', objectFit: 'contain' }}
+                            />
+                          </div>
+
+                          <div className="Financery mt-3">
+                            {prod?.projectName}
+                          </div>
                         </div>
-                        <div className="memind">{prod?.shortDescription}</div>
+                        <div className="memind mt-4">
+                          {prod?.shortDescription}
+                        </div>
                         <div>
                           <div className="u-alone">
-                            {prod.ux && (
-                              <div className="presence">{prod.ux}</div>
-                            )}
-
-                            {prod.branding && (
-                              <div className="presence2">{prod.branding}</div>
-                            )}
-
-                            {prod.web && (
-                              <div className="presence2">{prod.web}</div>
-                            )}
+                            {prod.tags.map((tag, index) => (
+                              <div key={index} className="presence">
+                                {tag}
+                              </div>
+                            ))}
                           </div>
                           <div>
                             <button

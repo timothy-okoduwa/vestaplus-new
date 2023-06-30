@@ -1,56 +1,55 @@
-.avee{
-    color: #ED3324;
+.avee {
+  color: #ed3324;
 }
-.sb{
-       background-color: #ED3324;
+.sb {
+  background-color: #ed3324;
 }
-.sb2{
-background: rgba(237, 49, 36, 0.089);
-color: #ED3324;
+.sb2 {
+  background: rgba(237, 49, 36, 0.089);
+  color: #ed3324;
 }
-.mentor{
-    padding-top: 180px;
-    padding-bottom: 80px;
+.mentor {
+  padding-top: 180px;
+  padding-bottom: 80px;
 }
-.skills{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 600 !important;
-font-size: 47px !important;
-text-align: center;
-color: #121212;
-/* line-height: 70px; */
+.skills {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600 !important;
+  font-size: 47px !important;
+  text-align: center;
+  color: #121212;
+  /* line-height: 70px; */
 }
-.strategy{
-    color: #ED3324;
+.strategy {
+  color: #ed3324;
 }
-.funn{
-    font-family: 'Outfit';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-text-align: center;
-color: #121212;
-margin-top:20px ;
+.funn {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #121212;
+  margin-top: 20px;
 }
-.truru{
-    margin-top: 90px;
+.truru {
+  margin-top: 90px;
 }
-.advisors{
-    background-color: #3580F8;
+.advisors {
+  background-color: #3580f8;
 }
-.degin{
-    background-color: #FFFFFF;
-    color: black;
+.degin {
+  background-color: #ffffff;
+  color: black;
 }
-.cbh{
-    background: #0A0C4E;
+.cbh {
+  background: #0a0c4e;
 }
-.nvm{
-    background-color: #FFBB55;
+.nvm {
+  background-color: #ffbb55;
 }
 .loastf {
-
   border-radius: 43px;
 }
 .sbbbf {
@@ -69,14 +68,19 @@ margin-top:20px ;
   border: none;
   margin-top: 23px;
 }
-@media screen and (max-width:991px){
-    .skills{
+@media screen and (max-width: 991px) {
+  .skills {
     font-family: 'Outfit';
-font-style: normal;
-font-weight: 600;
-font-size: 32px !important;
-text-align: center;
-color: #121212;
-/* line-height: 70px; */
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px !important;
+    text-align: center;
+    color: #121212;
+    /* line-height: 70px; */
+  }
 }
+.seses {
+  /* background-color: red !important; */
+  height: 65px;
+  width: 65px;
 }

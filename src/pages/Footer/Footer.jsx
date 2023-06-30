@@ -20,6 +20,7 @@ const Footer = ({ prod }) => {
   const hideAll =
     location.pathname === '/create-admin' ||
     location.pathname === '/project-upload' ||
+    location.pathname === '/project-uploadx' ||
     location.pathname.startsWith('/404') ||
     location.pathname === '/admin';
   const hideInWhatPage =

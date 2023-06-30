@@ -1,26 +1,21 @@
-.biud {
+.roling {
+  /* background-color: red; */
   display: flex;
-
-  margin-top: -30px;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
-.four {
-  font-size: 330px;
-  font-family: 'Outfit';
+.fourtofour {
+  color: #000;
+  font-size: 268.8px;
+  font-family: Outfit;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
   animation: zoomInOut 2s infinite;
-
-  z-index: -1;
 }
-.ibe2 {
-  margin-top: -50px;
-}
-.wyben {
-  margin-top: 60px;
-}
-
 @keyframes zoomInOut {
   0% {
     transform: scale(1);
@@ -33,14 +28,37 @@
   }
 }
 
-@media screen and (max-width: 991px) {
-  .four {
-    font-size: 140px;
-    font-family: 'Outfit';
+.oops {
+  color: #000;
+  font-size: 64px;
+  font-family: Outfit;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.forbut {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .fourtofour {
+    color: #000;
+    font-size: 120px;
+    font-family: Outfit;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
   }
-  .ibe2 {
-    margin-top: 50px;
+  .oops {
+    color: #000;
+    font-size: 30px;
+    font-family: Outfit;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
   }
 }

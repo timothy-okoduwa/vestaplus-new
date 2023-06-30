@@ -1,17 +1,29 @@
 import React from 'react';
 import './Nothing.css';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import v from '../images/oxy.svg';
 const Nothing = () => {
+  const navigate = useNavigate();
+  const move = () => {
+    navigate('/');
+  };
   return (
-    <div className="container mt-3">
-      <div className="biud">
-        {/* <div className="wyben">fhfhfh</div> */}
-        <div className="four">404</div>
-        <div className="borigi">
-          <div className="ibe2">
-            <Link to="/">
-              <button className="cafmu">Back Home</button>
-            </Link>
+    <div className="container ">
+      <div className="roling">
+        <div>
+          <div className="forbut">
+            <img src={v} alt="" />
+          </div>
+          <div>
+            <div className="fourtofour">404</div>
+          </div>
+          <div>
+            <div className="oops">Oops, Page not found.</div>
+          </div>
+          <div className="forbut mt-4">
+            <button className="cafmu" onClick={move}>
+              Go Back Home
+            </button>
           </div>
         </div>
       </div>

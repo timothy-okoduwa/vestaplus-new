@@ -19,6 +19,7 @@ import { db } from './firebase';
 import Blog from './pages/Blog/Blog';
 import BlogRead from './pages/Blog/BlogRead';
 import Nothing from './components/Nothing/Nothing';
+import ProjUpload2 from './pages/Admin/ProjUpload2';
 
 const App = () => {
   const [user, setUser] = useState([]);

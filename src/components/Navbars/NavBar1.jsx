@@ -22,6 +22,7 @@ const NavBar1 = ({ prod }) => {
   const hideAll =
     location.pathname === '/project-upload' ||
     location.pathname === '/create-admin' ||
+    location.pathname === '/project-uploadx' ||
     location.pathname.startsWith('/404') ||
     location.pathname === '/admin';
 
@@ -30,7 +31,7 @@ const NavBar1 = ({ prod }) => {
     location.pathname === '/project' ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/about' ||
     location.pathname === '/contact';
   const hideInHomePage =
@@ -40,14 +41,14 @@ const NavBar1 = ({ prod }) => {
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/about' ||
     location.pathname === '/noth' ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/contact';
   const hideInWhatAndHomePage =
     location.pathname === '/' ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/whatwedo' ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/about' ||
     location.pathname === '/noth' ||
     location.pathname === '/contact';
@@ -57,7 +58,7 @@ const NavBar1 = ({ prod }) => {
     location.pathname === '/noth' ||
     location.pathname === '/blog' ||
     location.pathname.startsWith('/blog-read') ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/about' ||
     location.pathname === '/noth' ||
     location.pathname === '/project';
@@ -65,7 +66,7 @@ const NavBar1 = ({ prod }) => {
     location.pathname === '/' ||
     location.pathname === '/noth' ||
     location.pathname === '/whatwedo' ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname === '/contact' ||
     location.pathname === '/about' ||
     location.pathname === '/noth' ||
@@ -74,7 +75,7 @@ const NavBar1 = ({ prod }) => {
     location.pathname === '/' ||
     location.pathname === '/noth' ||
     location.pathname === '/whatwedo' ||
-    projectNames.includes(location.pathname.substring(1)) ||
+    location.pathname.startsWith('/more') ||
     location.pathname.startsWith('/blog-read') ||
     location.pathname === '/contact' ||
     location.pathname === '/blog' ||
