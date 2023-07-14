@@ -226,6 +226,11 @@
   font-style: normal !important;
   font-weight: 500 !important;
   font-size: 16px !important;
+  border: none !important;
+  padding: 0px !important;
+  margin-bottom: 0px !important;
+  margin-top: -10px !important;
+  background-color: rgba(255, 255, 255, 0);
 }
 .pagination .active a {
   color: #ffffff;
@@ -248,8 +253,8 @@
 .pagination .page-item:first-child .page-link {
   border-top-left-radius: 0.25rem;
   border-bottom-left-radius: 0.25rem;
-  margin-left: 10px;
-  
+  /* margin-left: 10px; */
+
   font-family: 'outfit' !important;
   font-style: normal !important;
   font-weight: 500 !important;
@@ -259,7 +264,7 @@
 .pagination .page-item:last-child .page-link {
   border-top-right-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   font-family: 'outfit' !important;
   font-style: normal !important;
   font-weight: 500 !important;
@@ -339,8 +344,8 @@
   margin-top: 45px !important;
 }
 
-.backkik{
-   font-family: 'Outfit';
+.backkik {
+  font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
   font-size: 19px !important;
@@ -380,9 +385,9 @@
   color: #3d3d3d;
   cursor: pointer;
   background-color: rgba(255, 0, 0, 0);
-padding: 6px;
-border-radius: 6px;
-  transition:  0.3s ease-out !important;
+  padding: 6px;
+  border-radius: 6px;
+  transition: 0.3s ease-out !important;
 }
 .slotsss:hover {
   width: fit-content;
@@ -393,7 +398,14 @@ border-radius: 6px;
   color: #ffffff;
   cursor: pointer;
   background-color: lightgray;
-padding: 6px;
-border-radius: 6px;
-  transition:  0.3s ease-out !important;
+  padding: 6px;
+  border-radius: 6px;
+  transition: 0.3s ease-out !important;
+}
+.omhhfj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -60px; */
+  /* background-color: red; */
 }

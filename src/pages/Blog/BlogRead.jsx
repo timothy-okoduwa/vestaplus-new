@@ -12,6 +12,7 @@ import { HiArrowNarrowLeft, HiArrowNarrowUp } from 'react-icons/hi';
 import { useNavigate } from 'react-router-dom';
 import t from '../images/tbb.png';
 import m from '../images/man-shrugging.png';
+
 const BlogRead = () => {
   const [showButton, setShowButton] = useState(false);
 
@@ -36,15 +37,14 @@ const BlogRead = () => {
   const move = () => {
     navigate('/blog');
   };
+
   const selectedPost = useSelector((state) => state.selectedPost);
 
   if (!selectedPost) {
-    // Handle the case when there's no post data available
     return (
       <div style={{ textAlign: 'center' }}>
         <div>
           <div>
-            {' '}
             <img src={m} alt="shrig" style={{ width: '5%' }} />
           </div>
           No blog post found.
@@ -56,19 +56,26 @@ const BlogRead = () => {
     );
   }
 
-  const { title, readingTime, dateAdded, contentMarkdown, coverImage } =
-    selectedPost;
-  // Function to format date to the desired format
+  const {
+    title,
+    readingTime,
+    dateAdded,
+    contentMarkdown,
+    coverImage,
+    ownerName,
+  } = selectedPost;
+
   const formatDate = (dateString) => {
     const date = new Date(dateString);
     const options = { year: 'numeric', month: 'short', day: 'numeric' };
     const formattedDate = date.toLocaleDateString('en-US', options);
     return formattedDate;
   };
+
   const Image = ({ src, alt }) => (
     <img
       src={src}
-      alt={alt || 'ok'}
+      alt={alt || ''}
       className="blog-post-image"
       style={{ width: '100%' }}
     />
@@ -93,7 +100,7 @@ const BlogRead = () => {
       <div className="container">
         <div className="stress">
           <div className="">
-            <div onClick={move} className=' slotsss'>
+            <div onClick={move} className=" slotsss">
               <HiArrowNarrowLeft /> Back
             </div>
           </div>
@@ -101,13 +108,11 @@ const BlogRead = () => {
           <div>
             <div className="okokok mt-3">
               <div className="rigyt">
-                By <span className="sly">Sylvester Nnachi</span>
+                By <span className="sly">{ownerName}</span>
               </div>
               <div className="rigyt"> {formatDate(dateAdded)}</div>
-
               <div className="rigyt">{readingTime} Mins read</div>
             </div>
-
             <div className="okokok mt-4 ">
               <div className="key">
                 <a
@@ -150,7 +155,6 @@ const BlogRead = () => {
                 </a>
               </div>
             </div>
-
             <div>
               <img
                 src={coverImage || t}
@@ -180,12 +184,11 @@ const BlogRead = () => {
                   <div className="ui mb-3">UI & UX Design</div>
                   <div className="graph mb-3">Graphics Design</div>
                 </div>
-
                 <div className="ohn ">
                   Let’s build something awesome together!
                 </div>
                 <div className="shilalo">
-                  Email:project@vestarplus.com
+                  Email: project@vestarplus.com
                   <br /> Call: +234 802 2861 622
                 </div>
               </div>

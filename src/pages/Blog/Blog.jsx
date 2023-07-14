@@ -12,7 +12,6 @@ import { useNavigate } from 'react-router-dom';
 // import { useDispatch } from 'react-redux';
 import store from '../../Store';
 
-
 const Blog = () => {
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
@@ -26,7 +25,7 @@ const Blog = () => {
 
     navigate(`/blog-read/${post.slug}`);
   };
-  
+
   //!karllhughes
 
   const query = `
@@ -82,10 +81,11 @@ const Blog = () => {
     if (data.errors) {
       throw new Error(data.errors[0].message);
     }
-
+    const { name } = data.data.user;
     const newPosts = data.data.user.publication.posts.map((post) => ({
       ...post,
       readingTime: calculateReadingTime(post.contentMarkdown),
+      ownerName: name,
     }));
 
     if (newPosts.length === 0) {
@@ -311,15 +311,7 @@ const Blog = () => {
         </div>
       </div>
 
-      <div
-        className=" container wrongs"
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          marginTop: '-100px',
-          marginBottom: '90px',
-        }}
-      >
+      <div className=" omhhfj mb-5">
         <ReactPaginate
           pageCount={pageCount}
           onPageChange={handlePageChange}
