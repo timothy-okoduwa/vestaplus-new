@@ -22,7 +22,7 @@ const Blog = () => {
       type: 'SET_SELECTED_POST',
       payload: post,
     });
-
+    localStorage.setItem('selectedPost', JSON.stringify(post));
     navigate(`/blog-read/${post.slug}`);
   };
 

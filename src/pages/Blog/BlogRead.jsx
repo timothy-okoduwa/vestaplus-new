@@ -15,7 +15,12 @@ import m from '../images/man-shrugging.png';
 
 const BlogRead = () => {
   const [showButton, setShowButton] = useState(false);
-
+  const selectedPostFromLocalStorage = JSON.parse(
+    localStorage.getItem('selectedPost')
+  );
+  const [selectedPost, setSelectedPost] = useState(
+    selectedPostFromLocalStorage
+  );
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -38,7 +43,7 @@ const BlogRead = () => {
     navigate('/blog');
   };
 
-  const selectedPost = useSelector((state) => state.selectedPost);
+  // const selectedPost = useSelector((state) => state.selectedPost);
 
   if (!selectedPost) {
     return (
